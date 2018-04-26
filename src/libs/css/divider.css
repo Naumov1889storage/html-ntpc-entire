@@ -1,0 +1,63 @@
+.divider {
+    display: table;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    display: table-cell;
+    background: url(https://www.beautycolorcode.com/cdcdcd.png) no-repeat;
+    -webkit-background-size: 100% 1px;
+    background-size: 100% 1px;
+}
+
+
+/*right left begin*/
+.divider.right.left::before,
+.divider.right.left::after {
+    width: 50%;
+}
+
+.divider.right.left::before {
+    background-position: right 1em top 50%;
+}
+
+.divider.right.left::after {
+    background-position: left 1em top 50%;
+}
+/*right left end*/
+
+
+/*only right begin*/
+.divider.right::after {
+    width: 100%;
+}
+
+.divider.right::before {
+    width: 0;
+}
+
+.divider.right::after {
+    background-position: left 1em top 50%;
+}
+/*only right end*/
+
+
+/*only left begin*/
+.divider.left::after {
+    width: 0;
+}
+
+.divider.left::before {
+    width: 100%;
+}
+
+.divider.left::before {
+    background-position: right 1em top 50%;
+}
+/*only left end*/

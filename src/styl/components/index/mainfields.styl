@@ -1,0 +1,113 @@
+.mainfield {
+  padding-bottom: 70px
+  h2 {
+    margin: 65px 0 65px 0
+    text-align: center
+    font-family: latobold
+    font-size: 52px
+    line-height: 60px
+    color: #717171
+    text-transform: uppercase
+  }
+
+  #tabs {
+    box-shadow: -1px 1px 26px rgba(0, 0, 0, 0.4)
+    .tabs__title {
+      display: flex
+      height: 41px
+      li {
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 0 32px 0 32px
+        background: #c3c3c3
+        &.ui-tabs-active {
+          a {
+            color: #5d5d5d
+          }
+        }
+        a {
+          width: 100%
+          font-family: latoregular
+          font-size: 22px
+          color: #ffffff
+          text-decoration: none
+        }
+      }
+    }
+    .tabs__content {
+      & > div {
+        padding: 40px 0 40px 0
+      }
+      h3 {
+        display: block
+        width: 228px
+        font-family: latoblack
+        font-size: 25px
+        line-height: 25px
+        color: #6197a2
+        letter-spacing: 0.3px
+      }
+       .divider.left.right {
+          margin: 0
+          margin-bottom: 30px
+      }
+      b {
+        font-family: Calibri
+        font-size: 18px
+        font-weight: 600
+        line-height: 26px
+        color: #3a3a3a
+      }
+      p {
+        font-family: Calibri
+        font-size: 16px
+        line-height: 20px
+        color: #3a3a3a
+      }
+      .divider {
+        margin: 44px 0 44px 0
+
+      }
+      #tabs-1 {
+        .flex_row__between {
+          .left {
+            min-width: 190px
+            img {
+              margin-left: 40px
+              margin-right: 20px
+            }
+          }
+          .right {
+            p {
+              padding-right: 40px
+            }
+            .companylife {
+              display: block
+              margin-top: 18px
+            }
+          }
+        }
+        ul.features {
+          li {
+            padding-top: 70px
+            width: 75px
+            font-family: latoregular
+            font-size: 16px
+            line-height: 20px
+            text-align: center
+            color: #4373aa
+            background: url(/img/iconset-features.jpg) no-repeat
+            background-position: 12px 0
+            &:nth-child(2) {
+              background-position: -122px 0
+            }
+            &:nth-child(3) {
+              background-position: -260px 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

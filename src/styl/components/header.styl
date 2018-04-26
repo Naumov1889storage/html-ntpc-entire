@@ -1,0 +1,324 @@
+.header {
+  position: relative
+  z-index: 10
+  width: 100%
+  min-height: 90px
+  background-color: rgba(68, 106, 129, 0.5)
+  color: #ffffff
+  .container {
+    padding: 10px 0 10px 0
+    min-height: 90px
+  }
+  
+  &__tel {
+    margin-left: 86px
+    text-align: center
+    .number {
+      font-family: latobold
+      font-size: 22px
+      line-height: 22px
+    }
+    .call {
+      font-family: latolight
+      font-size: 18px
+      text-decoration: underline
+      cursor: pointer
+      &:hover {
+        text-decoration: none
+      }
+    }
+  }
+  
+  &__search {
+    position: relative
+    margin-left: 47px
+    padding: 3px
+    width: 215px
+    height: 40px
+    border: 1px solid #ffffff
+    border-radius: 2px
+    input {
+      padding: 0 35px 0 10px
+      width: 100%
+      height: 100%
+      font-family: calibri
+      font-size: 18px
+      border: 1px solid #ffffff
+      border-radius: 1px
+      &::placeholder {
+        color: #b4b4b4
+        opacity: 1
+      }
+
+      &:-ms-input-placeholder {
+        color: #b4b4b4
+      }
+
+      &::-ms-input-placeholder {
+        color: #b4b4b4
+      }
+    }
+    button {
+      position: absolute
+      top: 50%
+      right: 7px
+      transform: translateY(-50%)
+      width: 24px
+      height: 24px
+      background: url("/img/icon-search.png")
+    }
+  }
+
+  &__catalog {
+    position: relative
+    z-index: 10
+    margin-left: 72px
+    &.active {
+      background: #ffffff
+      .title {
+        color: #000000
+        border: none
+        &:before {
+          background: #000000
+        }
+        &:after {
+          top: 11px
+          width: 15px
+          height: 15px
+          border: none
+          transform: rotate(0)
+          background: url("/img/icon-cross.jpg")
+        }
+      }
+      .content {
+        display: block
+      }
+    }
+    .title {
+      position: relative
+      z-index: 10
+      padding: 7px 20px 7px 21px
+      width: 160px
+      height: 37px
+      font-family: latobold
+      font-size: 18px
+      border: 1px solid #ffffff
+      border-radius: 2px
+      cursor: pointer
+      &:before {
+        content: ''
+        position: absolute
+        right: 38px
+        top: 4px
+        bottom: 4px
+        width: 1px
+        max-height: 100%
+        background: #ffffff
+      }
+      &:after {
+        content: ''
+        position: absolute
+        right: 12px
+        top: 8px
+        width: 11px
+        height: 11px
+        border-left: 2px solid #ffffff
+        border-bottom: 2px solid #ffffff
+        transform: rotate(-45deg)
+      }
+    }
+    .content {
+      display: none
+      position: absolute
+      top: -7px
+      right: 0
+      padding: 45px 8px 8px 8px
+      width: 595px
+      background: #ffffff
+      &:before {
+        content: ''
+        position: absolute
+        top: 44px
+        left: 8px
+        right: 8px
+        max-width: 100%
+        height: 1px
+        background: #c7c7c7
+      }
+
+      ul {
+        display: flex
+        flex-direction: column
+        .content__title {
+          display: inline-block
+          margin: 15px 0 10px 0
+          &.lonely {
+            margin: 3px 0 3px 0
+          }
+          a {
+            font-family: latobold
+            font-size: 18px
+            line-height: 25px
+            color: #0f73b9
+            text-decoration: underline
+            &:hover {
+              text-decoration: none
+            }
+          }
+        }
+        li {
+          font-family: latoregular
+          font-size: 16px
+          line-height: 26px
+          color: #0f73b9
+        }
+
+        &.foricons {
+          li {
+            position: relative
+            padding-left: 27px
+            &.content__title {
+              padding: 0 !important
+              &:before {
+                display: none
+              }
+            }
+            &:before {
+              content: ''
+              position: absolute
+              left: 0
+              top: 50%
+              transform: translateY(-50%)
+              width: 20px
+              height: 20px
+              background: url(/img/iconset-catalog.jpg)
+            }
+          }
+          &#foricons {
+            &__1 {
+              li {
+                &:nth-child(2) {
+                  &:before {
+                    background-position: 2px 0
+                  }
+                }
+                &:nth-child(3) {
+                  &:before {
+                    background-position: 2px -27px
+                  }
+                }
+                &:nth-child(4) {
+                  &:before {
+                    background-position: 2px -53px
+                  }
+                }
+                &:nth-child(5) {
+                  &:before {
+                    background-position: 2px -80px
+                  }
+                }
+              }
+            }
+            &__2 {
+              li {
+                padding-left: 32px
+                &:before {
+                  width: 25px
+                }
+                &:nth-child(2) {
+                  &:before {
+                    background-position: 26px 0
+                  }
+                }
+                &:nth-child(3) {
+                  &:before {
+                    background-position: 26px -27px
+                  }
+                }
+                &:nth-child(4) {
+                  &:before {
+                    background-position: 26px -53px
+                  }
+                }
+                &:nth-child(5) {
+                  &:before {
+                    background-position: 26px -80px
+                  }
+                }
+                &:nth-child(6) {
+                  &:before {
+                    height: 25px
+                    background-position: 26px -103px
+                  }
+                }
+
+              }
+            }
+            &__3 {
+              li {
+                padding-left: 33px
+                &:before {
+                  width: 26px
+                  height: 25px
+                }
+                &:nth-child(2) {
+                  &:before {
+                    background-position: 29px -180px
+                  }
+                }
+                &:nth-child(3) {
+                  &:before {
+                    background-position: 29px -206px
+                  }
+                }
+                &:nth-child(4) {
+                  &:before {
+                    background-position: 29px -232px
+                  }
+                }
+                &:nth-child(5) {
+                  &:before {
+                    background-position: 29px -257px
+                  }
+                }
+              }
+            }
+
+          }
+        }
+
+      }
+
+      .square {
+        width: 230px
+        min-height: 175px
+        border-bottom: 1px solid #c7c7c7
+        &:last-child {
+          border: none
+        }
+        &.top {
+
+        }
+        &.bottom {
+          padding:
+        }
+      }
+
+      .right {
+        position: relative
+        padding: 0 0 35px 25px
+        &:before {
+          content: ''
+          position: absolute
+          left: 0
+          top: 0
+          bottom: 5px
+          width: 1px
+          max-height: 100%
+          background: #c7c7c7
+        }
+      }
+    }
+  }
+}
+

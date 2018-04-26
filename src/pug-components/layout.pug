@@ -1,0 +1,160 @@
+doctype html
+html(lang="ru-Ru")
+    head
+        meta(charset = 'utf-8')
+        meta(name='viewport', content="initial-scale=1.0, width=device-width")
+        block title
+            title Главная
+        link(rel='stylesheet', href='css/concat-css-libs.css')
+        link(rel='stylesheet', href='css/concat-css.css')
+    body
+        block header
+            .header
+                .container.flex_row__center.align_center
+                    a(class='header__logo' href='')
+                        img(src='img/logo-ntpc.png')
+
+                    .header__tel
+                        .number +7 (812) 320-61-61
+                        .call заказать звонок
+
+                    form(class='header__search' method='get')
+                        input(type='text' placeholder='Поиск по сайту')
+                        button(type='submit')
+
+                    .header__catalog
+                        .title КАТАЛОГ
+                        .content
+                            .flex_row__start
+                                .left
+                                    .square.top.flex_column.align_center
+                                        ul.foricons#foricons__1
+                                            li.content__title
+                                                a(href='') Инженерное ПО
+                                            li
+                                                a(href='') NanoCAD
+                                            li
+                                                a(href='') Model Studio CS
+                                            li
+                                                a(href='') Pilot-ICE
+                                            li
+                                                a(href='') Renga
+
+                                    .square.bottom.flex_column.justify_center.align_center
+                                        ul
+                                            li.content__title.lonely
+                                                a(href='') NormaCS
+                                            li.content__title.lonely
+                                                a(href='') Гарант
+                                            li.content__title.lonely
+                                                a(href='') Обучение
+                                .right
+                                    ul.foricons#foricons__2
+                                        li.content__title
+                                            a(href='') Электронная подпись
+                                        li
+                                            a(href='') Для гос. порталов
+                                        li
+                                            a(href='') Для электронных торгов
+                                        li
+                                            a(href='') Электронная отчетность
+                                        li
+                                            a(href='') Электронный документооборот
+                                        li
+                                            a(href='') Электронные кассы
+
+
+                                    ul.foricons#foricons__3
+                                        li.content__title
+                                            a(href='') Тендерное сопровождение
+                                        li
+                                            a(href='') Аккредитация / Установка
+                                        li
+                                            a(href='') Обучение Торгам
+                                        li
+                                            a(href='') Подготовка для участия в тендере
+                                        li
+                                            a(href='') Полное сопровождение
+
+
+
+            .topmenu
+                ul.container
+                    li
+                        a(href='') Акции!
+                    li
+                        a(href='') Новости
+                    li
+                        a(href='') Статьи
+                    li
+                        a(href='') Отзывы
+                    li
+                        a(href='') О компании
+                    li
+                        a(href='') Контакты
+
+
+
+
+
+
+
+
+        block content
+            | Ling yellowtail flagtail southern flounder. Ribbon eel northern pike glass knifefish cepalin barbelless catfish cusk-eel ridgehead, mahi-mahi. Glass knifefish snubnose eel pompano dolphinfish lemon shark salmon duckbilled barracudina common tunny skate, codlet. Perch tarpon, zebra pleco--round herring jewfish, New Zealand sand diver. Spiny dwarf catfish slickhead clown triggerfish. Shad New Zealand sand diver cavefish banjo catfish bamboo shark spiny basslet, pigfish handfish.
+        block footer
+            .footer
+                .container
+                    .flex_row__between
+                        a(class='footer__logo' href='')
+                            img(src='img/logo-ntpc.png')
+                        ul.footer__company
+                            li.footer__title КОМПАНИЯ
+                            li
+                                a(href='') О компании
+                            li
+                                a(href='') Контакты
+                            li
+                                a(href='') Новости
+                            li
+                                a(href='') Акции
+                            li
+                                a(href='') Лицензии
+                            li
+                                a(href='') Работа в компании
+                            li
+                                a(href='') Корпоративная жизни
+
+
+
+                        ul.footer__fields
+                            li.footer__title НАПРАВЛЕНИЯ
+                            li
+                                a(href='') Инженерное ПО
+                            li <span>- </span> <a href=''>NanoCAD</a>
+                            li <span>- </span> <a href=''>Renga</a>
+                            li
+                                a(href='') Электронные услуги
+                            li <span>- </span> <a href=''>Электронная подпись</a>
+                            li <span>- </span> <a href=''>Кассы под ключ</a>
+                            li
+                                a(href='') NormaCS
+                            li
+                                a(href='') Гарант
+
+                        ul.footer__contact
+                            li.footer__title КОНТАКТЫ
+                            li <b>Телефон:</b> +7 (812) 320-61-61
+                                div E-mail: info@3206161.ru
+                            li <b>Адрес:</b> Санкт-Петербург
+                                div Пр. Энгельса, д. 124, к. 1
+                            li <b>Режим работы:</b>
+                                div Пн. – Пт.: с 9:30 до 18:00
+                                div Сб. - Вс.: выходные
+
+
+
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+        script(src='https://code.jquery.com/ui/1.12.1/jquery-ui.js')
+        script(src='js/concat-js-libs.js')
+        script(src='js/common.js')
