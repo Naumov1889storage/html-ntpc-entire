@@ -5,7 +5,7 @@
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <title>Главная</title>
     <link rel="stylesheet" href="css/concat-css-libs.css">
-    <link rel="stylesheet" href="css/concat-css.css">
+    <link rel="stylesheet" href="css/concat-css.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   </head>
   <body>
     <div class="header">
@@ -73,18 +73,27 @@
       </ul>
     </div>
     <div class="indexpagefirstscreen">
-      <div class="container">slider goes here</div>
+      <div class="container">
+        <div class="single-item">
+          <div class="item">slide 1</div>
+          <div class="item">slide 2</div>
+          <div class="item">slide 3</div>
+          <div class="item">slide 4</div>
+          <div class="item">slide 5</div>
+        </div>
+      </div>
     </div>
     <div class="mainfield">
       <div class="container">
         <h2>ОСНОВНЫЕ НАПРАВЛЕНИЯ</h2><div id="tabs">
-<ul class='tabs__title'>
+        <div class="tabs__title__wrap"><ul class='tabs__title'>
 <li><a href="#tabs-1">О компании</a></li>
 <li><a href="#tabs-2">Инженерное ПО</a></li>
 <li><a href="#tabs-3">Электронные услуги</a></li>
 <li><a href="#tabs-4">NormaCS</a></li>
 <li><a href="#tabs-5">Гарант</a></li>
 </ul>
+        </div>
         <div class="tabs__content"><div id="tabs-1">
           <div class="divider right left">
             <h3>О компании НТПЦ</h3>
@@ -123,9 +132,45 @@
         </div></div>
       </div>
     </div>
+    <div class="feedback">
+      <div class="container">
+        <div class="flex_row__between">
+          <form>
+            <h3>ОБРАТНАЯ СВЯЗЬ</h3>
+            <input class="name" type="text" placeholder="Ваше имя ...">
+            <input class="tel" type="text" placeholder="Ваш телефон ...">
+            <textarea type="text" placeholder="Вопрос..."></textarea><div class="agreement checkbox">
+<input type="checkbox" id="checkbox-icon-1"/>
+<label for="checkbox-icon-1">Я принимаю <a href=''>условия</a> передачи инф.</label>
+</div>
+            <button type="submit">ОТПРАВИТЬ</button>
+          </form>
+          <div class="right">
+            <div class="logo divider left right"><img src="img/logo-ntpc2.png"></div>
+            <div class="features flex_row__between">
+              <ul>
+                <li>Квалифицированные специалисты</li>
+                <li>Специальные предложения и акции</li>
+                <li>Техподдержка 24/7</li>
+                <li>Кассы под ключ</li>
+              </ul>
+              <ul>
+                <li>Квалифицированные специалисты</li>
+                <li>Специальные предложения и акции</li>
+                <li>Техподдержка 24/7</li>
+                <li>Кассы под ключ</li>
+              </ul>
+            </div>
+            <div class="divider"></div>
+            <div class="links"><a href="">Наши клиенты</a><a href="">Лицензии и сетификаты</a><a href="">Работа в компани</a></div>
+            <div class="divider"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="footer">
       <div class="container">
-        <div class="flex_row__between"><a class="footer__logo" href=""><img src="img/logo-ntpc.png"></a>
+        <div class="footer__wrap"><a class="footer__logo" href=""><img src="img/logo-ntpc.png"></a>
           <ul class="footer__company">
             <li class="footer__title">КОМПАНИЯ</li>
             <li><a href="">О компании</a></li>
@@ -164,7 +209,7 @@
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/concat-js-libs.js"></script>
     <script src="js/common.js"></script>
   </body>

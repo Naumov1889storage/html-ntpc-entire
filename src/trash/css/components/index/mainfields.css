@@ -1,0 +1,264 @@
+.mainfield {
+  padding-bottom: 70px;
+}
+.mainfield h2 {
+  margin: 65px 0 65px 0;
+  text-align: center;
+  font-family: latobold;
+  font-size: 52px;
+  line-height: 60px;
+  color: #717171;
+  text-transform: uppercase;
+}
+.mainfield #tabs {
+  box-shadow: -1px 1px 26px rgba(0,0,0,0.4);
+}
+.mainfield #tabs .tabs__title__wrap {
+  position: relative;
+}
+.mainfield #tabs .tabs__title__wrap:before {
+  content: '';
+  position: absolute;
+  top: -41px;
+  right: 40px;
+  left: 40px;
+  height: 10px;
+  box-shadow: -1px 1px 26px rgba(0,0,0,0.4);
+}
+.mainfield #tabs .tabs__title__wrap:after {
+  content: '';
+  position: absolute;
+  top: -27px;
+  left: 16px;
+  width: 50px;
+  height: 50px;
+  box-shadow: -1px 1px 26px rgba(0,0,0,0.4);
+  transform: rotate(45deg);
+}
+.mainfield #tabs .tabs__title {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -41px;
+  height: 41px;
+  overflow: hidden;
+}
+.mainfield #tabs .tabs__title li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainfield #tabs .tabs__title li:before {
+  content: '';
+  position: absolute;
+  z-index: 10;
+  left: -10px;
+  width: 150px;
+  height: 41px;
+  background: #ccc;
+}
+.mainfield #tabs .tabs__title li:after {
+  content: '';
+  position: absolute;
+  z-index: -10;
+  right: 3px;
+  width: 100px;
+  height: 400px;
+  background: #000;
+  transform: rotate(-45deg);
+  box-shadow: -1px 1px 26px rgba(0,0,0,0.4);
+}
+.mainfield #tabs .tabs__title li:nth-child(1) a {
+  z-index: 30;
+  padding: 5px 17px 0 45px;
+}
+.mainfield #tabs .tabs__title li:nth-child(1) a:before {
+  left: 50px;
+  background-color: #8b008b;
+}
+.mainfield #tabs .tabs__title li:nth-child(1):before {
+  z-index: 30;
+  top: -5px;
+  left: -8px;
+  height: 100px;
+  transform: rotate(-45deg);
+  background-color: #8b008b;
+}
+.mainfield #tabs .tabs__title li:nth-child(1):after {
+  z-index: 25;
+  width: 60px;
+  right: 0;
+  background-color: #8b008b;
+}
+.mainfield #tabs .tabs__title li:nth-child(2) a {
+  z-index: 22;
+}
+.mainfield #tabs .tabs__title li:nth-child(2) a:before {
+  background-color: #7ac6df;
+}
+.mainfield #tabs .tabs__title li:nth-child(2):before {
+  background-color: #7ac6df;
+}
+.mainfield #tabs .tabs__title li:nth-child(2):after {
+  z-index: 20;
+  background-color: #7ac6df;
+}
+.mainfield #tabs .tabs__title li:nth-child(3) a {
+  z-index: 18;
+}
+.mainfield #tabs .tabs__title li:nth-child(3) a:before {
+  background-color: #48a0bd;
+}
+.mainfield #tabs .tabs__title li:nth-child(3):before {
+  background-color: #48a0bd;
+}
+.mainfield #tabs .tabs__title li:nth-child(3):after {
+  z-index: 16;
+  background-color: #48a0bd;
+}
+.mainfield #tabs .tabs__title li:nth-child(4) a {
+  z-index: 14;
+}
+.mainfield #tabs .tabs__title li:nth-child(4) a:before {
+  background-color: #42c0c5;
+}
+.mainfield #tabs .tabs__title li:nth-child(4):before {
+  background-color: #42c0c5;
+}
+.mainfield #tabs .tabs__title li:nth-child(4):after {
+  z-index: 12;
+  right: -4px;
+  width: 50px;
+  background-color: #42c0c5;
+}
+.mainfield #tabs .tabs__title li:nth-child(5) a {
+  z-index: 10;
+  padding: 5px 43px 0 39px;
+}
+.mainfield #tabs .tabs__title li:nth-child(5) a:before {
+  left: -40px;
+  background-color: #14968e;
+}
+.mainfield #tabs .tabs__title li:nth-child(5):before {
+  left: -70px;
+  background-color: #14968e;
+}
+.mainfield #tabs .tabs__title li:nth-child(5):after {
+  z-index: 2;
+  right: 40px;
+  background-color: #14968e;
+  box-shadow: none;
+}
+.mainfield #tabs .tabs__title li.ui-tabs-active:before,
+.mainfield #tabs .tabs__title li.ui-tabs-active:after {
+  background: #fff;
+}
+.mainfield #tabs .tabs__title li.ui-tabs-active a {
+  color: #5d5d5d;
+}
+.mainfield #tabs .tabs__title li.ui-tabs-active a:before {
+  background: #fff;
+}
+.mainfield #tabs .tabs__title li a {
+  position: relative;
+  padding: 5px 24px 0 39px;
+  width: 100%;
+  height: 100%;
+  font-family: latoregular;
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+}
+.mainfield #tabs .tabs__title li a:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -5px;
+  left: 35px;
+  right: 35px;
+  max-width: 100%;
+  height: 120%;
+  background: #7ac6df;
+}
+.mainfield #tabs .tabs__content > div {
+  padding: 0 0 40px 0;
+}
+.mainfield #tabs .tabs__content h3 {
+  display: block;
+  width: 228px;
+  font-family: latoblack;
+  font-size: 25px;
+  line-height: 25px;
+  color: #6197a2;
+  letter-spacing: 0.3px;
+}
+.mainfield #tabs .tabs__content .divider.left.right {
+  margin: 0;
+  margin-bottom: 30px;
+}
+.mainfield #tabs .tabs__content b {
+  font-family: Calibri;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #3a3a3a;
+}
+.mainfield #tabs .tabs__content p {
+  font-family: Calibri;
+  font-size: 16px;
+  line-height: 20px;
+  color: #3a3a3a;
+}
+.mainfield #tabs .tabs__content .divider {
+  margin: 44px 0 44px 0;
+}
+.mainfield #tabs .tabs__content #tabs-1 .flex_row__between .left {
+  min-width: 190px;
+}
+.mainfield #tabs .tabs__content #tabs-1 .flex_row__between .left img {
+  margin-left: 40px;
+  margin-right: 20px;
+}
+.mainfield #tabs .tabs__content #tabs-1 .flex_row__between .right p {
+  padding-right: 40px;
+}
+.mainfield #tabs .tabs__content #tabs-1 .flex_row__between .right .companylife {
+  display: block;
+  margin-top: 18px;
+}
+.mainfield #tabs .tabs__content #tabs-1 ul.features li {
+  padding-top: 70px;
+  width: 75px;
+  font-family: latoregular;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #4373aa;
+  background: url("/img/iconset-features.jpg") no-repeat;
+  background-position: 12px 0;
+}
+.mainfield #tabs .tabs__content #tabs-1 ul.features li:nth-child(2) {
+  background-position: -122px 0;
+}
+.mainfield #tabs .tabs__content #tabs-1 ul.features li:nth-child(3) {
+  background-position: -260px 0;
+}
+.triangle-with-shadow {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 16px 10px -17px rgba(0,0,0,0.5);
+}
+.triangle-with-shadow:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #999;
+  transform: rotate(45deg);
+  top: 75px;
+  left: 25px;
+  box-shadow: -1px -1px 10px -2px rgba(0,0,0,0.5);
+}

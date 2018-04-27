@@ -1,0 +1,73 @@
+.topmenu {
+  ul {
+    position: relative
+    display: flex
+    justify-content: space-around
+    width: 800px
+    height: 37px
+    background: #e2eef0
+    &:before, &:after {
+      content: ''
+      position: absolute
+      left: -37px
+      border-left: 37px solid transparent
+      border-right: 37px solid transparent
+      border-bottom: 37px solid #e2eef0
+      transform: rotate(180deg)
+    }
+    &:after {
+      right: -37px
+    }
+    li {
+      position: relative
+      z-index: 9
+      padding-left: 30px
+      &:before {
+        content: ''
+        position: absolute
+        top: 8px
+        left: 0
+        width: 19px
+        height: 19px
+        background: url(/img/iconset-topmenu.png) no-repeat
+      }
+      &:nth-child(2) {
+        &:before {
+          background-position: -114px 0
+        }
+      }
+      &:nth-child(3) {
+        &:before {
+          background-position: -239px 0
+        }
+      }
+      &:nth-child(4) {
+        &:before {
+          background-position: -350px 0
+        }
+      }
+      &:nth-child(5) {
+        &:before {
+          background-position: -467px 0
+        }
+      }
+      &:nth-child(6) {
+        &:before {
+          background-position: -624px 0
+        }
+      }
+
+      a {
+        font-family: Calibri
+        font-weight: 400
+        font-size: 20px
+        line-height: 37px
+        color: #223f50
+        &:hover {
+          font-weight: 600
+          text-decoration: underline
+        }
+      }
+    }
+  }
+}

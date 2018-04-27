@@ -7,6 +7,7 @@ html(lang="ru-Ru")
             title Главная
         link(rel='stylesheet', href='css/concat-css-libs.css')
         link(rel='stylesheet', href='css/concat-css.css')
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     body
         block header
             .header
@@ -105,7 +106,7 @@ html(lang="ru-Ru")
         block footer
             .footer
                 .container
-                    .flex_row__between
+                    .footer__wrap
                         a(class='footer__logo' href='')
                             img(src='img/logo-ntpc.png')
                         ul.footer__company
@@ -156,5 +157,6 @@ html(lang="ru-Ru")
 
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
         script(src='https://code.jquery.com/ui/1.12.1/jquery-ui.js')
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         script(src='js/concat-js-libs.js')
         script(src='js/common.js')

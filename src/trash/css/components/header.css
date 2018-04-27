@@ -1,0 +1,275 @@
+.header {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  min-height: 90px;
+  background-color: rgba(68,106,129,0.5);
+  color: #fff;
+}
+.header .container {
+  min-height: 90px;
+}
+.header__logo img {
+  min-width: 146px;
+  height: 61px;
+}
+.header__tel {
+  margin-left: 86px;
+  text-align: center;
+}
+.header__tel .number {
+  font-family: latobold;
+  font-size: 22px;
+  line-height: 22px;
+}
+.header__tel .call {
+  font-family: latolight;
+  font-size: 18px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.header__tel .call:hover {
+  text-decoration: none;
+}
+.header__search {
+  position: relative;
+  margin-left: 47px;
+  padding: 3px;
+  width: 215px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+.header__search input {
+  padding: 0 35px 0 10px;
+  width: 100%;
+  height: 100%;
+  font-family: calibri;
+  font-size: 18px;
+  border: 1px solid #fff;
+  border-radius: 1px;
+}
+.header__search input::placeholder {
+  color: #b4b4b4;
+  opacity: 1;
+}
+.header__search input:-ms-input-placeholder {
+  color: #b4b4b4;
+}
+.header__search input::-ms-input-placeholder {
+  color: #b4b4b4;
+}
+.header__search button {
+  position: absolute;
+  top: 50%;
+  right: 7px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background: url("/img/icon-search.png");
+}
+.header__catalog {
+  position: relative;
+  z-index: 10;
+  margin-left: 72px;
+}
+.header__catalog.active {
+  background: #fff;
+}
+.header__catalog.active .title {
+  color: #000;
+  border: none;
+}
+.header__catalog.active .title:before {
+  background: #000;
+}
+.header__catalog.active .title:after {
+  top: 11px;
+  width: 15px;
+  height: 15px;
+  border: none;
+  transform: rotate(0);
+  background: url("/img/icon-cross.jpg");
+}
+.header__catalog.active .content {
+  display: block;
+}
+.header__catalog .title {
+  position: relative;
+  z-index: 10;
+  padding: 7px 20px 7px 21px;
+  width: 160px;
+  height: 37px;
+  font-family: latobold;
+  font-size: 18px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.header__catalog .title:before {
+  content: '';
+  position: absolute;
+  right: 38px;
+  top: 4px;
+  bottom: 4px;
+  width: 1px;
+  max-height: 100%;
+  background: #fff;
+}
+.header__catalog .title:after {
+  content: '';
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  width: 11px;
+  height: 11px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(-45deg);
+}
+.header__catalog .content {
+  display: none;
+  position: absolute;
+  top: -7px;
+  right: 0;
+  padding: 45px 8px 8px 8px;
+  width: 595px;
+  background: #fff;
+}
+.header__catalog .content:before {
+  content: '';
+  position: absolute;
+  top: 44px;
+  left: 8px;
+  right: 8px;
+  max-width: 100%;
+  height: 1px;
+  background: #c7c7c7;
+}
+.header__catalog .content ul {
+  display: flex;
+  flex-direction: column;
+}
+.header__catalog .content ul .content__title {
+  display: inline-block;
+  margin: 15px 0 10px 0;
+}
+.header__catalog .content ul .content__title.lonely {
+  margin: 3px 0 3px 0;
+}
+.header__catalog .content ul .content__title a {
+  font-family: latobold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #0f73b9;
+  text-decoration: underline;
+}
+.header__catalog .content ul .content__title a:hover {
+  text-decoration: none;
+}
+.header__catalog .content ul li {
+  font-family: latoregular;
+  font-size: 16px;
+  line-height: 26px;
+  color: #0f73b9;
+}
+.header__catalog .content ul.foricons li {
+  position: relative;
+  padding-left: 27px;
+}
+.header__catalog .content ul.foricons li.content__title {
+  padding: 0 !important;
+}
+.header__catalog .content ul.foricons li.content__title:before {
+  display: none;
+}
+.header__catalog .content ul.foricons li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url("/img/iconset-catalog.jpg");
+}
+.header__catalog .content ul.foricons#foricons__1 li:nth-child(2):before {
+  background-position: 2px 0;
+}
+.header__catalog .content ul.foricons#foricons__1 li:nth-child(3):before {
+  background-position: 2px -27px;
+}
+.header__catalog .content ul.foricons#foricons__1 li:nth-child(4):before {
+  background-position: 2px -53px;
+}
+.header__catalog .content ul.foricons#foricons__1 li:nth-child(5):before {
+  background-position: 2px -80px;
+}
+.header__catalog .content ul.foricons#foricons__2 li {
+  padding-left: 32px;
+}
+.header__catalog .content ul.foricons#foricons__2 li:before {
+  width: 25px;
+}
+.header__catalog .content ul.foricons#foricons__2 li:nth-child(2):before {
+  background-position: 26px 0;
+}
+.header__catalog .content ul.foricons#foricons__2 li:nth-child(3):before {
+  background-position: 26px -27px;
+}
+.header__catalog .content ul.foricons#foricons__2 li:nth-child(4):before {
+  background-position: 26px -53px;
+}
+.header__catalog .content ul.foricons#foricons__2 li:nth-child(5):before {
+  background-position: 26px -80px;
+}
+.header__catalog .content ul.foricons#foricons__2 li:nth-child(6):before {
+  height: 25px;
+  background-position: 26px -103px;
+}
+.header__catalog .content ul.foricons#foricons__3 li {
+  padding-left: 33px;
+}
+.header__catalog .content ul.foricons#foricons__3 li:before {
+  width: 26px;
+  height: 25px;
+}
+.header__catalog .content ul.foricons#foricons__3 li:nth-child(2):before {
+  background-position: 29px -180px;
+}
+.header__catalog .content ul.foricons#foricons__3 li:nth-child(3):before {
+  background-position: 29px -206px;
+}
+.header__catalog .content ul.foricons#foricons__3 li:nth-child(4):before {
+  background-position: 29px -232px;
+}
+.header__catalog .content ul.foricons#foricons__3 li:nth-child(5):before {
+  background-position: 29px -257px;
+}
+.header__catalog .content .square {
+  width: 230px;
+  min-height: 175px;
+  border-bottom: 1px solid #c7c7c7;
+}
+.header__catalog .content .square:last-child {
+  border: none;
+}
+.header__catalog .content .right {
+  position: relative;
+  padding: 0 0 35px 25px;
+}
+.header__catalog .content .right:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 5px;
+  width: 1px;
+  max-height: 100%;
+  background: #c7c7c7;
+}
+@media (max-width: 955px) {
+  .header__tel {
+    margin-left: 30px;
+  }
+}
