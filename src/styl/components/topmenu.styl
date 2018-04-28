@@ -3,7 +3,7 @@
     position: relative
     display: flex
     justify-content: space-around
-    width: 800px
+    max-width: 800px
     height: 37px
     background: #e2eef0
     &:before, &:after {
@@ -70,4 +70,62 @@
       }
     }
   }
+  #topmenu__burger {
+    display: none
+    position: relative
+    width: 100%
+    height: 55px
+    background: rgba(67,115,170,0.4)
+    .burger {
+      top: 25px
+      left: 15px
+      &.active {
+        i {
+          background: transparent
+        }
+      }
+      i {
+        background: white
+        &:before,
+        &:after {
+          background: white
+        }
+      }
+    }
+  }
+}
+  
+@media (max-width: 730px) {
+    .topmenu {
+      #topmenu__burger {
+        display: block
+      }
+      ul {
+        position: absolute
+        z-index: 10
+        flex-direction: column
+        padding-top: 0
+        padding-bottom: 0
+        height:0
+        overflow hidden
+        transition: .2s
+        &.active {
+          padding-top: 15px
+          padding-bottom: 15px
+          height: 330px
+        }
+        &:before,
+        &:after {
+          display: none
+        }
+
+        li {
+          width: 100%
+          a {
+            display: block
+            width: 100%
+          }
+        }
+      }
+    }
 }

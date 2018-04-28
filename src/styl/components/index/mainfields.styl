@@ -1,7 +1,10 @@
 .mainfield {
-  padding-bottom: 70px
+  margin-bottom: 130px
+  padding-bottom: 85px
+  background: #f8fbfd
   h2 {
-    margin: 65px 0 65px 0
+    margin: 0 0 65px 0
+    padding-top: 75px
     text-align: center
     font-family: latobold
     font-size: 52px
@@ -26,23 +29,44 @@
       &:after {
         content: ''
         position: absolute
-        top: -27px
-        left: 16px
-        width: 50px
-        height: 50px
-        box-shadow: -1px 1px 26px rgba(0, 0, 0, 0.4)
-        transform: rotate(45deg)
+        top: 0px
+        width: 100%
+        height: 41px
+        background: #ffffff
+      }
+      .forshadow {
+        position: absolute
+        width: 100%
+        height: 40px
+        background: #ffffff
+        &:before {
+          content: ''
+          position: absolute
+          top: -26px
+          right: 11px
+          width: 50px
+          height: 50px
+          box-shadow: -1px 1px 26px rgba(0, 0, 0, 0.4)
+          transform: rotate(45deg)
+        }
+        &:after {
+          content: ''
+          position: absolute
+          top: -27px
+          left: 16px
+          width: 50px
+          height: 50px
+          box-shadow: -1px 1px 26px rgba(0, 0, 0, 0.4)
+          transform: rotate(45deg)
+        }
       }
     }
     .tabs__title {
       display: flex
       justify-content: space-between
       position: relative
-      //width: 110%
-      //margin-left: -12px
-      //padding-left: 15px
       top: -41px
-      height: 41px
+      min-height: 41px
       overflow: hidden
       li {
         position: relative
@@ -164,7 +188,6 @@
         }
 
         &.ui-tabs-active {
-          //z-index: 100
           &:before,
           &:after {
             background: #ffffff
@@ -178,7 +201,6 @@
         }
         a {
           position: relative
-          //z-index: 20
           padding: 5px 24px 0 39px
           width: 100%
           height: 100%
@@ -235,7 +257,7 @@
 
       }
       #tabs-1 {
-        .flex_row__between {
+        & > .flex_row__between {
           .left {
             min-width: 190px
             img {
@@ -255,6 +277,7 @@
         }
         ul.features {
           li {
+            margin: 0 10px 20px 10px
             padding-top: 70px
             width: 75px
             font-family: latoregular
@@ -277,21 +300,106 @@
   }
 }
 
-.triangle-with-shadow {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 16px 10px -17px rgba(0, 0, 0, 0.5);
+
+@media (max-width: 1040px) {
+    .mainfield {
+      #tabs {
+        .tabs__title__wrap {
+          .forshadow {
+            &:before {
+              top: -40px
+              right: 0px
+              transform: none
+            }
+          }
+        }
+        .tabs__title {
+          flex-wrap wrap
+          justify-content: flex-start
+          li {
+            display: flex !important
+            justify-content center !important
+            align-items center !important
+            width: 50%
+            min-height: 41px
+            overflow: hidden
+            &:before {
+              z-index: 5
+              height: 100px
+            }
+            a {
+              display: flex
+              align-items center
+              padding-top: 7px !important
+              padding-right: 20px !important
+              padding-bottom: 7px !important
+            }
+            &:after {
+              z-index: 3 !important
+              width: 200px!important
+              height: 200px!important
+            }
+            &:last-child {
+              &:after {
+                top: -101px
+              }
+            }
+            &.ui-tabs-active {
+              &:before,
+              &:after {
+                background: darken(#ffffff, 7%)
+              }
+              a {
+                &:before {
+                  background: darken(#ffffff, 7%)
+                }
+              }
+            }
+          }
+        }
+      }
+    }
 }
-.triangle-with-shadow:after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background: #999;
-  transform: rotate(45deg);
-  top: 75px;
-  left: 25px;
-  box-shadow: -1px -1px 10px -2px rgba(0, 0, 0, 0.5);
+
+@media (max-width: 770px) {
+    .mainfield {
+      #tabs-1 {
+        & > .flex_row__between {
+          flex-direction: column
+          .left {
+            img {
+              margin-left: 20px !important
+              margin-bottom: 10px
+            }
+          }
+          .right {
+            margin-left: 20px
+            p {
+              padding-right: 20px !important
+            }
+          }
+        }
+        ul.features {
+          flex-wrap: wrap
+          li {
+
+          }
+        }
+      }
+    }
+}
+
+@media (max-width: 580px) {
+  .mainfield {
+    h2 {
+      font-size: 35px !important
+    }
+    #tabs {
+      .tabs__title {
+        li {
+          width: 100%
+        }
+      }
+    }
+  }
 }

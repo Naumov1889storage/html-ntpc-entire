@@ -1,3 +1,85 @@
+.burger {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+}
+
+.burger i,
+.burger i::before,
+.burger i::after {
+  display: block;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: #222222;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.burger i {
+  position: relative;
+}
+
+.burger i::before,
+.burger i::after {
+  content: "";
+  position: absolute;
+}
+
+.burger i::before {
+  top: -8px;
+}
+
+.burger i::after {
+  top: 8px;
+}
+
+.burger.active i {
+  background: none;
+}
+
+.burger.active i::before,
+.burger.active i::after {
+  top: 0;
+}
+
+.burger.active i:before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.burger.active i:after {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.burger.active:hover i:before {
+  -webkit-transform: rotate(-35deg);
+      -ms-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+
+.burger.active:hover i:after {
+  -webkit-transform: rotate(35deg);
+      -ms-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+
+.burger:hover:not(.active) i:before {
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.burger:hover:not(.active) i:after {
+  -webkit-transform: translateY(5px);
+      -ms-transform: translateY(5px);
+          transform: translateY(5px);
+}
 /*MINIMALISTIC CUSTOM CHECKBOX AND RADIO BEGIN ===================*/
 
 .checkbox {

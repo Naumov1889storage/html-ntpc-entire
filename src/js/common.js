@@ -12,4 +12,9 @@ $( function() {
     $('.header__catalog .title').click(function () {
        $('.header__catalog').toggleClass('active')
     });
+
+    $('.topmenu .burger').click(function() {
+        $(this).toggleClass('active'),
+        $('.topmenu ul').toggleClass('active')
+    });
 } );
