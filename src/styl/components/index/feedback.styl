@@ -4,11 +4,22 @@
     display: flex
     flex-direction: column
     align-items: center
-    margin-right: 40px
+    position: relative
+    margin-right: 50px
     padding: 10px 30px 0 30px
-    min-width: 300px
+    min-width: 290px
     width: 300px
-    border: 6px solid rgba(67, 115, 170, 0.8)
+    background: #ffffff
+    &:before {
+      content: ''
+      position: absolute
+      z-index -1
+      left: -6px
+      right: -6px
+      top: -6px
+      bottom: -6px
+      background-image: linear-gradient(to bottom, #5ab6e8 0%, #00c6b5 100%)
+    }
     h3 {
       margin: 13px 0 20px 0
       font-family: latoblack

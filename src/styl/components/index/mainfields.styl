@@ -14,7 +14,7 @@
     box-shadow: inset 0px -20px 10px -20px rgba(0,0,0,0.16);
   }
   h2 {
-    margin: 0 0 65px 0
+    margin: 0 0 105px 0
     padding-top: 75px
     text-align: center
     font-family: latobold
@@ -43,7 +43,7 @@
         position: absolute
         top: 0px
         width: 100%
-        height: 41px
+        height: 100px
         background: #ffffff
       }
       .forshadow {
@@ -116,11 +116,12 @@
           }
           &:before {
             z-index: 30
-            top: -5px
-            left: -8px
-            height: 100px
+            top: -24px !important
+            left: 10px !important
+            height: 100px !important
             transform: rotate(-45deg)
             background-color: darkmagenta
+            box-shadow: none !important
           }
           &:after {
             z-index: 25
@@ -198,13 +199,54 @@
             box-shadow: none
           }
         }
-
+        &.prev {
+          &:after {
+            right: -100px
+            width: 140px
+            box-shadow: none
+            transform: none
+          }
+        }
         &.ui-tabs-active {
+          &:nth-child(1) {
+            &:before {
+              top: 2px !important
+
+            }
+          }
+          &:nth-child(4) {
+            &:before {
+              left: -20px
+              width: 50px
+            }
+          }
+          &:nth-child(5) {
+            &:before {
+              left: -20px
+              width: 40px
+            }
+            &:after {
+
+            }
+            a:before {
+              left: 30px
+              width: 70px
+            }
+          }
           &:before,
           &:after {
             background: #ffffff
           }
+          &:before {
+            z-index: 100
+            top: -145px
+            width: 100px
+            height: 400px
+            transform: rotate(45deg)
+            box-shadow: -1px 1px 26px rgba(0, 0, 0, 0.4)
+          }
           a {
+            z-index: 200
             color: #5d5d5d
             &:before {
               background: #ffffff
@@ -235,6 +277,9 @@
       }
     }
     .tabs__content {
+      position: relative
+      z-index: 100
+      background: #ffffff
       & > div {
         padding: 0 0 40px 0
       }
@@ -313,8 +358,118 @@
 }
 
 
+.mainfield {
+  min-height: 500px
+  overflow: hidden
+  h2 {
+    position: relative
+    z-index: 100
+  }
+  .fillers {
+    position: absolute
+    min-width: 1304px
+  }
+  .shape1,
+  .shape2,
+  .shape3,
+  .circle1,
+  .circle2 {
+    position: absolute
+    width: 300px
+    height: 300px
+    &:before,
+    &:after {
+      content: ''
+      position: absolute
+      width: 300px
+      height: 300px
+      background-repeat: no-repeat
+    }
+
+  }
+  .shape1 {
+    width: 100%
+    height: 100%
+    &:before {
+      z-index: 1
+      left: -40px
+      top: 780px
+      background-image: url("/img/shape1.png")
+    }
+    &:after {
+      z-index: 1
+      right: -375px
+      top: 320px
+      background-image: url("/img/shape1.png")
+    }
+  }
+  .shape2 {
+    width: 100%
+    height: 100%
+    &:before {
+      z-index: 1
+      transform translateX(750px)
+      top: 440px
+      background-image: url("/img/shape3.png")
+    }
+  }
+  .shape3 {
+    width: 100%
+    height: 100%
+    &:before {
+      z-index: 1
+      left: -500px
+      top: 550px
+      background-image: url("/img/shape2.png")
+    }
+    &:after {
+      z-index: 1
+      transform: translateX(1320px)
+      top: 80px
+      background-image: url("/img/shape2.png")
+    }
+  }
+  .circle1 {
+    &:before {
+      top: -350px
+      left: -262px
+      width: 1530px
+      height: 1530px
+      border: 1px solid #e7eef3
+      border-radius: 100%
+    }
+    &:after {
+      top: -220px
+      left: -135px
+      width: 1260px
+      height: 1260px
+      border: 2px solid #e7eff3
+      border-radius: 100%
+    }
+  }
+  .circle2 {
+    &:before {
+      top: 155px
+      margin-left: 145px
+      width: 730px
+      height: 544px
+      border: 2px solid #e7eff3
+      border-radius: 100%
+    }
+  }
+}
+
 @media (max-width: 1040px) {
     .mainfield {
+      .fillers {
+        .circle1,
+        .circle2 {
+          display: none
+        }
+      }
+      h2 {
+        margin-bottom:80px
+      }
       #tabs {
         .tabs__title__wrap {
           .forshadow {
@@ -323,6 +478,9 @@
               right: 0px
               transform: none
             }
+          }
+          &:after {
+            height: 200px
           }
         }
         .tabs__title {
@@ -338,6 +496,12 @@
             &:before {
               z-index: 5
               height: 100px
+            }
+            &:not(:first-child) {
+              &:before {
+                width: 100px !important
+                transform: none
+              }
             }
             a {
               display: flex

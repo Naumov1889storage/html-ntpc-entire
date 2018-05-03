@@ -23,4 +23,12 @@ $( function() {
         $(this).toggleClass('active'),
         $('.topmenu ul').toggleClass('active')
     });
+
+    $('#tabs .tabs__title__wrap a').click(function () {
+        li = $(this).parent().index();
+        $('#tabs .tabs__title__wrap li').removeClass('prev');
+        $('#tabs .tabs__title__wrap li:eq(' + (li-1) + ')').addClass('prev');
+        $('#tabs .tabs__title__wrap li:eq(4)').removeClass('prev');
+        console.log()
+    });
 } );

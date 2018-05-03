@@ -802,11 +802,26 @@ a:hover {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 40px;
+  position: relative;
+  margin-right: 50px;
   padding: 10px 30px 0 30px;
-  min-width: 300px;
+  min-width: 290px;
   width: 300px;
-  border: 6px solid rgba(67,115,170,0.8);
+  background: #fff;
+}
+
+.feedback form:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -6px;
+  right: -6px;
+  top: -6px;
+  bottom: -6px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5ab6e8), to(#00c6b5));
+  background-image: -webkit-linear-gradient(top, #5ab6e8 0%, #00c6b5 100%);
+  background-image: -o-linear-gradient(top, #5ab6e8 0%, #00c6b5 100%);
+  background-image: linear-gradient(to bottom, #5ab6e8 0%, #00c6b5 100%);
 }
 
 .feedback form h3 {
@@ -1305,7 +1320,7 @@ a:hover {
 }
 
 .mainfield h2 {
-  margin: 0 0 65px 0;
+  margin: 0 0 105px 0;
   padding-top: 75px;
   text-align: center;
   font-family: latobold;
@@ -1341,7 +1356,7 @@ a:hover {
   position: absolute;
   top: 0px;
   width: 100%;
-  height: 41px;
+  height: 100px;
   background: #fff;
 }
 
@@ -1448,13 +1463,15 @@ a:hover {
 
 .mainfield #tabs .tabs__title li:nth-child(1):before {
   z-index: 30;
-  top: -5px;
-  left: -8px;
-  height: 100px;
+  top: -24px !important;
+  left: 10px !important;
+  height: 100px !important;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
   background-color: #8b008b;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 .mainfield #tabs .tabs__title li:nth-child(1):after {
@@ -1540,12 +1557,54 @@ a:hover {
           box-shadow: none;
 }
 
+.mainfield #tabs .tabs__title li.prev:after {
+  right: -100px;
+  width: 140px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+}
+
+.mainfield #tabs .tabs__title li.ui-tabs-active:nth-child(1):before {
+  top: 2px !important;
+}
+
+.mainfield #tabs .tabs__title li.ui-tabs-active:nth-child(4):before {
+  left: -20px;
+  width: 50px;
+}
+
+.mainfield #tabs .tabs__title li.ui-tabs-active:nth-child(5):before {
+  left: -20px;
+  width: 40px;
+}
+
+.mainfield #tabs .tabs__title li.ui-tabs-active:nth-child(5) a:before {
+  left: 30px;
+  width: 70px;
+}
+
 .mainfield #tabs .tabs__title li.ui-tabs-active:before,
 .mainfield #tabs .tabs__title li.ui-tabs-active:after {
   background: #fff;
 }
 
+.mainfield #tabs .tabs__title li.ui-tabs-active:before {
+  z-index: 100;
+  top: -145px;
+  width: 100px;
+  height: 400px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-box-shadow: -1px 1px 26px rgba(0,0,0,0.4);
+          box-shadow: -1px 1px 26px rgba(0,0,0,0.4);
+}
+
 .mainfield #tabs .tabs__title li.ui-tabs-active a {
+  z-index: 200;
   color: #5d5d5d;
 }
 
@@ -1574,6 +1633,12 @@ a:hover {
   max-width: 100%;
   height: 120%;
   background: #7ac6df;
+}
+
+.mainfield #tabs .tabs__content {
+  position: relative;
+  z-index: 100;
+  background: #fff;
 }
 
 .mainfield #tabs .tabs__content > div {
@@ -1653,13 +1718,152 @@ a:hover {
   background-position: -260px 0;
 }
 
+.mainfield {
+  min-height: 500px;
+  overflow: hidden;
+}
+
+.mainfield h2 {
+  position: relative;
+  z-index: 100;
+}
+
+.mainfield .fillers {
+  position: absolute;
+  min-width: 1304px;
+}
+
+.mainfield .shape1,
+.mainfield .shape2,
+.mainfield .shape3,
+.mainfield .circle1,
+.mainfield .circle2 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+}
+
+.mainfield .shape1:before,
+.mainfield .shape2:before,
+.mainfield .shape3:before,
+.mainfield .circle1:before,
+.mainfield .circle2:before,
+.mainfield .shape1:after,
+.mainfield .shape2:after,
+.mainfield .shape3:after,
+.mainfield .circle1:after,
+.mainfield .circle2:after {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+}
+
+.mainfield .shape1 {
+  width: 100%;
+  height: 100%;
+}
+
+.mainfield .shape1:before {
+  z-index: 1;
+  left: -40px;
+  top: 780px;
+  background-image: url("../img/shape1.png");
+}
+
+.mainfield .shape1:after {
+  z-index: 1;
+  right: -375px;
+  top: 320px;
+  background-image: url("../img/shape1.png");
+}
+
+.mainfield .shape2 {
+  width: 100%;
+  height: 100%;
+}
+
+.mainfield .shape2:before {
+  z-index: 1;
+  -webkit-transform: translateX(750px);
+      -ms-transform: translateX(750px);
+          transform: translateX(750px);
+  top: 440px;
+  background-image: url("../img/shape3.png");
+}
+
+.mainfield .shape3 {
+  width: 100%;
+  height: 100%;
+}
+
+.mainfield .shape3:before {
+  z-index: 1;
+  left: -500px;
+  top: 550px;
+  background-image: url("../img/shape2.png");
+}
+
+.mainfield .shape3:after {
+  z-index: 1;
+  -webkit-transform: translateX(1320px);
+      -ms-transform: translateX(1320px);
+          transform: translateX(1320px);
+  top: 80px;
+  background-image: url("../img/shape2.png");
+}
+
+.mainfield .circle1:before {
+  top: -350px;
+  left: -262px;
+  width: 1530px;
+  height: 1530px;
+  border: 1px solid #e7eef3;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+}
+
+.mainfield .circle1:after {
+  top: -220px;
+  left: -135px;
+  width: 1260px;
+  height: 1260px;
+  border: 2px solid #e7eff3;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+}
+
+.mainfield .circle2:before {
+  top: 155px;
+  margin-left: 145px;
+  width: 730px;
+  height: 544px;
+  border: 2px solid #e7eff3;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+}
+
 @media (max-width: 1040px) {
+  .mainfield .fillers .circle1,
+  .mainfield .fillers .circle2 {
+    display: none;
+  }
+
+  .mainfield h2 {
+    margin-bottom: 80px;
+  }
+
   .mainfield #tabs .tabs__title__wrap .forshadow:before {
     top: -40px;
     right: 0px;
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
+  }
+
+  .mainfield #tabs .tabs__title__wrap:after {
+    height: 200px;
   }
 
   .mainfield #tabs .tabs__title {
@@ -1693,6 +1897,13 @@ a:hover {
   .mainfield #tabs .tabs__title li:before {
     z-index: 5;
     height: 100px;
+  }
+
+  .mainfield #tabs .tabs__title li:not(:first-child):before {
+    width: 100px !important;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
   }
 
   .mainfield #tabs .tabs__title li a {
