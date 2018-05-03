@@ -1,8 +1,22 @@
 .mainfield {
-  padding-bottom: 70px;
+  position: relative;
+  margin-bottom: 130px;
+  padding-bottom: 85px;
+  background: #f8fbfd;
+}
+.mainfield:before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: -20px;
+  right: -20px;
+  height: 20px;
+  box-shadow: inset 0px -20px 10px -20px rgba(0,0,0,0.16);
 }
 .mainfield h2 {
-  margin: 65px 0 65px 0;
+  margin: 0 0 65px 0;
+  padding-top: 75px;
   text-align: center;
   font-family: latobold;
   font-size: 52px;
@@ -12,6 +26,7 @@
 }
 .mainfield #tabs {
   box-shadow: -1px 1px 26px rgba(0,0,0,0.4);
+  background: #fff;
 }
 .mainfield #tabs .tabs__title__wrap {
   position: relative;
@@ -28,6 +43,30 @@
 .mainfield #tabs .tabs__title__wrap:after {
   content: '';
   position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 41px;
+  background: #fff;
+}
+.mainfield #tabs .tabs__title__wrap .forshadow {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background: #fff;
+}
+.mainfield #tabs .tabs__title__wrap .forshadow:before {
+  content: '';
+  position: absolute;
+  top: -26px;
+  right: 11px;
+  width: 50px;
+  height: 50px;
+  box-shadow: -1px 1px 26px rgba(0,0,0,0.4);
+  transform: rotate(45deg);
+}
+.mainfield #tabs .tabs__title__wrap .forshadow:after {
+  content: '';
+  position: absolute;
   top: -27px;
   left: 16px;
   width: 50px;
@@ -40,7 +79,7 @@
   justify-content: space-between;
   position: relative;
   top: -41px;
-  height: 41px;
+  min-height: 41px;
   overflow: hidden;
 }
 .mainfield #tabs .tabs__title li {
@@ -213,21 +252,22 @@
 .mainfield #tabs .tabs__content .divider {
   margin: 44px 0 44px 0;
 }
-.mainfield #tabs .tabs__content #tabs-1 .flex_row__between .left {
+.mainfield #tabs .tabs__content #tabs-1 > .flex_row__between .left {
   min-width: 190px;
 }
-.mainfield #tabs .tabs__content #tabs-1 .flex_row__between .left img {
+.mainfield #tabs .tabs__content #tabs-1 > .flex_row__between .left img {
   margin-left: 40px;
   margin-right: 20px;
 }
-.mainfield #tabs .tabs__content #tabs-1 .flex_row__between .right p {
+.mainfield #tabs .tabs__content #tabs-1 > .flex_row__between .right p {
   padding-right: 40px;
 }
-.mainfield #tabs .tabs__content #tabs-1 .flex_row__between .right .companylife {
+.mainfield #tabs .tabs__content #tabs-1 > .flex_row__between .right .companylife {
   display: block;
   margin-top: 18px;
 }
 .mainfield #tabs .tabs__content #tabs-1 ul.features li {
+  margin: 0 10px 20px 10px;
   padding-top: 70px;
   width: 75px;
   font-family: latoregular;
@@ -244,21 +284,74 @@
 .mainfield #tabs .tabs__content #tabs-1 ul.features li:nth-child(3) {
   background-position: -260px 0;
 }
-.triangle-with-shadow {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 16px 10px -17px rgba(0,0,0,0.5);
+@media (max-width: 1040px) {
+  .mainfield #tabs .tabs__title__wrap .forshadow:before {
+    top: -40px;
+    right: 0px;
+    transform: none;
+  }
+  .mainfield #tabs .tabs__title {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .mainfield #tabs .tabs__title li {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 50%;
+    min-height: 41px;
+    overflow: hidden;
+  }
+  .mainfield #tabs .tabs__title li:before {
+    z-index: 5;
+    height: 100px;
+  }
+  .mainfield #tabs .tabs__title li a {
+    display: flex;
+    align-items: center;
+    padding-top: 7px !important;
+    padding-right: 20px !important;
+    padding-bottom: 7px !important;
+  }
+  .mainfield #tabs .tabs__title li:after {
+    z-index: 3 !important;
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .mainfield #tabs .tabs__title li:last-child:after {
+    top: -101px;
+  }
 }
-.triangle-with-shadow:after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background: #999;
-  transform: rotate(45deg);
-  top: 75px;
-  left: 25px;
-  box-shadow: -1px -1px 10px -2px rgba(0,0,0,0.5);
+@media (max-width: 970px) {
+  .mainfield {
+    margin-bottom: 85px;
+  }
+}
+@media (max-width: 770px) {
+  .mainfield #tabs-1 > .flex_row__between {
+    flex-direction: column;
+  }
+  .mainfield #tabs-1 > .flex_row__between .left img {
+    margin-left: 20px !important;
+    margin-bottom: 10px;
+  }
+  .mainfield #tabs-1 > .flex_row__between .right {
+    margin-left: 20px;
+  }
+  .mainfield #tabs-1 > .flex_row__between .right p {
+    padding-right: 20px !important;
+  }
+  .mainfield #tabs-1 ul.features {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 580px) {
+  .mainfield h2 {
+    padding-top: 60px;
+    font-size: 35px !important;
+    line-height: 45px;
+  }
+  .mainfield #tabs .tabs__title li {
+    width: 100%;
+  }
 }

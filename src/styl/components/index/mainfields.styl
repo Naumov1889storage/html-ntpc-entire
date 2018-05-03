@@ -1,7 +1,18 @@
 .mainfield {
+  position: relative
   margin-bottom: 130px
   padding-bottom: 85px
   background: #f8fbfd
+  &:before {
+    content: ''
+    position: absolute
+    z-index: 0
+    bottom: 0
+    left: -20px
+    right: -20px
+    height: 20px
+    box-shadow: inset 0px -20px 10px -20px rgba(0,0,0,0.16);
+  }
   h2 {
     margin: 0 0 65px 0
     padding-top: 75px
@@ -345,20 +356,15 @@
                 top: -101px
               }
             }
-            &.ui-tabs-active {
-              &:before,
-              &:after {
-                background: darken(#ffffff, 7%)
-              }
-              a {
-                &:before {
-                  background: darken(#ffffff, 7%)
-                }
-              }
-            }
           }
         }
       }
+    }
+}
+
+@media (max-width: 970px) {
+    .mainfield {
+      margin-bottom: 85px
     }
 }
 
@@ -393,7 +399,9 @@
 @media (max-width: 580px) {
   .mainfield {
     h2 {
+      padding-top: 60px
       font-size: 35px !important
+      line-height: 45px
     }
     #tabs {
       .tabs__title {
