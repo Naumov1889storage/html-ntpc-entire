@@ -1,0 +1,113 @@
+.topmenu ul {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  height: 37px;
+  background: #e2eef0;
+}
+.topmenu ul:before,
+.topmenu ul:after {
+  content: '';
+  position: absolute;
+  left: -37px;
+  border-left: 37px solid transparent;
+  border-right: 37px solid transparent;
+  border-bottom: 37px solid #e2eef0;
+  transform: rotate(180deg);
+}
+.topmenu ul:after {
+  right: -37px;
+}
+.topmenu ul li {
+  position: relative;
+  z-index: 9;
+  padding-left: 30px;
+}
+.topmenu ul li:before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 19px;
+  height: 19px;
+  background: url("/img/iconset-topmenu.png") no-repeat;
+}
+.topmenu ul li:nth-child(2):before {
+  background-position: -114px 0;
+}
+.topmenu ul li:nth-child(3):before {
+  background-position: -239px 0;
+}
+.topmenu ul li:nth-child(4):before {
+  background-position: -350px 0;
+}
+.topmenu ul li:nth-child(5):before {
+  background-position: -467px 0;
+}
+.topmenu ul li:nth-child(6):before {
+  background-position: -624px 0;
+}
+.topmenu ul li a {
+  font-family: Calibri;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 37px;
+  color: #223f50;
+}
+.topmenu ul li a:hover {
+  font-weight: 600;
+  text-decoration: underline;
+}
+.topmenu #topmenu__burger {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 55px;
+  background: rgba(67,115,170,0.4);
+}
+.topmenu #topmenu__burger .burger {
+  top: 25px;
+  left: 15px;
+}
+.topmenu #topmenu__burger .burger.active i {
+  background: transparent;
+}
+.topmenu #topmenu__burger .burger i {
+  background: #fff;
+}
+.topmenu #topmenu__burger .burger i:before,
+.topmenu #topmenu__burger .burger i:after {
+  background: #fff;
+}
+@media (max-width: 730px) {
+  .topmenu #topmenu__burger {
+    display: block;
+  }
+  .topmenu ul {
+    position: absolute;
+    z-index: 10;
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 0;
+    overflow: hidden;
+    transition: 0.2s;
+  }
+  .topmenu ul.active {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 330px;
+  }
+  .topmenu ul:before,
+  .topmenu ul:after {
+    display: none;
+  }
+  .topmenu ul li {
+    width: 100%;
+  }
+  .topmenu ul li a {
+    display: block;
+    width: 100%;
+  }
+}
