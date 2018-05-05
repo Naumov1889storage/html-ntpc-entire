@@ -48,4 +48,32 @@ $( function() {
 
     closeIfOutside('.header__catalog');
 
+    $('.contact .map__option .option__yandex').click(function () {
+        $('.contact .map__option .option__yandex,' +
+            '.contact .map__wrap .map__yandex').addClass('active');
+        $('.contact .map__wrap .option__google,' +
+            '.contact .map__wrap .map__google').removeClass('active');
+    });
+    $('.contact .map__option .option__google').click(function () {
+        $('.contact .map__option .option__google,' +
+            '.contact .map__wrap .map__google').addClass('active');
+        $('.contact .map__wrap .option__yandex,' +
+            '.contact .map__wrap .map__yandex').removeClass('active');
+    });
+
 } );
+
+var mapWrap = document.getElementById('map__google');
+
+//init map
+function initMap() {
+
+    //map options
+    var options = {
+        zoom: 8,
+        center: {lat: 24.4814700, lng: 53.4710300}
+    };
+
+    //new map
+    var map = new google.maps.Map(mapWrap, options);
+}

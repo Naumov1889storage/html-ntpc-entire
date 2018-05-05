@@ -1,0 +1,153 @@
+.contact {
+  margin-bottom: 65px;
+}
+.contact .map__wrap {
+  position: relative;
+}
+.contact .map__wrap:before,
+.contact .map__wrap:after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  height: 8px;
+  background: rgba(255,255,255,0.6);
+}
+.contact .map__wrap:after {
+  top: auto;
+  bottom: 0;
+}
+.contact .map__yandex,
+.contact .map__google {
+  display: none;
+}
+.contact .map__yandex.active,
+.contact .map__google.active {
+  display: block;
+}
+.contact .map__google #map__google {
+  width: 100%;
+  height: 530px;
+}
+.contact .map__option {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  bottom: 0;
+  left: 50%;
+  padding-bottom: 8px;
+  width: 155px;
+  height: 40px;
+  background: #fff;
+}
+.contact .map__option:before,
+.contact .map__option:after {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  left: -40px;
+  bottom: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 40px solid #fff;
+}
+.contact .map__option:after {
+  right: -40px;
+}
+.contact .map__option .option__google,
+.contact .map__option .option__yandex {
+  position: relative;
+  z-index: 10;
+  color: #34546c;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.contact .map__option .option__google:hover,
+.contact .map__option .option__yandex:hover {
+  text-decoration: none;
+}
+.contact .map__option .option__google.active,
+.contact .map__option .option__yandex.active {
+  color: #929292;
+  text-decoration: none;
+}
+.contact .map__option .slash {
+  z-index: 10;
+}
+.contact .map__option .slash:before {
+  content: '|';
+}
+.contact__content {
+  margin-top: 75px;
+}
+.contact__info li {
+  margin-bottom: 22px;
+  color: #34546c;
+}
+.contact__info li.info__title {
+  font-size: 26px;
+}
+.contact__info li b {
+  font-family: latobold;
+}
+.contact__form.form__submit {
+  padding: 0;
+  min-width: 227px;
+  width: 227px;
+}
+.contact__form.form__submit h3 {
+  margin-top: 0;
+  margin-bottom: 32px;
+  align-self: flex-start;
+  font-family: latoregular;
+  font-weight: 400;
+  font-size: 23px;
+  color: #34546c;
+}
+.contact__form.form__submit textarea {
+  margin-bottom: 10px;
+}
+.contact__form.form__submit button {
+  position: relative;
+  z-index: 10;
+  margin-top: 5px;
+  width: 103px;
+  height: 35px;
+  color: #fff;
+  border-radius: 4px;
+  background-color: #6dadda;
+}
+.contact__form.form__submit button:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  bottom: -5px;
+  width: 103px;
+  height: 35px;
+  background-color: #6dadda;
+  border-radius: 4px;
+}
+.contact__form.form__submit button:after {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  left: 0;
+  bottom: -3px;
+  width: 103px;
+  height: 35px;
+  background-color: #417aa3;
+  border-radius: 4px;
+}
+@media (max-width: 630px) {
+  .contact__content {
+    flex-direction: column;
+    margin-top: 65px;
+  }
+  .contact__content form.form__submit.contact__form {
+    margin-top: 40px;
+  }
+}

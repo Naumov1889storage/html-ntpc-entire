@@ -1,0 +1,46 @@
+extends pug-components/layout
+
+block append title
+    -page = 'Акции'
+
+block content
+    .pricedown
+        .container
+            h2.innerPage__title Контакты
+            .crumbs
+                a(href='index.html') Главная
+                span.slash »
+                a(class='current' href='pricedown.html') Акции
+
+        .pricedown__wrap
+            .container
+                .item
+                    .pricedown__title Renga за 45к + NanoCAD в подарок
+                    .pricedown__img
+                        img(src='img/bg-pricedown-sample.jpg')
+                    .flex_row__between.flex1
+                        p.pricedown__text Купи Renga любую версию за 40 000 рублей и получи nanoCAD в подарок
+                        a(class='pricedown__more' href='') Подробнее...
+                    .divider
+                    .flex_row__between.flex2
+                        .pricedown__status Статус: <span class='active'>Активная</span>
+                        .pricedown__term С 25.04.2018 до 30.04.2018
+
+                .item
+                    .pricedown__title ЭЦП + Рутокен +Криптопро за 2147 рублей
+                    .pricedown__img
+                        img(src='img/bg-pricedown-sample2.jpg')
+                    .flex_row__between.flex1
+                        p.pricedown__text Получи бесплатно КриптоПро и Рутокен к Электронной подписи за 2147 рублей
+                        a(class='pricedown__more' href='') Подробнее...
+                    .divider
+                    .flex_row__between.flex2
+                        .pricedown__status Статус: <span class='finished'>Закончилась</span>
+                        .pricedown__term С 25.04.2018 до 30.04.2018
+
+            .pagination
+                a(class='pag arrow' href='') «
+                a(class='pag' href='') 1
+                a(class='pag active' href='') 2
+                a(class='pag' href='') 3
+                a(class='pag arrow' href='') »

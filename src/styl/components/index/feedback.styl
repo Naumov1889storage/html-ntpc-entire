@@ -1,15 +1,7 @@
 .feedback {
   margin-bottom: 146px
   form {
-    display: flex
-    flex-direction: column
-    align-items: center
-    position: relative
     margin-right: 50px
-    padding: 10px 30px 0 30px
-    min-width: 290px
-    width: 300px
-    background: #ffffff
     &:before {
       content: ''
       position: absolute
@@ -19,100 +11,6 @@
       top: -6px
       bottom: -6px
       background-image: linear-gradient(to bottom, #5ab6e8 0%, #00c6b5 100%)
-    }
-    h3 {
-      margin: 13px 0 20px 0
-      font-family: latoblack
-      font-size: 23px
-      line-height: 25px
-      color: #5a7eba
-    }
-    input,
-    textarea {
-      margin-bottom: 17px
-      padding: 0 5px 0 40px
-      max-width: 227px
-      width: 100%
-      height: 40px
-      border: 1px solid #ababab
-      border-radius: 4px
-      font-family: latoregular
-      font-size: 16px
-      line-height: 25px
-      box-sizing border-box
-      &::placeholder {
-        color: #666666;
-        opacity: 1;
-      }
-
-      &:-ms-input-placeholder {
-        color: #666666;
-      }
-
-      &::-ms-input-placeholder {
-        color: #666666;
-      }
-    }
-    .input {
-      position: relative
-      &:before {
-        content: ''
-        position: absolute
-        top: 0
-        left: 15px
-        width: 17px
-        height: 17px
-        background: black
-      }
-    }
-    input {
-      &.name,
-      &.tel {
-        background: url(/img/iconset-feedback1.jpg) no-repeat 12px 10px
-      }
-      &.tel {
-        background-position: 12px -46px
-      }
-    }
-    textarea {
-      padding: 5px 12px 5px 12px
-      height: 105px
-      resize: none
-    }
-
-    .agreement {
-      color: #848586
-      font-family: latoregular
-      font-size: 12px
-      line-height: 25px
-      a {
-        color: #848586
-      }
-      label {
-        padding-left: 22px
-        &:before {
-          top: -1px
-        }
-      }
-      input:not(checked) + label:before {
-        width: 15px
-        height: 15px
-        background: url(/img/icon-checkbox.png) no-repeat
-        background-size: cover
-        border-radius: 0
-      }
-      input:not(checked) + label:after {
-        top: 50%;
-        margin-top: -6px;
-        left: 5px;
-        width: 3px;
-        height: 6px;
-        background: transparent
-        border-right: 1px solid #ffffff
-        border-bottom: 1px solid #ffffff
-        border-radius: 0
-        transform: rotate(45deg)
-      }
     }
     button {
       margin-top: 10px
@@ -126,7 +24,6 @@
       background: url(/img/icon-submit.png)
     }
   }
-
   .right {
     .logo {
       img {

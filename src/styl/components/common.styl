@@ -1,4 +1,12 @@
 @font-face {
+  font-family: 'TimesNewRomanPSMT'
+  src: url('/fonts/TimesNewRomanPSMT.ttf')
+}
+@font-face {
+  font-family: 'Calibri'
+  src: url('/fonts/Calibri.ttf')
+}
+@font-face {
   font-family: 'calibri'
   src: url('/fonts/Calibri.ttf')
 }
@@ -52,5 +60,183 @@ a {
   text-decoration: underline
   &:hover {
     text-decoration: none
+  }
+}
+
+h2.innerPage__title {
+  margin-top: 40px
+  font-family: latoblack
+  font-size: 26px
+  line-height: 32px
+  color: #34546c
+}
+
+.crumbs {
+  margin-bottom: 25px
+  a {
+    font-family: latoregular
+    font-size: 16px
+    line-height: 32px
+    color: #000000;
+    &.current {
+      pointer-events: none
+      cursor: default
+      text-decoration: none
+    }
+  }
+  .slash {
+    margin: 0 4px 0 4px
+    font-family: TimesNewRomanPSMT
+    &:before {
+      display: none
+    }
+  }
+}
+
+.slash {
+  &:before {
+    content: '/'
+    margin: 0 5px 0 5px
+  }
+}
+
+
+
+form.form__submit {
+  display: flex
+  flex-direction: column
+  align-items: center
+  position: relative
+  padding: 10px 30px 0 30px
+  min-width: 290px
+  width: 300px
+  background: #ffffff
+  h3 {
+    margin: 13px 0 20px 0
+    font-family: latoblack
+    font-size: 23px
+    line-height: 25px
+    color: #5a7eba
+  }
+  input,
+  textarea {
+    margin-bottom: 17px
+    padding: 0 5px 0 40px
+    max-width: 227px
+    width: 100%
+    height: 40px
+    border: 1px solid #ababab
+    border-radius: 4px
+    font-family: latoregular
+    font-size: 16px
+    line-height: 25px
+    box-sizing border-box
+    &::placeholder {
+      color: #666666;
+      opacity: 1;
+    }
+
+    &:-ms-input-placeholder {
+      color: #666666;
+    }
+
+    &::-ms-input-placeholder {
+      color: #666666;
+    }
+  }
+  .input {
+    position: relative
+    &:before {
+      content: ''
+      position: absolute
+      top: 0
+      left: 15px
+      width: 17px
+      height: 17px
+      background: black
+    }
+  }
+  input {
+    &.name,
+    &.tel {
+      background: url(/img/iconset-feedback1.jpg) no-repeat 12px 10px
+    }
+    &.tel {
+      background-position: 12px -46px
+    }
+  }
+  textarea {
+    padding: 5px 12px 5px 12px
+    height: 105px
+    resize: none
+  }
+
+  .agreement {
+    color: #848586
+    font-family: latoregular
+    font-size: 12px
+    line-height: 25px
+    a {
+      color: #848586
+    }
+    label {
+      padding-left: 22px
+      &:before {
+        top: -1px
+      }
+    }
+    input:not(checked) + label:before {
+      width: 15px
+      height: 15px
+      background: url(/img/icon-checkbox.png) no-repeat
+      background-size: cover
+      border-radius: 0
+    }
+    input:not(checked) + label:after {
+      top: 50%;
+      margin-top: -6px;
+      left: 5px;
+      width: 3px;
+      height: 6px;
+      background: transparent
+      border-right: 1px solid #ffffff
+      border-bottom: 1px solid #ffffff
+      border-radius: 0
+      transform: rotate(45deg)
+    }
+    input[type='checkbox'] {
+      height: 0
+    }
+  }
+}
+
+
+.pagination {
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  margin: 0 10px 76px 10px
+  .pag {
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 5px
+    min-width: 40px
+    height: 40px
+    line-height: 40px
+    font-size: 20px
+    color: #000000
+    text-decoration: none
+    border: 1px solid rgba(216, 216, 216, 0.8)
+    &.arrow {
+      padding-bottom: 5px
+      font-family: TimesNewRomanPSMT
+    }
+    &:hover {
+      border: 1px solid rgba(67, 115, 170, 0.8)
+    }
+    &.active {
+      border: 1px solid rgba(67, 115, 170, 0.8)
+    }
   }
 }

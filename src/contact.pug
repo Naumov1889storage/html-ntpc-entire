@@ -4,3 +4,47 @@ block append title
     -page = 'Контакты'
 
 block content
+    .contact
+        .container
+            h2.innerPage__title Контакты
+            .crumbs
+                a(href='index.html') Главная
+                span.slash »
+                a(class='current' href='contact.html') Контакты
+
+        .map__wrap
+            .map__yandex.active
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7d20db7762ef00f6ef2009bbf065ffcdda6e2db99d1573b635d61d3770f4e5c1&amp;width=100%25&amp;height=530&amp;lang=en_FR&amp;scroll=true"></script>
+            .map__google
+                #map__google
+
+
+            .map__option
+                .option__yandex.active Yandex
+                span.slash
+                .option__google Google
+
+        .container
+            .contact__content.flex_row__around
+                ul.contact__info
+                    li.info__title КОНТАКТЫ
+                    li <b>Адрес:</b> 194356, Санкт-Петербург,
+                        div пр. Энгельса, д. 124, корп. 1 лит. А пом. 58Н
+                    li <b>Телефон:</b> (812) 320-61-61
+                        div <b>Факс:</b> (812) 320-61-60
+                        div <b>Эл.почта:</b> office@3206161.ru
+                    li <b>Режим работы:</b>
+                        div Пн. – Пт.: с 9:30 до 18:00
+                        div Сб. - Вс.: выходные
+
+
+                form.form__submit.contact__form
+                    h3 ОБРАТНАЯ СВЯЗЬ
+                    input(class='name' type='text' placeholder='Ваше имя ...')
+                    input(class='tel' type='text' placeholder='Ваш телефон ...')
+                    textarea(type='text' placeholder='Вопрос...')
+                    <div class="agreement checkbox">
+                    <input type="checkbox" id="checkbox-icon-1"/>
+                    <label for="checkbox-icon-1">Я принимаю <a href=''>условия</a> передачи инф.</label>
+                    </div>
+                    button(type='submit') ОТПРАВИТЬ

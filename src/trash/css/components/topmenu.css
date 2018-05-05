@@ -86,6 +86,9 @@
 .topmenu #topmenu__burger .burger i:after {
   background: #fff;
 }
+.topmenu:not(.notindexpage) .slash {
+  display: none;
+}
 .topmenu.notindexpage {
   width: 100%;
   background: #fcf4c0;
@@ -103,7 +106,7 @@
 }
 .topmenu.notindexpage ul li {
   padding: 0;
-  font-family: Lato;
+  font-family: latoregular;
   font-size: 17px;
   color: #223f50;
 }
@@ -114,7 +117,7 @@
   display: none;
 }
 .topmenu.notindexpage ul li a {
-  font-family: Lato;
+  font-family: latoregular;
   font-size: 17px;
   color: #223f50;
   text-decoration: none;
@@ -132,10 +135,6 @@
 }
 .topmenu.notindexpage ul li.authorization span:not(.slash):hover {
   font-weight: 600;
-}
-.topmenu.notindexpage .slash:before {
-  content: '/';
-  margin: 0 5px 0 5px;
 }
 .topmenu.notindexpage #topmenu__burger {
   background: #5f95b2;
