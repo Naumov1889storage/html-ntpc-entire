@@ -29,6 +29,23 @@ $( function() {
         $('#tabs .tabs__title__wrap li').removeClass('prev');
         $('#tabs .tabs__title__wrap li:eq(' + (li-1) + ')').addClass('prev');
         $('#tabs .tabs__title__wrap li:eq(4)').removeClass('prev');
-        console.log()
     });
+
+
+    function closeIfOutside(block) {
+        $(document).click(function(e) {
+            var outside = $(e.target).parents().addBack();
+            if (!(outside.is(block))) {
+                $(block).removeClass('active')
+            }
+        });
+        $(document).keydown(function(e) {
+            if (e.keyCode == 27) {
+                $(block).removeClass('active')
+            }
+        });
+    };
+
+    closeIfOutside('.header__catalog');
+
 } );

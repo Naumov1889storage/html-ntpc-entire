@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  z-index: 20;
+  z-index: 200;
   width: 100%;
   min-height: 90px;
   background-color: rgba(68,106,129,0.5);
@@ -287,6 +287,10 @@
   bottom: -8px;
   width: 1px;
   background: #c7c7c7;
+}
+.header.notindexpage {
+  background: #417aa3;
+  box-shadow: -1px 1px 8px rgba(0,0,0,0.5);
 }
 @media (max-width: 850px) {
   .header .container {

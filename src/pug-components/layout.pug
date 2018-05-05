@@ -4,109 +4,130 @@ html(lang="ru-Ru")
         meta(charset = 'utf-8')
         meta(name='viewport', content="initial-scale=1.0, width=device-width")
         block title
-            title Главная
+            -var title = "ntpc"
+            -var page = ''
+        title #{title + (page.length ? " - " : "") + (typeof page === 'string' ? page : page[page.length - 1])}
         link(rel='stylesheet', href='css/concat-css-libs.css')
         link(rel='stylesheet', href='css/concat-css.css')
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     body
-        block header
-            .header
-                .container.flex_row__center.align_center
-                    a(class='header__logo' href='')
-                        img(src='img/logo-ntpc.png')
+        .toPushFooter
+            block header
+                mixin header
+                    .container.flex_row__center.align_center
+                        a(class='header__logo' href='index.html')
+                            img(src='img/logo-ntpc.png')
 
-                    .header__tel
-                        .number +7 (812) 320-61-61
-                        .call заказать звонок
+                        .header__tel
+                            .number +7 (812) 320-61-61
+                            .call заказать звонок
 
-                    form(class='header__search' method='get')
-                        input(type='text' placeholder='Поиск по сайту')
-                        button(type='submit')
+                        form(class='header__search' method='get')
+                            input(type='text' placeholder='Поиск по сайту')
+                            button(type='submit')
 
-                    .header__catalog
-                        .title КАТАЛОГ
-                        .content
-                            .flex_row__start
-                                .left
-                                    .square.top.flex_column.align_center
-                                        ul.foricons#foricons__1
+                        .header__catalog
+                            .title КАТАЛОГ
+                            .content
+                                .flex_row__start
+                                    .left
+                                        .square.top.flex_column.align_center
+                                            ul.foricons#foricons__1
+                                                li.content__title
+                                                    a(href='') Инженерное ПО
+                                                li
+                                                    a(href='') NanoCAD
+                                                li
+                                                    a(href='') Model Studio CS
+                                                li
+                                                    a(href='') Pilot-ICE
+                                                li
+                                                    a(href='') Renga
+
+                                        .square.bottom.flex_column.justify_center.align_center
+                                            ul
+                                                li.content__title.lonely
+                                                    a(href='') NormaCS
+                                                li.content__title.lonely
+                                                    a(href='') Гарант
+                                                li.content__title.lonely
+                                                    a(href='') Обучение
+                                    .right
+                                        ul.foricons#foricons__2
                                             li.content__title
-                                                a(href='') Инженерное ПО
+                                                a(href='') Электронная подпись
                                             li
-                                                a(href='') NanoCAD
+                                                a(href='') Для гос. порталов
                                             li
-                                                a(href='') Model Studio CS
+                                                a(href='') Для электронных торгов
                                             li
-                                                a(href='') Pilot-ICE
+                                                a(href='') Электронная отчетность
                                             li
-                                                a(href='') Renga
-
-                                    .square.bottom.flex_column.justify_center.align_center
-                                        ul
-                                            li.content__title.lonely
-                                                a(href='') NormaCS
-                                            li.content__title.lonely
-                                                a(href='') Гарант
-                                            li.content__title.lonely
-                                                a(href='') Обучение
-                                .right
-                                    ul.foricons#foricons__2
-                                        li.content__title
-                                            a(href='') Электронная подпись
-                                        li
-                                            a(href='') Для гос. порталов
-                                        li
-                                            a(href='') Для электронных торгов
-                                        li
-                                            a(href='') Электронная отчетность
-                                        li
-                                            a(href='') Электронный документооборот
-                                        li
-                                            a(href='') Электронные кассы
+                                                a(href='') Электронный документооборот
+                                            li
+                                                a(href='') Электронные кассы
 
 
-                                    ul.foricons#foricons__3
-                                        li.content__title
-                                            a(href='') Тендерное сопровождение
-                                        li
-                                            a(href='') Аккредитация / Установка
-                                        li
-                                            a(href='') Обучение Торгам
-                                        li
-                                            a(href='') Подготовка для участия в тендере
-                                        li
-                                            a(href='') Полное сопровождение
+                                        ul.foricons#foricons__3
+                                            li.content__title
+                                                a(href='') Тендерное сопровождение
+                                            li
+                                                a(href='') Аккредитация / Установка
+                                            li
+                                                a(href='') Обучение Торгам
+                                            li
+                                                a(href='') Подготовка для участия в тендере
+                                            li
+                                                a(href='') Полное сопровождение
 
+                if page == 'Главная'
+                    .header
+                        +header
+                else if page != 'Главная'
+                    .header.notindexpage
+                        +header
 
-
-            .topmenu
-                #topmenu__burger
-                    .burger
-                        i
-                ul.container
+                mixin navLink(link, name)
                     li
-                        a(href='') Акции!
-                    li
-                        a(href='') Новости
-                    li
-                        a(href='') Статьи
-                    li
-                        a(href='') Отзывы
-                    li
-                        a(href='') О компании
-                    li
-                        a(href='') Контакты
+                        a(href=link class={active: name === page}) #{name}
+                        span.slash
+
+                if page == 'Главная'
+                    .topmenu
+                        #topmenu__burger
+                            .burger
+                                i
+                        ul.container
+                            +navLink('dddd.html', 'Акция')
+                            +navLink('dddd.html', 'Новости')
+                            +navLink('dddd.html', 'Статьи')
+                            +navLink('dddd.html', 'Отзывы')
+                            +navLink('about.html', 'О компании')
+                            +navLink('contact.html', 'Контакты')
+                else if page != 'Главная'
+                    .topmenu.notindexpage
+                        #topmenu__burger
+                            .burger
+                                i
+                        ul.container
+                            +navLink('dddd.html', 'Акция')
+                            +navLink('dddd.html', 'Новости')
+                            +navLink('dddd.html', 'Статьи')
+                            +navLink('dddd.html', 'Отзывы')
+                            +navLink('about.html', 'О компании')
+                            +navLink('contact.html', 'Контакты')
+                            li.authorization
+                                span Вход
+                                span.slash
+                                span Регистрация
 
 
 
 
 
 
-
-
-
-        block content
-            | Ling yellowtail flagtail southern flounder. Ribbon eel northern pike glass knifefish cepalin barbelless catfish cusk-eel ridgehead, mahi-mahi. Glass knifefish snubnose eel pompano dolphinfish lemon shark salmon duckbilled barracudina common tunny skate, codlet. Perch tarpon, zebra pleco--round herring jewfish, New Zealand sand diver. Spiny dwarf catfish slickhead clown triggerfish. Shad New Zealand sand diver cavefish banjo catfish bamboo shark spiny basslet, pigfish handfish.
+            block content
+                | Ling yellowtail flagtail southern flounder. Ribbon eel northern pike glass knifefish cepalin barbelless catfish cusk-eel ridgehead, mahi-mahi. Glass knifefish snubnose eel pompano dolphinfish lemon shark salmon duckbilled barracudina common tunny skate, codlet. Perch tarpon, zebra pleco--round herring jewfish, New Zealand sand diver. Spiny dwarf catfish slickhead clown triggerfish. Shad New Zealand sand diver cavefish banjo catfish bamboo shark spiny basslet, pigfish handfish.
         block footer
             .footer
                 .container

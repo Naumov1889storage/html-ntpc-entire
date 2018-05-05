@@ -1,7 +1,7 @@
 extends pug-components/layout
 
-block title
-    title Главная
+block append title
+    -page = 'Главная'
 
 block content
     include pug-components/index/indexpagefirstscreen

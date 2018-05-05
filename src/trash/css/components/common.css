@@ -21,6 +21,21 @@
 * {
   font-family: latoregular;
 }
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.toPushFooter {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
 .container {
   margin: 0 auto;
   padding: 0 15px 0 15px;
