@@ -1,5 +1,14 @@
 .footer {
+  position: relative
   padding: 0 0 45px 0
+  &:before {
+    content: ''
+    position: absolute
+    top: -7px
+    width: 100%
+    height: 8px
+    background-image: linear-gradient(to left, #547695 0%, #7ab6e1 100%);
+  }
   &__wrap {
     display: flex
     justify-content: space-between
@@ -10,7 +19,8 @@
     font-size: 16px
     line-height: 24px
     color: #c3c3c3
-    background: #404040
+    //background: #404040
+    background: #2b3640
   }
   &__logo {
     display: flex

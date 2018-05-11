@@ -92,6 +92,7 @@
 .topmenu.notindexpage {
   width: 100%;
   background: #fcf4c0;
+  border-bottom: 1px solid #e3e1d0;
 }
 .topmenu.notindexpage .container {
   justify-content: unset;
@@ -186,5 +187,10 @@
   .topmenu ul li a {
     display: block;
     width: 100%;
+  }
+}
+@media (max-width: 430px) {
+  .topmenu #topmenu__burger {
+    display: none;
   }
 }

@@ -23,19 +23,26 @@ block content
                 .option__yandex.active Yandex
                 span.slash
                 .option__google Google
-
         .container
             .contact__content.flex_row__around
-                ul.contact__info
-                    li.info__title КОНТАКТЫ
-                    li <b>Адрес:</b> 194356, Санкт-Петербург,
-                        div пр. Энгельса, д. 124, корп. 1 лит. А пом. 58Н
-                    li <b>Телефон:</b> (812) 320-61-61
-                        div <b>Факс:</b> (812) 320-61-60
-                        div <b>Эл.почта:</b> office@3206161.ru
-                    li <b>Режим работы:</b>
-                        div Пн. – Пт.: с 9:30 до 18:00
-                        div Сб. - Вс.: выходные
+                div.contact__info__wrap
+                    img(src='img/logo-ntpc3.png')
+                    ul.contact__info
+                        li.info__title Группа компаний "НТПЦ"
+                        li <b>Адрес:</b> 194356, Санкт-Петербург,
+                            div пр. Энгельса, д. 124, корп. 1 лит. А пом. 58Н
+                            div <b>Ближайшее метро:</b> Озерки, Проспект Просвящения
+                            div <b>Здание:</b> Торгово-развлекательный комплекс Вояж
+                        li <b>Телефон:</b> (812) 320-61-61
+                            div <b>Факс:</b> (812) 320-61-60
+                            div <b>Эл.почта:</b> office@3206161.ru
+                        li <b>Режим работы:</b>
+                            div Пн. – Пт.: с 9:30 до 18:00
+                            div Сб. - Вс.: выходные
+                    .contact__links
+                        a(href='') ntpc.ntpc
+                        a(href='') https://vk.com/gk_ntpc
+
 
 
                 form.form__submit.contact__form
@@ -47,4 +54,4 @@ block content
                     <input type="checkbox" id="checkbox-icon-1"/>
                     <label for="checkbox-icon-1">Я принимаю <a href=''>условия</a> передачи инф.</label>
                     </div>
-                    button(type='submit') ОТПРАВИТЬ
+                    button(class='btn2' type='submit') Отправить

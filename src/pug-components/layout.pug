@@ -26,59 +26,63 @@ html(lang="ru-Ru")
                             input(type='text' placeholder='Поиск по сайту')
                             button(type='submit')
 
-                        .header__catalog
-                            .title КАТАЛОГ
-                            .content
-                                .flex_row__start
-                                    .left
-                                        .square.top.flex_column.align_center
-                                            ul.foricons#foricons__1
+                        .header__catalog__wrap
+                            #topmenu__burger
+                                .burger
+                                    i
+                            .header__catalog
+                                .title КАТАЛОГ
+                                .content
+                                    .flex_row__start
+                                        .left
+                                            .square.top.flex_column.align_center
+                                                ul.foricons#foricons__1
+                                                    li.content__title
+                                                        a(href='') Инженерное ПО
+                                                    li
+                                                        a(href='') NanoCAD
+                                                    li
+                                                        a(href='') Model Studio CS
+                                                    li
+                                                        a(href='') Pilot-ICE
+                                                    li
+                                                        a(href='') Renga
+
+                                            .square.bottom.flex_column.justify_center.align_center
+                                                ul
+                                                    li.content__title.lonely
+                                                        a(href='') NormaCS
+                                                    li.content__title.lonely
+                                                        a(href='') Гарант
+                                                    li.content__title.lonely
+                                                        a(href='') Обучение
+                                        .right
+                                            ul.foricons#foricons__2
                                                 li.content__title
-                                                    a(href='') Инженерное ПО
+                                                    a(href='') Электронная подпись
                                                 li
-                                                    a(href='') NanoCAD
+                                                    a(href='') Для гос. порталов
                                                 li
-                                                    a(href='') Model Studio CS
+                                                    a(href='') Для электронных торгов
                                                 li
-                                                    a(href='') Pilot-ICE
+                                                    a(href='') Электронная отчетность
                                                 li
-                                                    a(href='') Renga
-
-                                        .square.bottom.flex_column.justify_center.align_center
-                                            ul
-                                                li.content__title.lonely
-                                                    a(href='') NormaCS
-                                                li.content__title.lonely
-                                                    a(href='') Гарант
-                                                li.content__title.lonely
-                                                    a(href='') Обучение
-                                    .right
-                                        ul.foricons#foricons__2
-                                            li.content__title
-                                                a(href='') Электронная подпись
-                                            li
-                                                a(href='') Для гос. порталов
-                                            li
-                                                a(href='') Для электронных торгов
-                                            li
-                                                a(href='') Электронная отчетность
-                                            li
-                                                a(href='') Электронный документооборот
-                                            li
-                                                a(href='') Электронные кассы
+                                                    a(href='') Электронный документооборот
+                                                li
+                                                    a(href='') Электронные кассы
 
 
-                                        ul.foricons#foricons__3
-                                            li.content__title
-                                                a(href='') Тендерное сопровождение
-                                            li
-                                                a(href='') Аккредитация / Установка
-                                            li
-                                                a(href='') Обучение Торгам
-                                            li
-                                                a(href='') Подготовка для участия в тендере
-                                            li
-                                                a(href='') Полное сопровождение
+                                            ul.foricons#foricons__3
+                                                li.content__title
+                                                    a(href='') Тендерное сопровождение
+                                                li
+                                                    a(href='') Аккредитация / Установка
+                                                li
+                                                    a(href='') Обучение Торгам
+                                                li
+                                                    a(href='') Подготовка для участия в тендере
+                                                li
+                                                    a(href='') Полное сопровождение
 
                 if page == 'Главная'
                     .header

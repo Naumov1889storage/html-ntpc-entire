@@ -19,7 +19,7 @@ $( function() {
        $('.header__catalog').toggleClass('active')
     });
 
-    $('.topmenu .burger').click(function() {
+    $('#topmenu__burger .burger').click(function() {
         $(this).toggleClass('active'),
         $('.topmenu ul').toggleClass('active')
     });

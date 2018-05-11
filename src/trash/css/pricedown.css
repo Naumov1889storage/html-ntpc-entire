@@ -74,6 +74,9 @@
   .pricedown .flex1 {
     flex-direction: column;
   }
+  .pricedown__img::before {
+    display: none;
+  }
   .pricedown__more {
     margin-top: 10px;
   }
