@@ -1,0 +1,98 @@
+extends pug-components/inner-template
+
+block append title
+    -page = 'О компании'
+
+block innerPage__content1
+    .about__who
+        .item
+            .photo
+                img(src='img/picture-about-who1.jpg')
+                span Генеральный директор
+            .text
+                b Александр Григорьевич:
+                p Группа компаний НТПЦ предлагает комплекс решений на основе программного обеспечения ведущих российских разработчиков: ГАРАНТ, NormaCS, nanoCAD. Группа компаний НТПЦ работает на российском рынке с 2002 года, за это время нами накоплен большой опыт в сфере внедрения передовых технологий на российских предприятиях.
+        .item
+            .photo
+                img(src='img/picture-about-who1.jpg')
+                span Генеральный директор
+            .text
+                b От имени основателя:
+                p Группа компаний НТПЦ предлагает комплекс решений на основе программного обеспечения ведущих российских разработчиков: ГАРАНТ, NormaCS, nanoCAD. практических деталей качестве партнера по бизнесу.
+
+        .item
+            .photo
+                img(src='img/picture-about-who1.jpg')
+                span Генеральный директор
+            .text
+                b От имени основателя:
+                p Группа компаний НТПЦ предлагает комплекс решений на основе программного обеспечения ведущих российских разработчиков: ГАРАНТ, NormaCS, nanoCAD. Группа компаний НТПЦ работает на российском рынке с 2002 года, за это время нами накоплен.
+
+
+block innerPage__content2
+    .about__features
+        .item#fields
+            .container
+                .title Основные направления
+                ul
+                    li
+                        a(href='') Инженерное ПО
+                    li
+                        a(href='') NormaCS
+                    li
+                        a(href='') Электронная подпись
+                    li
+                        a(href='') Тендерное сопровождение
+                    li
+                        a(href='') Гарант
+                    li
+                        a(href='') Обучение
+
+        .item#achievements
+            .container
+                .title Наши достижения
+                ul.features.flex_row__around
+                    li Лучший продавец 2017
+                    li Лучшая компания 2016
+                    li ТОП 10 компаний
+                    li Лучший продавец 2017
+                    li Лучшая компания 2016
+                    li ТОП 10 компаний
+                    li Лучший продавец 2017
+                    li Лучший продавец 2017
+
+        .item#clients
+            .container
+                .title Наши Клиенты
+                ul
+                    li
+                        img(src='img/logo-client1.jpg')
+                    li
+                        img(src='img/logo-client2.jpg')
+                    li
+                        img(src='img/logo-client3.jpg')
+                    li
+                        img(src='img/logo-client1.jpg')
+                    li
+                        img(src='img/logo-client2.jpg')
+
+
+        .item#certificates
+            .container
+                .title лицензии и Сертификаты
+                ul
+                    li
+                        img(src='img/picture-certificate1.jpg')
+                    li
+                        img(src='img/picture-certificate2.jpg')
+                    li
+                        img(src='img/picture-certificate1.jpg')
+                    li
+                        img(src='img/picture-certificate2.jpg')
+                    li
+                        img(src='img/picture-certificate1.jpg')
+                    li
+                        img(src='img/picture-certificate1.jpg')
+                    li
+                        img(src='img/picture-certificate1.jpg')
+

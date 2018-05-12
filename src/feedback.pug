@@ -1,0 +1,73 @@
+extends pug-components/inner-template
+
+block append title
+    -page = 'Отзывы'
+
+block innerPage__content1
+    .feedbackPage
+        #feedbackPage__accordion
+            .toggler.btn2 <i></i>Оставить отзыв
+            .content
+                .title Оставить отзыв о компании "НТПЦ"
+                form.form__submit
+                    .input__wrap.flex_row__between
+                        .flex_column
+                            input(class='name' type='text' placeholder='Ваше имя ...')
+                            input(class='tel' type='text' placeholder='Ваш телефон ...')
+                        .flex_column
+                            input(type='text' placeholder='Компания ...')
+                            input(type='text' placeholder='Должность ...')
+                    textarea(placeholder='Отзыв...')
+                    .flex3.flex_row__between
+                        <div class="agreement checkbox">
+                            <input type="checkbox" id="checkbox-icon-1"/>
+                            <label for="checkbox-icon-1">Я принимаю <a href=''>условия</a> передачи инф.</label>
+                        </div>
+                        .attach__wrap
+                            span Прикрепить файл
+                            input(type='file' placeholder='sdfsdf')
+                    button(class='btn2' type='submit') <span>Отправить</span>
+
+        .feedbackPage__content
+            .item.flex_row__between.align_center
+                .text
+                    .name Дмитрий Блинов
+                    .job Директор компании Нанософт
+                    p Програмка не такая красочная как версии AutoCAD, но по удобству пользования превосходит. Очень порадовало что программа корректно открывает dwg файлы акада, что нехватает Компасу, а особенно большой + что она видит объекты созданные с помощью связки  <a href=''>Подробнее...</a>
+                .photo
+                    img(src='img/picture-feedback-logo.jpg')
+                    img(src='img/picture-feedback-photo.jpg')
+
+            .item.flex_row__between.align_center
+                .text
+                    .name Дмитрий Блинов
+                    .job Директор компании Нанософт
+                    p Програмка не такая красочная как версии AutoCAD, но по удобству пользования превосходит. Очень порадовало что программа корректно открывает dwg файлы акада, что нехватает Компасу, а особенно большой + что она видит объекты созданные с помощью связки  <a href=''>Подробнее...</a>
+                .photo
+                    img(src='img/picture-feedback-logo.jpg')
+                    img(src='img/picture-feedback-photo.jpg')
+
+            .item.flex_row__between.align_center
+                .text
+                    .name Дмитрий Блинов
+                    .job Директор компании Нанософт
+                    p Програмка не такая красочная как версии AutoCAD, но по удобству пользования превосходит. Очень порадовало что программа корректно открывает dwg файлы акада, что нехватает Компасу, а особенно большой + что она видит объекты созданные с помощью связки  <a href=''>Подробнее...</a>
+                .photo
+                    img(src='img/picture-feedback-logo.jpg')
+                    img(src='img/picture-feedback-photo.jpg')
+
+            .item.flex_row__between.align_center
+                .text
+                    .name Дмитрий Блинов
+                    .job Директор компании Нанософт
+                    p Програмка не такая красочная как версии AutoCAD, но по удобству пользования превосходит. Очень порадовало что программа корректно открывает dwg файлы акада, что нехватает Компасу, а особенно большой + что она видит объекты созданные с помощью связки  <a href=''>Подробнее...</a>
+                .photo
+                    img(src='img/picture-feedback-logo.jpg')
+                    img(src='img/picture-feedback-photo.jpg')
+
+        .pagination
+            a(class='pag arrow' href='') «
+            a(class='pag' href='') 1
+            a(class='pag active' href='') 2
+            a(class='pag' href='') 3
+            a(class='pag arrow' href='') »

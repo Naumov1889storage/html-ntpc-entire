@@ -1,0 +1,135 @@
+.innerPage .about__who {
+  display: flex;
+}
+.innerPage .about__who .item {
+  min-width: 220px;
+  width: 220px;
+  margin: 0 15px 0 15px;
+}
+.innerPage .about__who .item:last-child {
+  margin-right: 0;
+}
+.innerPage .about__who .item .photo {
+  position: relative;
+  width: 220px;
+  height: 244px;
+}
+.innerPage .about__who .item .photo:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  background: rgba(0,0,0,0.4);
+}
+.innerPage .about__who .item .photo span {
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  width: 100%;
+  font-family: latoblack;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+}
+.innerPage .about__who .item .text,
+.innerPage .about__who .item .text b,
+.innerPage .about__who .item .text p {
+  font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  color: #3a3a3a;
+}
+.innerPage .about__who .item .text b {
+  display: block;
+  margin: 17px 0 10px 0;
+}
+.innerPage .about__who .item .text p {
+  line-height: 20px;
+}
+.innerPage .about__features {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.innerPage .about__features .item {
+  display: flex;
+  align-items: center;
+  padding: 50px 0 30px 0;
+  min-height: 200px;
+  border-top: 1px solid #ebebeb;
+}
+.innerPage .about__features .item .title {
+  margin-bottom: 25px;
+  font-family: latoblack;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #4482af;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-align: center;
+}
+.innerPage .about__features .item ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.innerPage .about__features .item ul li,
+.innerPage .about__features .item ul li a {
+  font-family: latoregular;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4373aa;
+}
+.innerPage .about__features .item ul li {
+  margin-bottom: 25px !important;
+}
+.innerPage .about__features .item#fields ul li {
+  margin: 0 12px 0 12px;
+}
+.innerPage .about__features .item#achievements ul li {
+  margin: 0 20px 20px 20px;
+  padding-top: 70px;
+  width: 75px;
+  text-align: center;
+  background: url("/img/iconset-features.jpg") no-repeat;
+  background-position: 12px 0;
+}
+.innerPage .about__features .item#achievements ul li:nth-child(2) {
+  background-position: -122px 0;
+}
+.innerPage .about__features .item#achievements ul li:nth-child(3) {
+  background-position: -260px 0;
+}
+.innerPage .about__features .item#clients ul li {
+  margin: 0 25px 0 25px;
+}
+.innerPage .about__features .item#certificates ul li {
+  margin: 0 15px 0 15px;
+}
+.innerPage .about__features .item#certificates ul li img {
+  width: 97px;
+  height: 137px;
+}
+@media (max-width: 1050px) {
+  .innerPage .about__who {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .innerPage .about__who .item {
+    margin-bottom: 40px;
+  }
+  .innerPage .about__who .item:last-child {
+    margin: 0 15px 30px 15px;
+  }
+}
+@media (max-width: 785px) {
+  .innerPage .about__who .item {
+    padding-bottom: 40px;
+    width: 100%;
+    border-bottom: 1px solid #cfcfcf;
+  }
+  .innerPage .about__who .item:last-child {
+    border: none;
+  }
+}

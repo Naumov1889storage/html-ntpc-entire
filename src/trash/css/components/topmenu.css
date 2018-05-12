@@ -59,7 +59,7 @@
   color: #223f50;
 }
 .topmenu ul li a:hover {
-  font-weight: 600;
+  color: #000 !important;
   text-decoration: underline;
 }
 .topmenu ul li a.active {
@@ -135,7 +135,7 @@
   cursor: pointer;
 }
 .topmenu.notindexpage ul li.authorization span:not(.slash):hover {
-  font-weight: 600;
+  color: #000 !important;
 }
 .topmenu.notindexpage #topmenu__burger {
   background: #5f95b2;

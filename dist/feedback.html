@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <title>ntpc - Контакты</title>
+    <title>ntpc - Отзывы</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calibri:400,700,400italic,700italic">
     <link rel="stylesheet" href="css/concat-css-libs.css">
     <link rel="stylesheet" href="css/concat-css.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -77,58 +77,90 @@
                 <li><a href="pricedown.html">Акции</a><span class="slash"></span></li>
                 <li><a href="news.html">Новости</a><span class="slash"></span></li>
                 <li><a href="article.html">Статьи</a><span class="slash"></span></li>
-                <li><a href="comment.html">Отзывы</a><span class="slash"></span></li>
+                <li><a class="active" href="comment.html">Отзывы</a><span class="slash"></span></li>
                 <li><a href="about.html">О компании</a><span class="slash"></span></li>
-                <li><a class="active" href="contact.html">Контакты</a><span class="slash"></span></li>
+                <li><a href="contact.html">Контакты</a><span class="slash"></span></li>
           <li class="authorization"><span>Вход</span><span class="slash"></span><span>Регистрация</span></li>
         </ul>
       </div>
-      <div class="contact">
+      <div class="innerPage">
         <div class="container">
-          <h2 class="innerPage__title">Контакты</h2>
-          <div class="crumbs"><a href="index.html">Главная</a><span class="slash">»</span><a class="current" href="contact.html">Контакты</a></div>
+          <h2 class="innerPage__title">Отзывы</h2>
+          <div class="crumbs"><a href="index.html">Главная</a><span class="slash">»</span><a class="current" href="feedback.html">Отзывы</a></div>
         </div>
-        <div class="map__wrap">
-          <div class="map__yandex active"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7d20db7762ef00f6ef2009bbf065ffcdda6e2db99d1573b635d61d3770f4e5c1&amp;width=100%25&amp;height=530&amp;lang=en_FR&amp;scroll=true"></script></div>
-          <div class="map__google">
-            <div id="map__google"></div>
-          </div>
-          <div class="map__option">
-            <div class="option__yandex active">Yandex</div><span class="slash"></span>
-            <div class="option__google">Google</div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="contact__content flex_row__around">
-            <div class="contact__info__wrap"><img src="img/logo-ntpc3.png">
-              <ul class="contact__info">
-                <li class="info__title">Группа компаний "НТПЦ"</li>
-                <li><b>Адрес:</b> 194356, Санкт-Петербург,
-                  <div>пр. Энгельса, д. 124, корп. 1 лит. А пом. 58Н</div>
-                  <div><b>Ближайшее метро:</b> Озерки, Проспект Просвящения</div>
-                  <div><b>Здание:</b> Торгово-развлекательный комплекс Вояж</div>
-                </li>
-                <li><b>Телефон:</b> (812) 320-61-61
-                  <div><b>Факс:</b> (812) 320-61-60</div>
-                  <div><b>Эл.почта:</b> office@3206161.ru</div>
-                </li>
-                <li><b>Режим работы:</b>
-                  <div>Пн. – Пт.: с 9:30 до 18:00</div>
-                  <div>Сб. - Вс.: выходные</div>
-                </li>
-              </ul>
-              <div class="contact__links"><a href="">ntpc.ntpc</a><a href="">https://vk.com/gk_ntpc</a></div>
-            </div>
-            <form class="form__submit contact__form">
-              <h3>ОБРАТНАЯ СВЯЗЬ</h3>
-              <input class="name" type="text" placeholder="Ваше имя ...">
-              <input class="tel" type="text" placeholder="Ваш телефон ...">
-              <textarea type="text" placeholder="Вопрос..."></textarea><div class="agreement checkbox">
+        <div class="innerPage__wrap">
+          <div class="container flex_row__start">
+            <ul class="innerPage__menu">
+              <li><a href="about.html"><span>О компании</span></a></li>
+              <li><a href=""><span>Работа в компании</span></a></li>
+              <li><a href="license.html"><span>Сертификаты и лиценз.</span></a></li>
+              <li class="current"><a href="feedback.html"><span>Отзывы</span></a></li>
+            </ul>
+            <div class="feedbackPage">
+              <div id="feedbackPage__accordion">
+                <div class="toggler btn2"><i></i>Оставить отзыв</div>
+                <div class="content">
+                  <div class="title">Оставить отзыв о компании "НТПЦ"</div>
+                  <form class="form__submit">
+                    <div class="input__wrap flex_row__between">
+                      <div class="flex_column">
+                        <input class="name" type="text" placeholder="Ваше имя ...">
+                        <input class="tel" type="text" placeholder="Ваш телефон ...">
+                      </div>
+                      <div class="flex_column">
+                        <input type="text" placeholder="Компания ...">
+                        <input type="text" placeholder="Должность ...">
+                      </div>
+                    </div>
+                    <textarea placeholder="Отзыв..."></textarea>
+                    <div class="flex3 flex_row__between"><div class="agreement checkbox">
 <input type="checkbox" id="checkbox-icon-1"/>
 <label for="checkbox-icon-1">Я принимаю <a href=''>условия</a> передачи инф.</label>
 </div>
-              <button class="btn2" type="submit">Отправить</button>
-            </form>
+                      <div class="attach__wrap"><span>Прикрепить файл</span>
+                        <input type="file" placeholder="sdfsdf">
+                      </div>
+                    </div>
+                    <button class="btn2" type="submit"><span>Отправить</span></button>
+                  </form>
+                </div>
+              </div>
+              <div class="feedbackPage__content">
+                <div class="item flex_row__between align_center">
+                  <div class="text">
+                    <div class="name">Дмитрий Блинов</div>
+                    <div class="job">Директор компании Нанософт</div>
+                    <p>Програмка не такая красочная как версии AutoCAD, но по удобству пользования превосходит. Очень порадовало что программа корректно открывает dwg файлы акада, что нехватает Компасу, а особенно большой + что она видит объекты созданные с помощью связки  <a href=''>Подробнее...</a></p>
+                  </div>
+                  <div class="photo"><img src="img/picture-feedback-logo.jpg"><img src="img/picture-feedback-photo.jpg"></div>
+                </div>
+                <div class="item flex_row__between align_center">
+                  <div class="text">
+                    <div class="name">Дмитрий Блинов</div>
+                    <div class="job">Директор компании Нанософт</div>
+                    <p>Програмка не такая красочная как версии AutoCAD, но по удобству пользования превосходит. Очень порадовало что программа корректно открывает dwg файлы акада, что нехватает Компасу, а особенно большой + что она видит объекты созданные с помощью связки  <a href=''>Подробнее...</a></p>
+                  </div>
+                  <div class="photo"><img src="img/picture-feedback-logo.jpg"><img src="img/picture-feedback-photo.jpg"></div>
+                </div>
+                <div class="item flex_row__between align_center">
+                  <div class="text">
+                    <div class="name">Дмитрий Блинов</div>
+                    <div class="job">Директор компании Нанософт</div>
+                    <p>Програмка не такая красочная как версии AutoCAD, но по удобству пользования превосходит. Очень порадовало что программа корректно открывает dwg файлы акада, что нехватает Компасу, а особенно большой + что она видит объекты созданные с помощью связки  <a href=''>Подробнее...</a></p>
+                  </div>
+                  <div class="photo"><img src="img/picture-feedback-logo.jpg"><img src="img/picture-feedback-photo.jpg"></div>
+                </div>
+                <div class="item flex_row__between align_center">
+                  <div class="text">
+                    <div class="name">Дмитрий Блинов</div>
+                    <div class="job">Директор компании Нанософт</div>
+                    <p>Програмка не такая красочная как версии AutoCAD, но по удобству пользования превосходит. Очень порадовало что программа корректно открывает dwg файлы акада, что нехватает Компасу, а особенно большой + что она видит объекты созданные с помощью связки  <a href=''>Подробнее...</a></p>
+                  </div>
+                  <div class="photo"><img src="img/picture-feedback-logo.jpg"><img src="img/picture-feedback-photo.jpg"></div>
+                </div>
+              </div>
+              <div class="pagination"><a class="pag arrow" href="">«</a><a class="pag" href="">1</a><a class="pag active" href="">2</a><a class="pag" href="">3</a><a class="pag arrow" href="">»</a></div>
+            </div>
           </div>
         </div>
       </div>

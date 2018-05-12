@@ -1,0 +1,24 @@
+extends layout
+
+block content
+    .innerPage
+        .container
+            h2.innerPage__title Отзывы
+            .crumbs
+                a(href='index.html') Главная
+                span.slash »
+                a(class='current' href='feedback.html') Отзывы
+
+        .innerPage__wrap
+            .container.flex_row__start
+                ul.innerPage__menu
+                    li
+                        a(href='about.html') <span>О компании</span>
+                    li
+                        a(href='') <span>Работа в компании</span>
+                    li
+                        a(href='license.html') <span>Сертификаты и лиценз.</span>
+                    li.current
+                        a(href='feedback.html') <span>Отзывы</span>
+                block innerPage__content1
+            block innerPage__content2

@@ -214,7 +214,7 @@ form.form__submit .agreement input[type='checkbox'] {
   border: 1px solid rgba(216,216,216,0.8);
 }
 .pagination .pag.arrow {
-  padding-bottom: 5px;
+  padding-bottom: 3px;
   font-family: TimesNewRomanPSMT;
 }
 .pagination .pag:hover {
@@ -259,6 +259,7 @@ form.form__submit .agreement input[type='checkbox'] {
   color: #fff;
   border-radius: 4px;
   background-color: #6dadda;
+  cursor: pointer;
 }
 .btn2:before {
   content: '';

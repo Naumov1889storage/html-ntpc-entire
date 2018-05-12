@@ -1,5 +1,7 @@
 $( function() {
     $( "#tabs" ).tabs();
+    //$( "#feedbackPage__accordion" ).accordion({ header: ".toggler", collapsible: true, active: false });
+
 
     $('.single-item-desk--js').slick({
         infinite: false,
@@ -60,6 +62,10 @@ $( function() {
         $('.contact .map__wrap .option__yandex,' +
             '.contact .map__wrap .map__yandex').removeClass('active');
     });
+
+    $('#feedbackPage__accordion .toggler').click(function () {
+        $(this).parent('#feedbackPage__accordion').find('.content').toggleClass('active')
+    })
 
 } );
 
