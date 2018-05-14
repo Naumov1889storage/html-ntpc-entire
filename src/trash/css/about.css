@@ -59,6 +59,7 @@
   border-top: 1px solid #ebebeb;
 }
 .innerPage .about__features .item .title {
+  display: block;
   margin-bottom: 25px;
   font-family: latoblack;
   font-size: 20px;

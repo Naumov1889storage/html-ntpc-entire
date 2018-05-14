@@ -65,7 +65,9 @@ $( function() {
 
     $('#feedbackPage__accordion .toggler').click(function () {
         $(this).parent('#feedbackPage__accordion').find('.content').toggleClass('active')
-    })
+    });
+
+    modalImg();
 
 } );
 
@@ -82,4 +84,16 @@ function initMap() {
 
     //new map
     var map = new google.maps.Map(mapWrap, options);
+}
+
+function modalImg() {
+    $(".license__img button").click(function () {
+        var $src = $(this).parent('.license__img').find('img').attr("src");
+        $(".modalImg").fadeIn();
+        $(".modalImg .img-show img").attr("src", $src);
+    });
+
+    $(".modalImg span, .modalImg .overlay").click(function () {
+        $(".modalImg").fadeOut();
+    });
 }
