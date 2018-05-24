@@ -46,7 +46,7 @@
     opacity: 1;
     transition: .13s
 }
-/*MINIMALISTIC STYLIZED CHECKBOX AND RADIO BEGIN ===================*/
+/*MINIMALISTIC STYLIZED CHECKBOX AND RADIO END ===================*/
 
 /*ICON ON CHECKED BEGIN ===================================*/
 .checkbox.icon input:not(checked) + label:before {

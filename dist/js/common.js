@@ -69,6 +69,42 @@ $( function() {
 
     modalImg();
 
+    $('.ecp .ecp__map .showMapBtn').click(function () {
+        $this = $(this);
+        $this.parent('.ecp__map').toggleClass('active');
+        if ($this.parent('.ecp__map').hasClass('active--additinal')) {
+            $this.parent('.ecp__map').removeClass('active--additinal')
+        } else {
+            setTimeout(function() {
+                $this.parent('.ecp__map').toggleClass('active--additinal');
+            }, 450);
+        }
+    });
+
+    $('.ecp .checkbox--picture input').change(function () {
+        thisIndex = $(this).parent('.checkbox--picture').index();
+        if ($(this).prop('checked')) {
+            $('.ecp .checkbox--picture:eq(' + (thisIndex+6) + ')').find('input').prop('checked', true);
+            $('.ecp .checkbox--picture:eq(' + thisIndex + ')').find('input').prop('checked', true)
+        } else {
+            $('.ecp .checkbox--picture:eq(' + (thisIndex+6) + ')').find('input').prop('checked', false);
+            $('.ecp .checkbox--picture:eq(' + thisIndex + ')').find('input').prop('checked', false)
+        }
+    });
+
+    $(".ecp__search input[name='keyword']").on("input", function() {
+        var term = $(this).val(),
+            $context = $(this).parent('.ecp__search').find('ul li.checkbox label');
+        $context.show().unmark();
+        if (term) {
+            $context.mark(term, {
+                done: function() {
+                    $context.not(":has(mark)").hide();
+                }
+            });
+        }
+    });
+
 } );
 
 var mapWrap = document.getElementById('map__google');

@@ -1,0 +1,586 @@
+extends pug-components/layout
+
+block append title
+    -page = 'ЭЦП'
+
+block content
+    .ecp
+        .container
+            h2.innerPage__title Электронные цифровые подписи
+            .crumbs
+                a(href='index.html') Главная
+                span.slash »
+                a(class='current' href='ecp.html') ЭЦП
+
+            h2.ecp__title Получить ЭЦП в Санкт-ПЕТЕРБУРГЕ
+            ul.ecp__features
+                li чашка кофе/чая
+                li Оформление за 15 минут
+                li Бесплатная парковка
+                li Паспорт + Снилс
+                li комфортный офис в 5 мин от метро
+
+
+        .fox__wrap
+            <div class="content--fox">
+            <div class="fox">
+            <div class="fox-body">
+            <div class="fox-front-leg"></div>
+            <div class="fox-front-leg"></div>
+            </div>
+            <div class="fox-head">
+            <div class="fox-face">
+            <div class="fox-ears">
+            <div class="fox-ear"></div>
+            <div class="fox-ear"></div>
+            </div>
+            <div class="fox-skull"></div>
+            <div class="fox-front"></div>
+            <div class="fox-eyes"></div>
+            <div class="fox-nose"></div>
+            </div>
+            </div>
+            <div class="fox-tail">
+            <div class="fox-tail">
+            <div class="fox-tail">
+            <div class="fox-tail">
+            <div class="fox-tail">
+            <div class="fox-tail">
+            <div class="fox-tail">
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none">
+            <defs>
+            <filter id="squiggly-0">
+            <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0" />
+            <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="2" />
+            </filter>
+            <filter id="squiggly-1">
+            <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" />
+            </filter>
+            <filter id="squiggly-2">
+            <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" />
+            </filter>
+            <filter id="squiggly-3">
+            <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" />
+            </filter>
+            <filter id="squiggly-4">
+            <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="1" />
+            </filter>
+            </defs>
+            </svg>
+            </div>
+
+        .ecp__form1
+            form(class='container' method='post')
+                .ecp__input
+                    input(type='tel' placeholder='+7(___)-___-__-__')
+                    button(type='submit') ЗАКАЗАТЬ ЭЦП
+
+
+                .checkbox__wrap
+                    p.title ПРИ ЗАКАЗЕ С САЙТА, <span class='font-red'>БРЕЛОК</span> В ПОДАРОК
+                    ul
+                        li.checkbox.checkbox--picture
+                            input(id='ecp-gift1' type='checkbox')
+                            label(for='ecp-gift1')
+                                span.img__wrap
+                                    img(src='img/picture-ecp-gift1.png')
+                                span.text Ципленок
+
+                        li.checkbox.checkbox--picture
+                            input(id='ecp-gift2' type='checkbox')
+                            label(for='ecp-gift2')
+                                span.img__wrap
+                                    img(src='img/picture-ecp-gift2.png')
+                                span.text Миньон
+
+                        li.checkbox.checkbox--picture
+                            input(id='ecp-gift3' type='checkbox')
+                            label(for='ecp-gift3')
+                                span.img__wrap
+                                    img(src='img/picture-ecp-gift3.png')
+                                span.text Дарт Вейдер
+
+                        li.checkbox.checkbox--picture
+                            input(id='ecp-gift4' type='checkbox')
+                            label(for='ecp-gift4')
+                                span.img__wrapspan.img__wrap
+                                    img(src='img/picture-ecp-gift4.png')
+                                span.text Рука Халка
+
+                        li.checkbox.checkbox--picture
+                            input(id='ecp-gift5' type='checkbox')
+                            label(for='ecp-gift5')
+                                span.img__wrap
+                                    img(src='img/picture-ecp-gift5.png')
+                                span.text Фламинго
+                        li.checkbox.checkbox--picture
+                            input(id='ecp-gift6' type='checkbox')
+                            label(for='ecp-gift6')
+                                span.img__wrap
+                                    img(src='img/picture-ecp-gift6.png')
+                                span.text Танк
+
+        .ecp__form2
+            .container
+                h2
+                    span.top <span class='font-red'>ЦЕНЫ</span> НА ЭЛЕКТРОННУЮ ПОДПИСЬ
+                    span.bottom ВЫБЕРИТЕ ПОДПИСЬ И РАСЧИТАЙТЕ СТОИМОСТЬ
+
+                form(method='post')
+                    a(class='font-red' href='') ТОРГИ
+                    
+                    ul.ecp__stair.ecp__level1
+                        li.checkbox
+                            input(id='ecp-product7' type='checkbox')
+                            label(for='ecp-product7')
+                                span.text.font-bold Для всех торговых площадок (универсальная)
+                                span.ecp__divider
+                                span.price.font-bold 6490 руб.
+                            ul.ecp__stair.ecp__level2
+                                li.checkbox
+                                    input(id='ecp-product8' type='checkbox')
+                                    label(for='ecp-product8')
+                                        span.text.font-bold Федеральные (универсальная)
+                                        span.ecp__divider
+                                        span.price.font-bold 4720 руб.
+                                    ul.ecp__stair.ecp__level3
+                                        li.checkbox
+                                            input(id='ecp-product9' type='checkbox')
+                                            label(for='ecp-product9')
+                                                span.text АО «ЕЭТП», «Росэлторг» <span class='font-dark'>- roseltorg.ru</span>
+                                                span.ecp__divider
+                                                span.price 3068 руб.
+                                        li.checkbox
+                                            input(id='ecp-product10' type='checkbox')
+                                            label(for='ecp-product10')
+                                                span.text Площадка Сбербанк-АСТ <span class='font-dark'>- sberbank-ast.ru</span>
+                                                span.ecp__divider
+                                                span.price 3068 руб.
+                                        li.checkbox
+                                            input(id='ecp-product11' type='checkbox')
+                                            label(for='ecp-product11')
+                                                span.text Электронная площадка РТС-тендер <span class='font-dark'>- rts-tender.ru</span>
+                                                span.ecp__divider
+                                                span.price 3068 руб.
+
+
+                                li.checkbox
+                                    input(id='ecp-product2' type='checkbox')
+                                    label(for='ecp-product2')
+                                        span.text.font-bold Для всех торговых площадок (универсальная)
+                                        span.ecp__divider
+                                        span.price.font-bold 4720 руб.
+
+                                    ul.ecp__stair.ecp__level3
+                                        li.ecp__search
+                                            input(type='text' name='keyword' placeholder='Введите название или сайт...')
+                                            ul
+                                                li.checkbox
+                                                    input(id='ecp-product3' type='checkbox')
+                                                    label(for='ecp-product3')
+                                                        span.text АО «ЕЭТП», «Росэлторг» <span class='font-dark'>- roseltorg.ru</span>
+                                                        span.ecp__divider
+                                                        span.price 3068 руб.
+                                                li.checkbox
+                                                    input(id='ecp-product4' type='checkbox')
+                                                    label(for='ecp-product4')
+                                                        span.text Площадка Сбербанк-АСТ <span class='font-dark'>- sberbank-ast.ru</span>
+                                                        span.ecp__divider
+                                                        span.price 3068 руб.
+                                                li.checkbox
+                                                    input(id='ecp-product4' type='checkbox')
+                                                    label(for='ecp-product4')
+                                                        span.text Сбербанк-АСТ <span class='font-dark'>- sberbank-ast.ru</span>
+                                                        span.ecp__divider
+                                                        span.price 3068 руб.
+                                                li.checkbox
+                                                    input(id='ecp-product4' type='checkbox')
+                                                    label(for='ecp-product4')
+                                                        span.text РТС-тендер <span class='font-dark'>- rts-tender.ru</span>
+                                                        span.ecp__divider
+                                                        span.price 3068 руб.
+                                                li.checkbox
+                                                    input(id='ecp-product4' type='checkbox')
+                                                    label(for='ecp-product4')
+                                                        span.text ОТС-тендер <span class='font-dark'>- otc.ru</span>
+                                                        span.ecp__divider
+                                                        span.price 3068 руб.
+                                                li.checkbox
+                                                    input(id='ecp-product4' type='checkbox')
+                                                    label(for='ecp-product4')
+                                                        span.text Российский аукционный дом <span class='font-dark'>- lot-online.ru</span>
+                                                        span.ecp__divider
+                                                        span.price 3068 руб.
+                                                li.checkbox
+                                                    input(id='ecp-product4' type='checkbox')
+                                                    label(for='ecp-product4')
+                                                        span.text Фабрикант <span class='font-dark'>- fabrikant.ru</span>
+                                                        span.ecp__divider
+                                                        span.price 3068 руб.
+                                                li.checkbox
+                                                    input(id='ecp-product4' type='checkbox')
+                                                    label(for='ecp-product4')
+                                                        span.text b2b-center <span class='font-dark'>- b2b-center.ru</span>
+                                                        span.ecp__divider
+                                                        span.price 3068 руб.
+                                                li.checkbox
+                                                    input(id='ecp-product4' type='checkbox')
+                                                    label(for='ecp-product4')
+                                                        span.text uTender <span class='font-dark'>- utender.ru</span>
+                                                        span.ecp__divider
+                                                        span.price 3068 руб.
+                                                li.checkbox
+                                                    input(id='ecp-product4' type='checkbox')
+                                                    label(for='ecp-product4')
+                                                        span.text Аукционный Конкурсный Дом <span class='font-dark'>- a-k-d.ru</span>
+                                                        span.ecp__divider
+                                                        span.price 3068 руб.
+                                                li.checkbox
+                                                    input(id='ecp-product4' type='checkbox')
+                                                    label(for='ecp-product4')
+                                                        span.text Аукционный тендерный центр <span class='font-dark'>- atctrade.ru</span>
+                                                        span.ecp__divider
+                                                        span.price 3068 руб.
+                                                li.checkbox
+                                                    input(id='ecp-product4' type='checkbox')
+                                                    label(for='ecp-product4')
+                                                        span.text uTender <span class='font-dark'>- utender.ru</span>
+                                                        span.ecp__divider
+                                                        span.price 3068 руб.
+                                                li.checkbox
+                                                    input(id='ecp-product4' type='checkbox')
+                                                    label(for='ecp-product4')
+                                                        span.text Аукционный Конкурсный Дом <span class='font-dark'>- a-k-d.ru</span>
+                                                        span.ecp__divider
+                                                        span.price 3068 руб.
+                                                li.checkbox
+                                                    input(id='ecp-product4' type='checkbox')
+                                                    label(for='ecp-product4')
+                                                        span.text Аукционный тендерный центр <span class='font-dark'>- atctrade.ru</span>
+                                                        span.ecp__divider
+                                                        span.price 3068 руб.
+                                                li.checkbox
+                                                    input(id='ecp-product4' type='checkbox')
+                                                    label(for='ecp-product4')
+                                                        span.text uTender <span class='font-dark'>- utender.ru</span>
+                                                        span.ecp__divider
+                                                        span.price 3068 руб.
+                                                li.checkbox
+                                                    input(id='ecp-product4' type='checkbox')
+                                                    label(for='ecp-product4')
+                                                        span.text Аукционный Конкурсный Дом <span class='font-dark'>- a-k-d.ru</span>
+                                                        span.ecp__divider
+                                                        span.price 3068 руб.
+                                                li.checkbox
+                                                    input(id='ecp-product4' type='checkbox')
+                                                    label(for='ecp-product4')
+                                                        span.text Аукционный тендерный центр <span class='font-dark'>- atctrade.ru</span>
+                                                        span.ecp__divider
+                                                        span.price 3068 руб.
+                                                li.checkbox
+                                                    input(id='ecp-product4' type='checkbox')
+                                                    label(for='ecp-product4')
+                                                        span.text uTender <span class='font-dark'>- utender.ru</span>
+                                                        span.ecp__divider
+                                                        span.price 3068 руб.
+                                                li.checkbox
+                                                    input(id='ecp-product4' type='checkbox')
+                                                    label(for='ecp-product4')
+                                                        span.text Аукционный Конкурсный Дом <span class='font-dark'>- a-k-d.ru</span>
+                                                        span.ecp__divider
+                                                        span.price 3068 руб.
+                                                li.checkbox
+                                                    input(id='ecp-product4' type='checkbox')
+                                                    label(for='ecp-product4')
+                                                        span.text Аукционный тендерный центр <span class='font-dark'>- atctrade.ru</span>
+                                                        span.ecp__divider
+                                                        span.price 3068 руб.
+                                                li.checkbox
+                                                    input(id='ecp-product4' type='checkbox')
+                                                    label(for='ecp-product4')
+                                                        span.text uTender <span class='font-dark'>- utender.ru</span>
+                                                        span.ecp__divider
+                                                        span.price 3068 руб.
+                                                li.checkbox
+                                                    input(id='ecp-product4' type='checkbox')
+                                                    label(for='ecp-product4')
+                                                        span.text Аукционный Конкурсный Дом <span class='font-dark'>- a-k-d.ru</span>
+                                                        span.ecp__divider
+                                                        span.price 3068 руб.
+                                                li.checkbox
+                                                    input(id='ecp-product4' type='checkbox')
+                                                    label(for='ecp-product4')
+                                                        span.text Аукционный тендерный центр <span class='font-dark'>- atctrade.ru</span>
+                                                        span.ecp__divider
+                                                        span.price 3068 руб.
+
+
+
+                    a(class='font-red' href='') ПОРТАЛЫ
+
+                    ul.ecp__stair.ecp__stair--none.ecp__level1
+                        li.checkbox
+                            input(id='ecp-product7' type='checkbox')
+                            label(for='ecp-product7')
+                                span.text.font-bold Для всех торговых площадок (универсальная)
+                                span.ecp__divider
+                                span.price.font-bold 6490 руб.
+                            ul.ecp__stair.ecp__level3
+                                li.ecp__search
+                                    input(type='text' name='keyword' placeholder='Введите название или сайт...')
+                                    ul
+                                        li.checkbox
+                                            input(id='ecp-product3' type='checkbox')
+                                            label(for='ecp-product3')
+                                                span.text АО «ЕЭТП», «Росэлторг» <span class='font-dark'>- roseltorg.ru</span>
+                                                span.ecp__divider
+                                                span.price 3068 руб.
+                                        li.checkbox
+                                            input(id='ecp-product4' type='checkbox')
+                                            label(for='ecp-product4')
+                                                span.text Площадка Сбербанк-АСТ <span class='font-dark'>- sberbank-ast.ru</span>
+                                                span.ecp__divider
+                                                span.price 3068 руб.
+                                        li.checkbox
+                                            input(id='ecp-product4' type='checkbox')
+                                            label(for='ecp-product4')
+                                                span.text Сбербанк-АСТ <span class='font-dark'>- sberbank-ast.ru</span>
+                                                span.ecp__divider
+                                                span.price 3068 руб.
+                                        li.checkbox
+                                            input(id='ecp-product4' type='checkbox')
+                                            label(for='ecp-product4')
+                                                span.text РТС-тендер <span class='font-dark'>- rts-tender.ru</span>
+                                                span.ecp__divider
+                                                span.price 3068 руб.
+                                        li.checkbox
+                                            input(id='ecp-product4' type='checkbox')
+                                            label(for='ecp-product4')
+                                                span.text ОТС-тендер <span class='font-dark'>- otc.ru</span>
+                                                span.ecp__divider
+                                                span.price 3068 руб.
+                                        li.checkbox
+                                            input(id='ecp-product4' type='checkbox')
+                                            label(for='ecp-product4')
+                                                span.text Российский аукционный дом <span class='font-dark'>- lot-online.ru</span>
+                                                span.ecp__divider
+                                                span.price 3068 руб.
+                                        li.checkbox
+                                            input(id='ecp-product4' type='checkbox')
+                                            label(for='ecp-product4')
+                                                span.text Фабрикант <span class='font-dark'>- fabrikant.ru</span>
+                                                span.ecp__divider
+                                                span.price 3068 руб.
+                                        li.checkbox
+                                            input(id='ecp-product4' type='checkbox')
+                                            label(for='ecp-product4')
+                                                span.text b2b-center <span class='font-dark'>- b2b-center.ru</span>
+                                                span.ecp__divider
+                                                span.price 3068 руб.
+                                        li.checkbox
+                                            input(id='ecp-product4' type='checkbox')
+                                            label(for='ecp-product4')
+                                                span.text uTender <span class='font-dark'>- utender.ru</span>
+                                                span.ecp__divider
+                                                span.price 3068 руб.
+                                        li.checkbox
+                                            input(id='ecp-product4' type='checkbox')
+                                            label(for='ecp-product4')
+                                                span.text Аукционный Конкурсный Дом <span class='font-dark'>- a-k-d.ru</span>
+                                                span.ecp__divider
+                                                span.price 3068 руб.
+                                        li.checkbox
+                                            input(id='ecp-product4' type='checkbox')
+                                            label(for='ecp-product4')
+                                                span.text Аукционный тендерный центр <span class='font-dark'>- atctrade.ru</span>
+                                                span.ecp__divider
+                                                span.price 3068 руб.
+                                        li.checkbox
+                                            input(id='ecp-product4' type='checkbox')
+                                            label(for='ecp-product4')
+                                                span.text uTender <span class='font-dark'>- utender.ru</span>
+                                                span.ecp__divider
+                                                span.price 3068 руб.
+                                        li.checkbox
+                                            input(id='ecp-product4' type='checkbox')
+                                            label(for='ecp-product4')
+                                                span.text Аукционный Конкурсный Дом <span class='font-dark'>- a-k-d.ru</span>
+                                                span.ecp__divider
+                                                span.price 3068 руб.
+                                        li.checkbox
+                                            input(id='ecp-product4' type='checkbox')
+                                            label(for='ecp-product4')
+                                                span.text Аукционный тендерный центр <span class='font-dark'>- atctrade.ru</span>
+                                                span.ecp__divider
+                                                span.price 3068 руб.
+                                        li.checkbox
+                                            input(id='ecp-product4' type='checkbox')
+                                            label(for='ecp-product4')
+                                                span.text uTender <span class='font-dark'>- utender.ru</span>
+                                                span.ecp__divider
+                                                span.price 3068 руб.
+                                        li.checkbox
+                                            input(id='ecp-product4' type='checkbox')
+                                            label(for='ecp-product4')
+                                                span.text Аукционный Конкурсный Дом <span class='font-dark'>- a-k-d.ru</span>
+                                                span.ecp__divider
+                                                span.price 3068 руб.
+
+
+                        li.checkbox
+                            input(id='ecp-product7' type='checkbox')
+                            label(for='ecp-product7')
+                                span.text Росреестр
+                                span.ecp__divider
+                                span.price 6490 руб.
+                        li.checkbox
+                            input(id='ecp-product7' type='checkbox')
+                            label(for='ecp-product7')
+                                span.text СМЭВ
+                                span.ecp__divider
+                                span.price 6490 руб.
+                        li.checkbox
+                            input(id='ecp-product7' type='checkbox')
+                            label(for='ecp-product7')
+                                span.text Федеральная Таможенная Служба
+                                span.ecp__divider
+                                span.price 6490 руб.
+
+                    a(class='font-red' href='') ДОКУМЕНТООБОРОТ
+                    ul.ecp__stair.ecp__stair--none.ecp__level1
+                        li.checkbox
+                            input(id='ecp-product7' type='checkbox')
+                            label(for='ecp-product7')
+                                span.text Электронный документооборот на 1 год
+                                span.ecp__divider
+                                span.price 6490 руб.
+
+
+                    a(class='font-red' href='') ЭЛЕКТРОННАЯ ОТЧЕТНОСТЬ
+                    ul.ecp__stair.ecp__stair--none.ecp__level1
+                        li.checkbox
+                            input(id='ecp-product7' type='checkbox')
+                            label(for='ecp-product7')
+                                span.text Пакет «Стандарт»
+                                span.ecp__divider
+                                span.price 6490 руб.
+                        li.checkbox
+                            input(id='ecp-product7' type='checkbox')
+                            label(for='ecp-product7')
+                                span.text Пакет «Эконом»
+                                span.ecp__divider
+                                span.price 6490 руб.
+                        li.checkbox
+                            input(id='ecp-product7' type='checkbox')
+                            label(for='ecp-product7')
+                                span.text Пакет «Бюджет»
+                                span.ecp__divider
+                                span.price 6490 руб.
+                        li.checkbox
+                            input(id='ecp-product7' type='checkbox')
+                            label(for='ecp-product7')
+                                span.text Пакет «Предприниматель»
+                                span.ecp__divider
+                                span.price 6490 руб.
+
+
+
+                    .checkbox__wrap
+                        p.title
+                        ul
+                            li.checkbox.checkbox--picture
+                                input(id='ecp-gift7' type='checkbox')
+                                label(for='ecp-gift7')
+                                    span.img__wrap
+                                        img(src='img/picture-ecp-gift1.png')
+                                    span.text Ципленок
+
+                            li.checkbox.checkbox--picture
+                                input(id='ecp-gift8' type='checkbox')
+                                label(for='ecp-gift8')
+                                    span.img__wrap
+                                        img(src='img/picture-ecp-gift2.png')
+                                    span.text Миньон
+
+                            li.checkbox.checkbox--picture
+                                input(id='ecp-gift9' type='checkbox')
+                                label(for='ecp-gift9')
+                                    span.img__wrap
+                                        img(src='img/picture-ecp-gift3.png')
+                                    span.text Дарт Вейдер
+
+                            li.checkbox.checkbox--picture
+                                input(id='ecp-gift10' type='checkbox')
+                                label(for='ecp-gift10')
+                                    span.img__wrapspan.img__wrap
+                                        img(src='img/picture-ecp-gift4.png')
+                                    span.text Рука Халка
+
+                            li.checkbox.checkbox--picture
+                                input(id='ecp-gift11' type='checkbox')
+                                label(for='ecp-gift11')
+                                    span.img__wrap
+                                        img(src='img/picture-ecp-gift5.png')
+                                    span.text Фламинго
+                            li.checkbox.checkbox--picture
+                                input(id='ecp-gift12' type='checkbox')
+                                label(for='ecp-gift12')
+                                    span.img__wrap
+                                        img(src='img/picture-ecp-gift6.png')
+                                    span.text Танк
+
+
+
+        .divider
+        .ecp__steps
+            .container
+                .title 3 ПРОСТЫХ ШАГА <span class='font-red'>ПОЛУЧЕНИЯ</span> ЭЦП
+                ul
+                    li
+                        .number 01
+                        .title ВЫБЕРИТЕ ЭЦП
+                        .text Выберите нужную подпись и свяжитесь с нами
+
+                    li
+                        .number 02
+                        .title ПОДГОТОВЬТЕ ДОКУМЕНТЫ
+                        .text Всего 2 документа: <b>Паспорт, СНИЛС<b> для ИП + <b>Свидетельство ИНН</b>
+
+                    li
+                        .number 03
+                        .title ПОЛУЧИТЕ ПОДПИСЬ
+                        .text Забирите подпись в нашем офисе или закажите доставку
+
+
+        .divider
+        .ecp__dscr
+            .title Подробное описание электронная подпись
+            p.text Электро́нная по́дпись (эп), Электро́нная цифровая по́дпись (эцп) — реквизит электронного документа, полученный в результате криптографического преобразования информации с использованием закрытого ключа подписи. Электро́нная по́дпись (эп), Электро́нная цифровая по́дпись (эцп) — реквизит электронного документа, полученный в результате криптографического преобразования информации с использованием закрытого ключа подписи. закрытого ключа подписи закрытого...  Подробнее
+        .divider
+        ul.ecp__links.container
+            li
+                a(href='') Лицензии и сертификаты
+            li
+                span Действующие акции:
+                a(href='') Брелок в подарок
+                a(href='') Универсальная подпись
+            li
+                a(href='') Наши клиенты
+                a(href='') Отзывы
+        .ecp__map
+            .map
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7d20db7762ef00f6ef2009bbf065ffcdda6e2db99d1573b635d61d3770f4e5c1&amp;width=100%25&amp;height=565&amp;lang=en_FR&amp;scroll=true"></script>
+            button(class='showMapBtn btn2' type='button') <span>ПОКАЗАТЬ КАРТУ</span> <span>Вернуть данные</span>
+
