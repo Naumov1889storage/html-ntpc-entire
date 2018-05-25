@@ -173,6 +173,7 @@ form.form__submit .agreement label:before {
   top: -1px;
 }
 form.form__submit .agreement input:not(checked) + label:before {
+  top: 4px;
   width: 15px;
   height: 15px;
   background: url("/img/icon-checkbox.png") no-repeat;
@@ -301,9 +302,8 @@ form.form__submit .agreement input[type='checkbox'] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 0;
-  background: #00f;
+  justify-content: center;
+  padding: 0 !important;
   text-align: center;
 }
 .checkbox--picture label:hover span.img__wrap:before {
@@ -315,6 +315,7 @@ form.form__submit .agreement input[type='checkbox'] {
 }
 .checkbox--picture label span.img__wrap {
   position: relative;
+  margin: auto 0 0 0;
 }
 .checkbox--picture label span.img__wrap:before {
   content: '';
@@ -322,8 +323,7 @@ form.form__submit .agreement input[type='checkbox'] {
   z-index: 0;
   top: 50%;
   left: 50%;
-  margin-left: -50%;
-  transform: translateY(-50%);
+  margin: -41.5px 0 0 -41.5px;
   width: 83px;
   height: 83px;
   background-color: #f7e0da;
@@ -331,7 +331,12 @@ form.form__submit .agreement input[type='checkbox'] {
   opacity: 0;
 }
 .checkbox--picture label span.text {
-  min-height: 40px;
+  min-height: 55px;
+  margin-top: auto;
+  font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #545454;
 }
 .checkbox--picture input:not(checked) + label:before,
 .checkbox--picture input:not(checked) + label:after {

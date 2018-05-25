@@ -1,21 +1,104 @@
 .ecp {
   min-height: 1000px
   position: relative
+  .transpBox {
+    position: relative
+    //border: 8px solid rgba(255, 255, 255, 0.5)
+    &:before {
+      content: ''
+      position: absolute
+      z-index: -1
+      left: -8px
+      right: -8px
+      top: -8px
+      bottom: -8px
+      background: rgba(255, 255, 255, 0.5)
+    }
+  }
+  .checkbox {
+    &__wrap {
+      ul {
+        display: flex
+        flex-wrap: wrap
+        padding: 38px 18px 0 18px
+        li.checkbox--picture {
+          display: flex
+          justify-content: center
+          margin-bottom: 20px
+          width: 16.6%
+          min-width: 115px
+          label {
+            span.text {
+              max-width: 77px
+            }
+          }
+          &:nth-child(3) {
+            span.img__wrap {
+              margin-left: 10px
+            }
+          }
+          &:nth-child(4) {
+            span.img__wrap {
+              margin-left: 25px
+            }
+          }
+
+        }
+      }
+    }
+  }
 
   &__title {
+    margin-top: 62px
     font-family: latoblack
     font-size: 38px
-    font-weight: bold
-    line-height: 35.02px
+    line-height: 48px
     text-transform: uppercase
     color: #ffffff
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.5)
     text-align: center
   }
+  &__tel {
+    display: flex
+    justify-content: center
+    height: 45px
+    input {
+      padding: 0 20px 0 20px
+      width: 210px
+      height: 100%
+      min-height: 45px
+      font-family: latoblack
+      font-size: 18px
+      font-weight: 400
+      line-height: 20px
+      color: #545454
+      &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #f56542
+        opacity: 1; /* Firefox */
+      }
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #f56542;
+      }
+      &::-ms-input-placeholder { /* Microsoft Edge */
+        color: #f56542;
+      }
+    }
+    button {
+      padding: 0 28px 0 28px
+      height: 100%
+      font-family: latoblack
+      font-size: 18px
+      font-weight: 400
+      line-height: 20px
+      color: #ffffff
+      background: #f56542
+    }
+  }
   &__features {
     display: flex
     flex-wrap: wrap
     justify-content: center
+    margin-top: 45px
     li {
       position: relative
       margin: 25px 13px 25px 13px
@@ -26,7 +109,8 @@
       line-height: 22px
       text-transform: uppercase
       color: #34546c
-      &:before {
+      &:before,
+      &:after {
         content: ''
         position: absolute
         top: 50%
@@ -36,6 +120,13 @@
         height: 58px
         border-radius: 100%
         background: #ffffff url(/img/icon-ecp-sample1.png) center no-repeat
+      }
+      &:after {
+        z-index: -1
+        left: -4px
+        width: 66px
+        height: 66px
+        background: rgba(255, 255, 255, 0.5)
       }
       &:nth-child(2) {
         &:before {
@@ -64,15 +155,40 @@
   .fox__wrap {
     position: absolute
     width: 100%
-    height: 520px
-    max-height: 100%
-    top: 0
-    overflow: hidden
+    //height: 500px
+    //max-height: 100%
+    top: -50px
+    //overflow: hidden
     z-index: -10
     .content--fox {
       position: relative
       z-index: -1
       top: 0
+      height: 980px
+      background: url(/img/bg-landscape.jpg) //-200px 0
+      background-size: cover
+      .fox {
+        left: 69%
+      }
+    }
+  }
+
+  &__dscr {
+    margin: 38px 0 40px 0
+    font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif
+    font-size: 18px
+    font-weight: 400
+    line-height: 20px
+    .title {
+      font-weight: bold
+      line-height: 28px
+      color: #4984ad
+    }
+    span.active {
+      display: inline !important
+    }
+    a.morelink {
+      color: #4984ad
     }
   }
 
@@ -80,17 +196,20 @@
     display: flex
     justify-content: center
     align-items: center
+    flex-wrap: wrap
+    padding-top: 15px !important
+    padding-bottom: 35px !important
     li {
       position: relative
-      padding-left: 82px
-      margin: 25px 10px 25px 10px
+      padding-left: 55px//82px
+      margin: 25px 15px 5px 15px
       &:before {
         content: ''
         position: absolute
         left: 0
         top: 50%
         transform: translateY(-50%)
-        width: 67px
+        width: 40px//67px
         height: 40px
         background: url(/img/icon-ecp-sample4.jpg) right center no-repeat
       }
@@ -103,7 +222,9 @@
         }
       }
       &:nth-child(3) {
+        padding-left: 82px
         &:before {
+          width: 67px
           background-image: url(/img/icon-ecp-sample6.png)
         }
       }
@@ -114,21 +235,66 @@
     display: flex
   }
   &__form1 {
+    margin-bottom: 32px
+    .ecp__tel {
+      margin: 62px 0 92px 0
+    }
     .checkbox__wrap {
-      .title {
+      margin: 0 auto
+      max-width: 730px
+      ul {
+        background: #ffffff
+      }
+      .title, .title span {
+        padding: 5px 0 7px 0
         font-family: latoblack
         font-size: 24px
-        font-weight: bold
         line-height: 35.02px
-        text-transform: uppercase
-        text-shadow: 0 0 8px rgba(0, 0, 0, 0.5)
-        color: #545454
+        //text-shadow: -2px -2px #ffffff, -2px 2px #ffffff, 2px 2px #ffffff, 2px -2px #ffffff
         text-align: center
+        &:not(span) {
+          color: #545454
+        }
       }
     }
   }
   &__form2 {
+    margin: 0 auto
+    max-width: 730px
+    background: #ffffff
+    border: 1px solid #cacaca
+    border-bottom: none
+    p {
+      position: relative
+      z-index: 1
+      margin: 19px 30px 0 30px
+      font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif !important
+      font-size: 18px
+      font-weight: 400
+      line-height: 28px
+      b {
+        color: #545454
+        font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif
+      }
+      a {
+        color: #4984ad
+        font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif
+      }
+      .font-red {
+        color: #d76546
+        font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif
+      }
+    }
+    .checkbox__wrap {
+      ul {
+        padding: 20px 18px 0 18px
+      }
+    }
     h2 {
+      margin-bottom: 15px
+      padding: 24px 10px 18px 10px
+      text-align: center
+      border-bottom: 1px solid #cacaca
       span {
         &.top, &.bottom {
           display: block
@@ -140,13 +306,45 @@
           & .font-red {
             font-family: latoblack
             font-size: 24px
+            line-height: 34px
           }
         }
         &.bottom {
-          font-family: latoregular
+          font-family: latolight !important
           font-size: 18px
+          line-height: 28px
           color: #545454
           text-transform: uppercase
+        }
+      }
+    }
+    &__footer {
+      display: flex
+      align-items: center
+      padding: 10px 34px 10px 34px
+      min-height: 63px
+      background: #fff0f0
+      border-top: 1px solid #cacaca
+      .btn2 {
+        margin-right: 15px
+        z-index: 10
+        font-family: latobold
+        font-size: 16px
+        background-color: #dd7f68
+        &:before {
+          display: none
+        }
+        &:after {
+          z-index: -1
+          background: rgba(221, 127, 104, 0.3)
+        }
+      }
+      .result {
+        font-family: latobold
+        font-size: 18px
+        color: #545454
+        span {
+          font-family: latoregular
         }
       }
     }
@@ -154,6 +352,7 @@
 
 
   &__steps {
+    margin: 87px 0 75px 0
     text-align: center
     .container > .title,
     .container > .title span {
@@ -231,11 +430,20 @@
           }
         }
       }
+      .ecp__tel {
+        opacity: 0
+      }
+
       &--additinal {
         .map {
           z-index: 0
         }
       }
+    }
+
+    .ecp__tel {
+      margin-top: 170px
+      transition: .2s
     }
 
     .map {
@@ -273,7 +481,7 @@
       position: relative
       z-index: 2
       display: block
-      margin: 7px 0 7px 0
+      margin: 10px 30px 7px 30px
       font-family: latoblack
       font-size: 18px
       font-weight: 400
@@ -357,10 +565,15 @@
         z-index: 10
       }
     }
+    .forHint {
+      .text {
+        padding-right: 33px
+      }
+    }
     .text {
       position: relative
-      z-index: 2
-      padding-right: 20px
+      z-index: 3
+      padding-right: 15px
       background: white
       &:before {
         content: ''
@@ -371,6 +584,15 @@
         height: 14px
         background: white
       }
+      /*&:after {
+        content: ''
+        position: absolute
+        z-index: -1
+        left: 0
+        width: 100%
+        height: 100%
+        background: #ffffff
+      }*/
     }
     .price {
       position: relative
@@ -393,6 +615,7 @@
     }
   }
   &__level1 {
+    margin: 0 30px 0 30px
   }
   &__level2 {
     margin-left: 25px
@@ -407,8 +630,8 @@
     }
     & > li:last-child {
       &:before {
-        left: -100px
-        width: 100px
+        left: -24px
+        width: 24px
         background: white
       }
     }
@@ -427,7 +650,7 @@
     & > li:last-child {
       &:before {
         display: block
-        left: -33px
+        left: -22px
         width: 20px
         background: white
       }
@@ -435,8 +658,9 @@
   }
 
   .ecp__search {
-
+    margin-top: 10px
     & > ul {
+      padding-left: 15px
       max-height: 190px
       overflow-y: auto
       overflow-x: hidden
@@ -479,6 +703,8 @@
 
     & > input {
       position: static
+      margin-bottom: 12px
+      padding: 0 35px 0 13px
       max-width: 384px
       width: 100%
       height: 33px
@@ -490,41 +716,237 @@
       font-size: 18px
       font-weight: 400
       line-height: 28px
+      background: url(/img/icon-search.png) no-repeat right center
+      background-size: 19px
+      background-position-x: 98%
+    }
+  }
+
+  &__hint {
+    position: absolute
+    z-index: 4
+    overflow: hidden
+    transform: translateY(4px) translateX(-26px)
+    /*width: 253px
+    height: 121px*/
+    width: 14px
+    height: 14px
+    border-radius: 100%
+    cursor: default
+    user-select: text;
+    background: white
+    line-height: 0
+    button {
+      width: 14px
+      height: 14px
+      background: url(/img/icon-help.png) center no-repeat
+      border-radius: 100%
+      cursor: pointer
+    }
+    .hint__text {
+      width: 100%
+      height: 100%
+      overflow: hidden
+      font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif
+      font-size: 16px
+      font-weight: 400
+      line-height: 16px
+      color: #545454
+      background-color: #fcf4c0
+      &:before {
+        display: none
+      }
+    }
+    &.active {
+      z-index: 5
+      transform: translateY(-5px) translateX(-33px)
+      padding: 8px 11px 12px 11px
+      width: 253px
+      height: auto
+      border: 1px solid #d6d6d6
+      border-radius: 4px
+      background-color: #fcf4c0
+      button {
+        transform: translateX(-5px)
+        background-image: url(/img/icon-help-close.png)
+      }
     }
   }
 }
 
-fi {
-  // Style for "ТОРГИ"
-  color: #4984ad
-  font-family: Calibri
-  font-size: 18px
-  font-weight: 400
+@media (max-width: 727px) {
+  .ecp {
+    &__form2 {
+      ul {
+        .checkbox--picture {
+          &:last-child {
+           label {
+             .text {
+               margin-top: 20px
+             }
+           }
+          }
+        }
+      }
+    }
+  }
+}
 
-  // Text style for ""
-  font-family: Calibri
-  line-height: 33px
-  // Text style for "Для всех т"
-  font-family: Calibri
-  font-weight: bold
-  line-height: 28px
-  // Text style for "(универсал"
-  font-family: Calibri
-  font-weight: bold
-  line-height: 20px
-  // Text style for ","
-  font-family: Calibri
-  line-height: 28px
-  // Text style for "«ЕЭТП», «Р"
-  font-family: Calibri
-  line-height: 20px
-  // Text style for "- roseltor"
-  color: #545454
-  font-family: Calibri
-  line-height: 20px
-  // Text style for ""
-  font-family: Calibri
-  font-weight: bold
-  line-height: 26px
+@media (max-width: 700px) {
+    .ecp {
+      &__divider {
+        width: 50px !important
+      }
+      &__form2 {
+        a.font-red {
+          margin: 10px 15px 7px 15px
+        }
+        p {
+          margin: 19px 15px 0 15px
+        }
+      }
+      &__level1 {
+        margin: 0 15px 0 15px
+      }
+      &__stair {
+        label {
+          .price {
+            &:before {
+              content: ''
+              position: absolute
+              left: -480px
+              top: 10px
+              width: 480px
+              height: 1px
+              background-color: #cbcbcb
+            }
+          }
+        }
+      }
+      &__level2,
+      &__level3 {
+        label {
+          .price {
+            &:before {
+              width: 400px
+              left: -400px
+            }
+          }
+        }
+      }
+    }
+}
 
+@media (max-width: 670px) {
+    .ecp {
+      &__stair {
+        label {
+          display: block
+          .forHint +.price {
+            &:before {
+              left: 0 !important
+            }
+          }
+          .price {
+            padding-left: 45px
+            &:before {
+              left: 10px
+              top: 10px
+              width: 25px
+            }
+          }
+          .text {
+            padding-right: 0
+          }
+        }
+      }
+      &__level2,
+      &__level3 {
+        label {
+          .price {
+            &:before {
+              left: 10px
+              top: 10px
+              width: 25px
+            }
+          }
+        }
+      }
+    }
+}
+
+@media (max-width: 630px) {
+    .ecp {
+      &__features {
+        flex-direction: column
+      }
+      &__form1,
+      &__form2 {
+        ul {
+          .checkbox--picture {
+            width: 33.3% !important
+          }
+        }
+      }
+
+      &__links {
+        li {
+          padding-left: 82px
+          width: 100%
+          &:before {
+            width: 67px
+          }
+        }
+      }
+    }
+}
+
+@media (max-width: 560px) {
+    .ecp {
+
+      &__tel {
+        flex-direction: column
+        min-height: 90px
+        input {
+          width: 100%
+        }
+
+      }
+      &__map {
+        .ecp__tel {
+          height: 100px
+          margin-top: 135px
+          input {
+            height: 45px
+          }
+          button {
+            min-height: 65px
+            line-height: 26px
+          }
+        }
+      }
+    }
+}
+
+@media (max-width: 430px) {
+    .ecp {
+      &__title {
+        font-size: 25px
+        line-height: 30px
+      }
+      &__form1,
+      &__form2 {
+        ul {
+          .checkbox--picture {
+            width: 50% !important
+          }
+        }
+      }
+    }
+}
+
+@media (max-width: 380px) {
+    .ecp {
+
+    }
 }

@@ -1,6 +1,14 @@
 $( function() {
     $( "#tabs" ).tabs();
-    //$( "#feedbackPage__accordion" ).accordion({ header: ".toggler", collapsible: true, active: false });
+
+    $(".ecp__dscr .text").shorten({
+        "showChars" : 350,
+        "moreText"	: "Подробнее",
+        "lessText"	: "Скрыть",
+    });
+    $('.morelink').click(function () {
+       $(this).parents('.text.shortened').find('span').not('.moreellipses').not('.morecontent').toggleClass('active').toggle()
+    });
 
 
     $('.single-item-desk--js').slick({
@@ -92,6 +100,8 @@ $( function() {
         }
     });
 
+    var $input = $(".ecp__search input[name='keyword']"),
+        $context = $(".ecp__search li.checkbox label");
     $(".ecp__search input[name='keyword']").on("input", function() {
         var term = $(this).val(),
             $context = $(this).parent('.ecp__search').find('ul li.checkbox label');
@@ -104,6 +114,30 @@ $( function() {
             });
         }
     });
+
+
+    var ecpCostCheckbox = $('.ecp__form2 input[type="checkbox"]'),
+        ecpCostPrint = $('.ecp__form2 .ecp__form2__footer .result .number'),
+        ecpCostCount = 0;
+    ecpCostCheckbox.change(function () {
+       ecpCostThis = $(this).siblings('label').find('.price').html().match(/\d/g).join("");
+       if($(this).prop('checked')) {
+           ecpCostCount += parseInt(ecpCostThis)
+       } else {
+           ecpCostCount -= parseInt(ecpCostThis)
+       }
+        $('.ecp__form2 .ecp__form2__footer .result .number').html(String(ecpCostCount))
+    });
+
+    $('.ecp__hint button').click(function () {
+        $(this).parent('.ecp__hint').toggleClass('active')
+    });
+    $('.ecp__hint').click(function () {
+        return false
+    });
+
+    closeIfOutside('.ecp__hint');
+
 
 } );
 
@@ -131,5 +165,25 @@ function modalImg() {
 
     $(".modalImg span, .modalImg .overlay").click(function () {
         $(".modalImg").fadeOut();
+    });
+}
+
+modal('.ecp .modal', '.ecp .ecp__form2__footer button');
+function modal(modal, btnOpen) {
+    $(btnOpen).click(function () {
+        $(modal).fadeIn();
+        $(modal).addClass('active');
+        $('.overlay').fadeIn()
+    });
+
+    $(modal).find('.modal__close').click(function () {
+        $(modal).fadeOut();
+        $(modal).removeClass('active');
+        $('.overlay').fadeOut()
+    });
+    $('.overlay').click(function () {
+        $(modal).fadeOut();
+        $(modal).removeClass('active');
+        $('.overlay').fadeOut()
     });
 }
