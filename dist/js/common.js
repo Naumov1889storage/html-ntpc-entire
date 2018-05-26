@@ -138,6 +138,7 @@ $( function() {
 
     closeIfOutside('.ecp__hint');
 
+    modal('.ecp .modal', '.ecp .ecp__form2__footer button');
 
 } );
 
@@ -168,7 +169,6 @@ function modalImg() {
     });
 }
 
-modal('.ecp .modal', '.ecp .ecp__form2__footer button');
 function modal(modal, btnOpen) {
     $(btnOpen).click(function () {
         $(modal).fadeIn();
@@ -187,3 +187,16 @@ function modal(modal, btnOpen) {
         $('.overlay').fadeOut()
     });
 }
+
+var element       = $("#ecp__form2");
+var elementHeight = element.height();
+var windowHeight  = $(window).height();
+
+var offset = Math.min(elementHeight, windowHeight) + element.offset().top;
+
+$("#linkTo-Ecp__form2").click(function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: offset - 80}, 500);
+});
+
+
