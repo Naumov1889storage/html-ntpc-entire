@@ -1,4 +1,35 @@
 .nanocad {
+  margin-bottom: 65px
+
+  .tabs1 {
+    .tabs__content {
+      margin-top: -10px
+      & > div > h2 {
+        margin-bottom: 30px
+      }
+    }
+  }
+
+  .ecp__tel {
+    height: 47px
+    input {
+      border: 1px solid #4984ad
+      &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #4984ad
+        opacity: 1; /* Firefox */
+      }
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #4984ad;
+      }
+      &::-ms-input-placeholder { /* Microsoft Edge */
+        color: #4984ad;
+      }
+    }
+    button {
+      background-color: #4984ad
+    }
+  }
+
   .btn3 {
     padding-bottom: 2px
     font-family: Lato
@@ -18,16 +49,33 @@
   p > a {
     color: #417aa3 !important
   }
+  p > b {
+    font-size: 15px !important
+  }
 
+  h1 {
+    margin-top: 35px
+    font-family: latoblack
+    font-size: 26px
+    line-height: 32px
+    color: #34546c
+  }
   h2 {
+    padding: 0 15px 0 15px
     color: #4984ad
     font-family: latoblack
     font-size: 20px
     line-height: 32px
-    text-transform: uppercase
     text-align: center
   }
-  h3, h3 > a {
+  .container > h3 {
+    font-family: latoblack
+    font-size: 20px
+    line-height: 32px
+    color: #4984ad
+    text-align: center
+  }
+  .tabs1 .tabs__content h3, h3 > a {
     font-family: latoblack
     font-size: 20px
     font-weight: 400
@@ -70,25 +118,46 @@
     font-family: latoblack
     font-size: 80px
     color: #545454
+    text-align: center
   }
   h3.form__title {
+    margin: 10px 15px 27px 15px
+    width: auto
     font-family: latoblack !important
     font-size: 27px !important
     color: #545454 !important
+    text-align: center
     span {
       display: block
       font-family: latoregular
       font-size: 16px
+      font-weight: 400
     }
   }
   &__form.form__submit {
+    margin: 0 auto
+    padding-top: 30px
+    padding-bottom: 22px
+    max-width: 300px
+    min-width: auto
+    width: 100%
+    border: 1px solid #c7c7c7
+    background: #f9f9f9
     input {
       margin-bottom: 11px
+      background-color: #ffffff !important
+      &.email,
+      &.organization {
+        background: #ffffff url(/img/iconset-nanocad2.png) no-repeat 12px 10px
+      }
+      &.organization {
+        background-position-y: -41px
+      }
     }
     button {
       margin: 12px 0 11px 0
     }
-    .checkbox.checkbox--cirle {
+    .checkbox.checkbox--circle {
       width: 100%
       label {
         color: #666666
@@ -112,13 +181,129 @@
     }
 
     h3.form__title {
+      margin: 35px auto 0 auto
       font-size: 22px !important
+    }
+    
+    .nanocad__form.form__submit {
+      margin: 0 auto
+      padding-top: 20px
+      background: #ffffff
+      border: none
+    }
+    .nanocad__form2 {
+      margin: 0 auto 34px auto
+      max-width: 254px
+    }
+
+  }
+
+  &__form2 {
+
+    position: relative
+
+    .blocker {
+      position: absolute
+      z-index: 1
+      width: 100%
+      height: 100%
+      background: #ffffff
+      opacity: .4
+    }
+    
+    table, th, td {
+      border: 1px solid #cecece;
+      box-sizing: border-box
+    }
+    table {
+      margin: 0 auto
+      max-width: 430px
+      width: 100%
+      border-collapse: collapse;
+      tr{
+        td {
+          padding: 6px
+          font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif
+          font-size: 16px
+          font-weight: 400
+          color: #666666
+          &:first-child {
+            img {
+              display: block
+              margin: auto
+              max-width: 32px
+              max-height: 32px
+            }
+          }
+          &:nth-child(2) {
+            padding: 6px 11px 6px 11px
+          }
+          button.btn3 {
+            width: 100%
+          }
+        }
+        &:first-child {
+          td:first-child {
+            display: none
+          }
+        }
+      }
+
+    }
+    .checkbox.checkbox--circle {
+      display: inline-block
+      label {
+        padding-left: 20px !important
+      }
+      input:not(checked) + label:before,
+      input:not(checked) + label:after,
+      input:checked + label:after {
+        left: 2px
+      }
+    }
+  }
+
+  .feedback {
+    .item {
+      display: flex
+      padding: 22px 70px 22px 40px
+      .left {
+        margin-right: 40px
+        min-width: 125px
+      }
+    }
+  }
+
+  .gallery {
+    margin: 25px 40px 0 40px
+    text-align: center
+    .current {
+      line-height: 0
+      font-size: 0
+    }
+    .set {
+      img {
+        margin: 2px 1px 2px 1px
+        width: 118px
+        height: 62px
+        cursor: pointer
+        &.active {
+          border: 2px solid #00a2d6
+        }
+      }
     }
   }
 
 }
 
+/*NANOCAD1 BEGIN*/
 .nanocad1.nanocad {
+
+  .nanocad1__img {
+    margin-top: 50px
+    margin-bottom: 110px
+    text-align: center
+  }
 
   .tabs1 {
     .divider {
@@ -152,8 +337,21 @@
     }
   }
 
+  #tabs-2 {
+    .content {
+      padding: 0 35px 0 35px
+      h3 {
+        margin-top: 18px
+      }
+      p {
+        margin: 10px 0 17px
+      }
+    }
+  }
+
   #tabs-3 {
     ul {
+      margin: 22px 0 22px 0
       li {
         position: relative
         padding: 8px 35px 8px 61px
@@ -225,7 +423,7 @@
     }
 
     .link {
-      padding: 0 35px 0 24px
+      padding: 8px 35px 8px 24px
       font-family: latoregular
       font-size: 16px
       line-height: 20px
@@ -233,29 +431,202 @@
       a {
         color: #4984ad
       }
-    }
-  }
-
-  #tabs-4 {
-    .flex_row__start {
-      padding: 5px 70px 5px 40px
-      .left {
-        margin-right: 40px
-        min-width: 125px
+      &.first {
+        padding-top: 28px
       }
     }
   }
+
 
   &__img {
     text-align: center
   }
 
+  #tabs-5 {
+    p {
+      margin: 12px 42px 12px 42px
+      letter-spacing: -0.13px
+      & > b {
+        letter-spacing: -0.13px
+      }
+    }
+    .right {
+      position: relative
+      .blocker {
+        position: absolute
+        z-index: 1
+        width: 100%
+        height: 100%
+        background: #ffffff
+        opacity: .4
+      }
+    }
+  }
+
 }
+
+@media (max-width: 970px) {
+  .nanocad {
+    .feedback .right {
+      margin-top: 0
+    }
+  }
+}
+
+@media (max-width: 850px) {
+    .nanocad {
+      .nanocad__getprod {
+        flex-direction: column
+        .left {
+          margin-bottom: 30px
+        }
+      }
+    }
+}
+  
+@media (max-width: 600px) {
+    .nanocad1.nanocad {
+      #tabs-1 {
+        .item {
+          display: block
+          padding-left: 15px
+          padding-right: 15px
+          .left {
+            float: left
+            margin-bottom: 10px
+          }
+          .right {
+            h3 {
+              width: 100%
+            }
+          }
+        }
+      }
+      #tabs-2 {
+        .content {
+          padding-left: 15px
+          padding-right: 15px
+        }
+      }
+    }
+    .nanocad {
+      .feedback {
+        .item {
+          display: block
+          padding-left: 15px
+          padding-right: 15px
+          .left {
+            float: left
+            margin-right: 15px
+            margin-bottom: 10px
+          }
+        }
+      }
+
+      .gallery {
+        margin-left: 15px
+        margin-right: 15px
+      }
+    }
+}
+
+  
+@media (max-width: 400px) {
+  .nanocad1.nanocad {
+    #tabs-1 {
+      .item {
+        display: flex
+        flex-direction: column
+        .left {
+          float: none
+          margin-right: 0
+        }
+      }
+    }
+  }
+  .nanocad {
+    .feedback {
+      .item {
+        display: flex
+        flex-direction: column
+        .left {
+          float: none
+        }
+      }
+    }
+
+    .nanocad__getprod {
+      .nanocad__form2 {
+        table {
+          tr {
+            td {
+              .checkbox.checkbox--circle {
+                display: block
+              }
+              .btn3 {
+                min-width: 80px
+              }
+              &:first-child {
+                padding: 0
+                max-width: 0
+                max-height: 0
+                font-size: 0
+                line-height: 0
+                border: none
+                opacity: 0
+                overflow: hidden
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*NANOCAD1 END*/
 
 /*NANOCAD2 BEGIN*/
 .nanocad2 {
 
+  .divider {
+    margin: 0 !important
+  }
+
+  .nanocad2__product {
+    margin-bottom: 110px
+    .left {
+      margin-right: 51px
+      .text {
+        margin-bottom: 7px
+        color: #6c6c6c
+      }
+      .img {
+        width: 393px
+        height: 196px
+      }
+    }
+    .right {
+      margin-top: 22px
+      .price {
+        margin: 12px 0 10px 0
+        font-family: latoregular
+        font-size: 18px
+        color: #545454
+        b {
+          font-family: latoblack
+          font-size: 20px
+          color: #545454
+        }
+      }
+      button.btn3 {
+        margin-top: 10px
+        margin-right: 16px
+      }
+    }
+  }
+
   .tabs1 {
+    margin-bottom: 55px
     .tabs__title {
       li {
         a {
@@ -263,10 +634,51 @@
         }
       }
     }
+
+    #tabs-1 {
+      p, img {
+        padding: 0 40px 0 40px
+      }
+      p {
+        margin: 16px 0 16px 0
+      }
+      img {
+        display: block
+        margin: 0 auto
+      }
+    }
+
+    #tabs-4 {
+      .downloadImg.first {
+        margin-top: 25px
+      }
+    }
+
+    #tabs-6 {
+      p {
+        margin: 12px 42px 12px 42px
+        letter-spacing: -0.13px
+        & > b {
+          letter-spacing: -0.13px
+        }
+      }
+      .right {
+        position: relative
+        .blocker {
+          position: absolute
+          z-index: 1
+          width: 100%
+          height: 100%
+          background: #ffffff
+          opacity: .4
+        }
+      }
+    }
   }
 
   &__video {
     margin: 0 auto
+    margin-top: 25px
     max-width: 808px
     width: 100%
     iframe {
@@ -277,6 +689,11 @@
   }
 
   &__other {
+    margin-top: 40px
+    margin-bottom: 35px
+    h3 {
+      margin-bottom: 15px
+    }
     ul {
       display: flex
       justify-content: space-around
@@ -286,7 +703,7 @@
         a {
           position: relative
           display: block
-          padding-top: 50px
+          padding-top: 60px
           font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif
           font-size: 16px
           font-weight: 400
@@ -340,6 +757,13 @@
       }
     }
   }
+
+  &__call {
+    margin-top: 38px
+    h3 {
+      margin-bottom: 30px
+    }
+  }
 }
 
 @media (max-width: 1040px) {
@@ -356,12 +780,44 @@
     }
   }
 }
+  
+@media (max-width: 800px) {
+    .nanocad2 {
+      .nanocad2__product {
+        flex-direction: column
+        .left {
+          margin: 0
+          width: 100%
+          height: auto
+          .img {
+            width: 100%
+            height: auto
+          }
+        }
+      }
+    }
+}
+
+@media (max-width: 600px) {
+  .nanocad2 {
+    .tabs1 {
+      .tabs__content {
+        #tabs-1 {
+          img, p {
+            padding-left: 15px
+            padding-right: 15px
+          }
+        }
+      }
+    }
+  }
+}
 /*NANOCAD2 END*/
 
 
 /*ENGSOFT BEGIN*/
 .engsoft {
-
+  margin-bottom: 65px
   &__types {
     .container {
       display: flex
@@ -380,8 +836,8 @@
       border: 1px solid #4984ad
       background-color: #ffffff
       &:hover {
-        color: darken(#0f73b9, 50%)
-        border-color: darken(#4984ad, 50%)
+        //color: darken(#0f73b9, 50%)
+        border-color: #dd7f68//darken(#4984ad, 50%)
       }
       &:first-child {
         &:before {
@@ -413,6 +869,7 @@
   }
 
   &__content {
+    margin-bottom: 30px
     .container {
       display: flex
       flex-wrap: wrap
@@ -421,14 +878,19 @@
       display: flex
       flex-direction: column
       align-items center
-      margin: 17px 0 17px 0
+      margin: 35px 0 35px 0
       min-width: 230px
       width: 25%
       & > a {
-        height: 212px // change
+        min-height: 240px
         text-align: center
+
+        font-family: latobold
+        font-size: 20px
+        color: #417aa3
         img {
           display: block
+          margin: 16px auto 16px auto
         }
       }
       .accordion {
@@ -447,6 +909,12 @@
             }
             span:nth-child(2) {
               display: block
+            }
+          }
+          &--additinal {
+            .content {
+              border-bottom: 1px solid #9e9e9e
+              border-top: 1px solid #9e9e9e
             }
           }
         }
@@ -480,6 +948,28 @@
           }
         }
       }
+    }
+  }
+
+  &__content2 {
+    margin-top: 48px
+    h3 {
+      margin-bottom: 13px
+      font-family: latoblack
+      font-size: 20px
+      line-height: 32px
+      color: #4984ad
+    }
+    p,
+    p > a {
+      font-family: Calibri
+      font-size: 16px
+      font-weight: 400
+      line-height: 20px
+      color: #545454
+    }
+    p > a {
+      color: #417aa3
     }
   }
 

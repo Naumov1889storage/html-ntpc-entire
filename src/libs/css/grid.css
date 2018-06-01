@@ -74,3 +74,6 @@
 .justify_end {
 	justify-content: flex-end;
 }
+.flex_wrap {
+	flex-wrap: wrap
+}

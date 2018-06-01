@@ -76,7 +76,11 @@ $( function() {
     });
 
     $('.engsoft .item .accordion .toggler').click(function () {
-        $(this).parent('.accordion').toggleClass('active')
+        $this = $(this);
+        $(this).parent('.accordion').toggleClass('active');
+        setTimeout(function() {
+            $this.parent('.accordion').toggleClass('active--additinal');
+        }, 370);
     });
 
     modalImg();
@@ -183,6 +187,14 @@ $( function() {
         $('.forshadow3').css({right: tabs1WrapWidth - tabs1Widths - 15});
     }
     /*tabs1 end*/
+
+    /*img gallery begin*/
+    $('.nanocad .gallery .set img').click(function () {
+        $('.nanocad .gallery .set img').removeClass('active');
+        $(this).addClass('active');
+        $('.nanocad .gallery .current img').attr('src', $(this).attr('src'))
+    });
+    /*img gallery end*/
 
 } );
 

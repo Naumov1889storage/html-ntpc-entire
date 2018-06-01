@@ -2050,6 +2050,12 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+
+.flex_wrap {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
 .modalImg {
   z-index: 999;
   display: none;

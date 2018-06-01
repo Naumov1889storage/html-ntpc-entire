@@ -1,3 +1,54 @@
+.nanocad {
+  margin-bottom: 65px;
+}
+.nanocad .tabs1 .tabs__content {
+  margin-top: -10px;
+}
+.nanocad .tabs1 .tabs__content > div > h2 {
+  margin-bottom: 30px;
+}
+.nanocad .ecp__tel {
+  height: 47px;
+}
+.nanocad .ecp__tel input {
+  border: 1px solid #4984ad;
+}
+.nanocad .ecp__tel input::-webkit-input-placeholder {
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #4984ad;
+  opacity: 1; /* Firefox */
+}
+.nanocad .ecp__tel input::-moz-placeholder {
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #4984ad;
+  opacity: 1; /* Firefox */
+}
+.nanocad .ecp__tel input:-ms-input-placeholder {
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #4984ad;
+  opacity: 1; /* Firefox */
+}
+.nanocad .ecp__tel input::-ms-input-placeholder {
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #4984ad;
+  opacity: 1; /* Firefox */
+}
+.nanocad .ecp__tel input::placeholder {
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #4984ad;
+  opacity: 1; /* Firefox */
+}
+.nanocad .ecp__tel input:-ms-input-placeholder {
+/* Internet Explorer 10-11 */
+  color: #4984ad;
+}
+.nanocad .ecp__tel input::-ms-input-placeholder {
+/* Microsoft Edge */
+  color: #4984ad;
+}
+.nanocad .ecp__tel button {
+  background-color: #4984ad;
+}
 .nanocad .btn3 {
   padding-bottom: 2px;
   font-family: Lato;
@@ -18,15 +69,32 @@
 .nanocad p > a {
   color: #417aa3 !important;
 }
+.nanocad p > b {
+  font-size: 15px !important;
+}
+.nanocad h1 {
+  margin-top: 35px;
+  font-family: latoblack;
+  font-size: 26px;
+  line-height: 32px;
+  color: #34546c;
+}
 .nanocad h2 {
+  padding: 0 15px 0 15px;
   color: #4984ad;
   font-family: latoblack;
   font-size: 20px;
   line-height: 32px;
-  text-transform: uppercase;
   text-align: center;
 }
-.nanocad h3,
+.nanocad .container > h3 {
+  font-family: latoblack;
+  font-size: 20px;
+  line-height: 32px;
+  color: #4984ad;
+  text-align: center;
+}
+.nanocad .tabs1 .tabs__content h3,
 .nanocad h3 > a {
   font-family: latoblack;
   font-size: 20px;
@@ -71,27 +139,50 @@
   font-family: latoblack;
   font-size: 80px;
   color: #545454;
+  text-align: center;
 }
 .nanocad h3.form__title {
+  margin: 10px 15px 27px 15px;
+  width: auto;
   font-family: latoblack !important;
   font-size: 27px !important;
   color: #545454 !important;
+  text-align: center;
 }
 .nanocad h3.form__title span {
   display: block;
   font-family: latoregular;
   font-size: 16px;
+  font-weight: 400;
+}
+.nanocad__form.form__submit {
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 22px;
+  max-width: 300px;
+  min-width: auto;
+  width: 100%;
+  border: 1px solid #c7c7c7;
+  background: #f9f9f9;
 }
 .nanocad__form.form__submit input {
   margin-bottom: 11px;
+  background-color: #fff !important;
+}
+.nanocad__form.form__submit input.email,
+.nanocad__form.form__submit input.organization {
+  background: #fff url("../img/iconset-nanocad2.png") no-repeat 12px 10px;
+}
+.nanocad__form.form__submit input.organization {
+  background-position-y: -41px;
 }
 .nanocad__form.form__submit button {
   margin: 12px 0 11px 0;
 }
-.nanocad__form.form__submit .checkbox.checkbox--cirle {
+.nanocad__form.form__submit .checkbox.checkbox--circle {
   width: 100%;
 }
-.nanocad__form.form__submit .checkbox.checkbox--cirle label {
+.nanocad__form.form__submit .checkbox.checkbox--circle label {
   color: #666;
   line-height: 22px;
 }
@@ -110,7 +201,109 @@
   border: none;
 }
 .nanocad__modal.modal h3.form__title {
+  margin: 35px auto 0 auto;
   font-size: 22px !important;
+}
+.nanocad__modal.modal .nanocad__form.form__submit {
+  margin: 0 auto;
+  padding-top: 20px;
+  background: #fff;
+  border: none;
+}
+.nanocad__modal.modal .nanocad__form2 {
+  margin: 0 auto 34px auto;
+  max-width: 254px;
+}
+.nanocad__form2 {
+  position: relative;
+}
+.nanocad__form2 .blocker {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0.4;
+}
+.nanocad__form2 table,
+.nanocad__form2 th,
+.nanocad__form2 td {
+  border: 1px solid #cecece;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.nanocad__form2 table {
+  margin: 0 auto;
+  max-width: 430px;
+  width: 100%;
+  border-collapse: collapse;
+}
+.nanocad__form2 table tr td {
+  padding: 6px;
+  font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+}
+.nanocad__form2 table tr td:first-child img {
+  display: block;
+  margin: auto;
+  max-width: 32px;
+  max-height: 32px;
+}
+.nanocad__form2 table tr td:nth-child(2) {
+  padding: 6px 11px 6px 11px;
+}
+.nanocad__form2 table tr td button.btn3 {
+  width: 100%;
+}
+.nanocad__form2 table tr:first-child td:first-child {
+  display: none;
+}
+.nanocad__form2 .checkbox.checkbox--circle {
+  display: inline-block;
+}
+.nanocad__form2 .checkbox.checkbox--circle label {
+  padding-left: 20px !important;
+}
+.nanocad__form2 .checkbox.checkbox--circle input:not(checked) + label:before,
+.nanocad__form2 .checkbox.checkbox--circle input:not(checked) + label:after,
+.nanocad__form2 .checkbox.checkbox--circle input:checked + label:after {
+  left: 2px;
+}
+.nanocad .feedback .item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 22px 70px 22px 40px;
+}
+.nanocad .feedback .item .left {
+  margin-right: 40px;
+  min-width: 125px;
+}
+.nanocad .gallery {
+  margin: 25px 40px 0 40px;
+  text-align: center;
+}
+.nanocad .gallery .current {
+  line-height: 0;
+  font-size: 0;
+}
+.nanocad .gallery .set img {
+  margin: 2px 1px 2px 1px;
+  width: 118px;
+  height: 62px;
+  cursor: pointer;
+}
+.nanocad .gallery .set img.active {
+  border: 2px solid #00a2d6;
+}
+/*NANOCAD1 BEGIN*/
+.nanocad1.nanocad .nanocad1__img {
+  margin-top: 50px;
+  margin-bottom: 110px;
+  text-align: center;
 }
 .nanocad1.nanocad .tabs1 .divider {
   margin: 0;
@@ -140,6 +333,18 @@
   margin-right: 27px;
   min-width: 100px;
   text-align: center;
+}
+.nanocad1.nanocad #tabs-2 .content {
+  padding: 0 35px 0 35px;
+}
+.nanocad1.nanocad #tabs-2 .content h3 {
+  margin-top: 18px;
+}
+.nanocad1.nanocad #tabs-2 .content p {
+  margin: 10px 0 17px;
+}
+.nanocad1.nanocad #tabs-3 ul {
+  margin: 22px 0 22px 0;
 }
 .nanocad1.nanocad #tabs-3 ul li {
   position: relative;
@@ -191,7 +396,7 @@
   background-position-y: -356px;
 }
 .nanocad1.nanocad #tabs-3 .link {
-  padding: 0 35px 0 24px;
+  padding: 8px 35px 8px 24px;
   font-family: latoregular;
   font-size: 16px;
   line-height: 20px;
@@ -200,22 +405,204 @@
 .nanocad1.nanocad #tabs-3 .link a {
   color: #4984ad;
 }
-.nanocad1.nanocad #tabs-4 .flex_row__start {
-  padding: 5px 70px 5px 40px;
-}
-.nanocad1.nanocad #tabs-4 .flex_row__start .left {
-  margin-right: 40px;
-  min-width: 125px;
+.nanocad1.nanocad #tabs-3 .link.first {
+  padding-top: 28px;
 }
 .nanocad1.nanocad__img {
   text-align: center;
 }
+.nanocad1.nanocad #tabs-5 p {
+  margin: 12px 42px 12px 42px;
+  letter-spacing: -0.13px;
+}
+.nanocad1.nanocad #tabs-5 p > b {
+  letter-spacing: -0.13px;
+}
+.nanocad1.nanocad #tabs-5 .right {
+  position: relative;
+}
+.nanocad1.nanocad #tabs-5 .right .blocker {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0.4;
+}
+@media (max-width: 970px) {
+  .nanocad .feedback .right {
+    margin-top: 0;
+  }
+}
+@media (max-width: 850px) {
+  .nanocad .nanocad__getprod {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nanocad .nanocad__getprod .left {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .nanocad1.nanocad #tabs-1 .item {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .nanocad1.nanocad #tabs-1 .item .left {
+    float: left;
+    margin-bottom: 10px;
+  }
+  .nanocad1.nanocad #tabs-1 .item .right h3 {
+    width: 100%;
+  }
+  .nanocad1.nanocad #tabs-2 .content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .nanocad .feedback .item {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .nanocad .feedback .item .left {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+  .nanocad .gallery {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+@media (max-width: 400px) {
+  .nanocad1.nanocad #tabs-1 .item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nanocad1.nanocad #tabs-1 .item .left {
+    float: none;
+    margin-right: 0;
+  }
+  .nanocad .feedback .item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nanocad .feedback .item .left {
+    float: none;
+  }
+  .nanocad .nanocad__getprod .nanocad__form2 table tr td .checkbox.checkbox--circle {
+    display: block;
+  }
+  .nanocad .nanocad__getprod .nanocad__form2 table tr td .btn3 {
+    min-width: 80px;
+  }
+  .nanocad .nanocad__getprod .nanocad__form2 table tr td:first-child {
+    padding: 0;
+    max-width: 0;
+    max-height: 0;
+    font-size: 0;
+    line-height: 0;
+    border: none;
+    opacity: 0;
+    overflow: hidden;
+  }
+}
+/*NANOCAD1 END*/
 /*NANOCAD2 BEGIN*/
+.nanocad2 .divider {
+  margin: 0 !important;
+}
+.nanocad2 .nanocad2__product {
+  margin-bottom: 110px;
+}
+.nanocad2 .nanocad2__product .left {
+  margin-right: 51px;
+}
+.nanocad2 .nanocad2__product .left .text {
+  margin-bottom: 7px;
+  color: #6c6c6c;
+}
+.nanocad2 .nanocad2__product .left .img {
+  width: 393px;
+  height: 196px;
+}
+.nanocad2 .nanocad2__product .right {
+  margin-top: 22px;
+}
+.nanocad2 .nanocad2__product .right .price {
+  margin: 12px 0 10px 0;
+  font-family: latoregular;
+  font-size: 18px;
+  color: #545454;
+}
+.nanocad2 .nanocad2__product .right .price b {
+  font-family: latoblack;
+  font-size: 20px;
+  color: #545454;
+}
+.nanocad2 .nanocad2__product .right button.btn3 {
+  margin-top: 10px;
+  margin-right: 16px;
+}
+.nanocad2 .tabs1 {
+  margin-bottom: 55px;
+}
 .nanocad2 .tabs1 .tabs__title li a {
   font-size: 19px;
 }
+.nanocad2 .tabs1 #tabs-1 p,
+.nanocad2 .tabs1 #tabs-1 img {
+  padding: 0 40px 0 40px;
+}
+.nanocad2 .tabs1 #tabs-1 p {
+  margin: 16px 0 16px 0;
+}
+.nanocad2 .tabs1 #tabs-1 img {
+  display: block;
+  margin: 0 auto;
+}
+.nanocad2 .tabs1 #tabs-4 .downloadImg.first {
+  margin-top: 25px;
+}
+.nanocad2 .tabs1 #tabs-6 p {
+  margin: 12px 42px 12px 42px;
+  letter-spacing: -0.13px;
+}
+.nanocad2 .tabs1 #tabs-6 p > b {
+  letter-spacing: -0.13px;
+}
+.nanocad2 .tabs1 #tabs-6 .right {
+  position: relative;
+}
+.nanocad2 .tabs1 #tabs-6 .right .blocker {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0.4;
+}
 .nanocad2__video {
   margin: 0 auto;
+  margin-top: 25px;
   max-width: 808px;
   width: 100%;
 }
@@ -224,6 +611,13 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid rgba(113,113,113,0.6);
+}
+.nanocad2__other {
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+.nanocad2__other h3 {
+  margin-bottom: 15px;
 }
 .nanocad2__other ul {
   display: -webkit-box;
@@ -243,7 +637,7 @@
 .nanocad2__other ul li a {
   position: relative;
   display: block;
-  padding-top: 50px;
+  padding-top: 60px;
   font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -277,13 +671,47 @@
 .nanocad2__other ul li:nth-child(5) a:before {
   background-image: url("../img/icon-nanocad1.png");
 }
+.nanocad2__call {
+  margin-top: 38px;
+}
+.nanocad2__call h3 {
+  margin-bottom: 30px;
+}
 @media (max-width: 1040px) {
   .nanocad2 .tabs1 .tabs__title li a {
     font-size: 20px;
   }
 }
+@media (max-width: 800px) {
+  .nanocad2 .nanocad2__product {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nanocad2 .nanocad2__product .left {
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+  .nanocad2 .nanocad2__product .left .img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 600px) {
+  .nanocad2 .tabs1 .tabs__content #tabs-1 img,
+  .nanocad2 .tabs1 .tabs__content #tabs-1 p {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 /*NANOCAD2 END*/
 /*ENGSOFT BEGIN*/
+.engsoft {
+  margin-bottom: 65px;
+}
 .engsoft__types .container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -307,8 +735,7 @@
   background-color: #fff;
 }
 .engsoft__types a:hover {
-  color: #083a5d;
-  border-color: #254257;
+  border-color: #dd7f68;
 }
 .engsoft__types a:first-child:before {
   z-index: 1;
@@ -333,6 +760,9 @@
   left: auto;
   right: -701px;
 }
+.engsoft__content {
+  margin-bottom: 30px;
+}
 .engsoft__content .container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -356,16 +786,20 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 17px 0 17px 0;
+  margin: 35px 0 35px 0;
   min-width: 230px;
   width: 25%;
 }
 .engsoft__content .item > a {
-  height: 212px;
+  min-height: 240px;
   text-align: center;
+  font-family: latobold;
+  font-size: 20px;
+  color: #417aa3;
 }
 .engsoft__content .item > a img {
   display: block;
+  margin: 16px auto 16px auto;
 }
 .engsoft__content .item .accordion {
   max-width: 230px;
@@ -382,6 +816,10 @@
 }
 .engsoft__content .item .accordion.active .toggler span:nth-child(2) {
   display: block;
+}
+.engsoft__content .item .accordion.active--additinal .content {
+  border-bottom: 1px solid #9e9e9e;
+  border-top: 1px solid #9e9e9e;
 }
 .engsoft__content .item .accordion .toggler {
   position: relative;
@@ -412,6 +850,27 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+}
+.engsoft__content2 {
+  margin-top: 48px;
+}
+.engsoft__content2 h3 {
+  margin-bottom: 13px;
+  font-family: latoblack;
+  font-size: 20px;
+  line-height: 32px;
+  color: #4984ad;
+}
+.engsoft__content2 p,
+.engsoft__content2 p > a {
+  font-family: Calibri;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #545454;
+}
+.engsoft__content2 p > a {
+  color: #417aa3;
 }
 @media (max-width: 970px) {
   .engsoft__content .item {
