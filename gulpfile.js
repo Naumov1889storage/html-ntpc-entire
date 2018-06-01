@@ -50,7 +50,7 @@ gulp.task('stylus', function () {
 		}))
 		.pipe(stylus())
 		.pipe(gulp.dest('src/trash/css'))
-		.pipe(concatCSS('concat-css.css'))
+		//.pipe(concatCSS('concat-css.css'))
 		.pipe(postcss(processors))
 		.pipe(gulp.dest('dist/css'))
 		.pipe(browserSync.reload({stream: true}))

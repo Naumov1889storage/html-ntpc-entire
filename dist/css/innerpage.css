@@ -1,3 +1,4 @@
+/*INNDERPAGE BEGIN*/
 .innerPage__menu {
   margin-right: 7%;
 }
@@ -7,7 +8,8 @@
   min-width: 212px;
   height: 143px;
   background: url("/img/bg-innermenu1.jpg");
-  background-size: cover !important;
+  -webkit-background-size: cover !important;
+          background-size: cover !important;
 }
 .innerPage__menu li a {
   display: block;
@@ -51,11 +53,20 @@
 }
 @media (max-width: 1050px) {
   .innerPage__wrap > .container.flex_row__start {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .innerPage__menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     margin-bottom: 30px;
     margin-right: 0;
   }
@@ -68,6 +79,9 @@
 }
 @media (max-width: 950px) {
   .innerPage__menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
   }
   .innerPage__menu li {
@@ -79,7 +93,10 @@
 }
 @media (max-width: 950px) {
   .innerPage__menu {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .innerPage__menu li {
     margin-right: 0;
@@ -91,3 +108,4 @@
     width: 100%;
   }
 }
+/*INNDERPAGE BEGIN*/

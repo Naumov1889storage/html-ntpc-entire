@@ -21,6 +21,9 @@
   font-size: 20px;
   line-height: 32px;
   color: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffc64c), to(#f6686a));
+  background-image: -webkit-linear-gradient(left, #ffc64c 0%, #f6686a 100%);
+  background-image: -o-linear-gradient(left, #ffc64c 0%, #f6686a 100%);
   background-image: linear-gradient(to right, #ffc64c 0%, #f6686a 100%);
 }
 .pricedown__title:before {
@@ -31,7 +34,9 @@
   border-left: 32px solid transparent;
   border-right: 32px solid transparent;
   border-bottom: 32px solid #fff;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .pricedown__img {
   position: relative;
@@ -43,7 +48,8 @@
   width: 100%;
   height: 100%;
   border: 10px solid rgba(255,255,255,0.6);
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .pricedown__text {
   margin-top: 20px;
@@ -73,7 +79,11 @@
 }
 @media (max-width: 550px) {
   .pricedown .flex1 {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .pricedown__img::before {
     display: none;
@@ -84,7 +94,11 @@
 }
 @media (max-width: 480px) {
   .pricedown .flex2 {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .pricedown__term {
     margin-top: 10px;
