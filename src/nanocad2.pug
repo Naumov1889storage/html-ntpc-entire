@@ -1,0 +1,129 @@
+extends pug-components/layout
+
+block append title
+    -page = 'nanocad2'
+
+block content
+    .nanocad.nanocad2
+        .container
+            h1 nanoCAD
+            .crumbs
+                a(href='index.html') Главная
+                span.slash »
+                a(href='engsoft.html') Инженерное ПО
+                span.slash »
+                a(href='nanocad1.html') nanoCAD
+                pan.slash »
+                a(class='current' href='nanocad1.html') nanoCAD СПДС
+
+        .container
+            .nanocad2__product.flex_row__start
+                .left.flex_column
+                    .text Версия: 8х (последняя русская версия)
+                    .img
+                        img(src='img/picture-nanocad3.jpg')
+                .right
+                    p Программа nanoCAD СПДС предназначена для оформления проектно-конструкторской документации в соответствии со стандартами СПДС (Система проектной документации для строительства). Обеспечивает высокую скорость работы и автоматизацию рутинных операций по оформлению чертежей благодаря применению интеллектуальных параметрических
+                    .price Цена: 26 400 руб.
+                    .flex_row__start
+                        button(class='btn3 btn3--white' type='button') Заказать
+                        button(class='btn3' type='button') Скачать
+                        button(class='btn3 btn3--white btn3--basket' type='button') В корзину
+
+
+
+
+            <div class="tabs1">
+            .tabs__title__wrap
+                .forshadow
+                .forshadow2
+                .forshadow3
+                <ul class='tabs__title'>
+                    <li class='color1'><a href="#tabs-1">Описание</a></li>
+                    <li class='color2'><a href="#tabs-2">Скриншоты</a></li>
+                    <li class='color3'><a href="#tabs-3">Отзывы</a></li>
+                    <li class='color4'><a href="#tabs-4">Документы</a></li>
+                    <li class='color5'><a href="#tabs-5">Видео</a></li>
+                    <li class='color6'><a href="#tabs-6">Бесплатная версия</a></li>
+                </ul>
+            .tabs__content
+                <div id="tabs-1">
+
+                    h2 ВСЕ ВЕРСИИ NANOCAD
+                    .divider
+                    h3 nanoCAD Plus 10
+                    p nanoCAD Plus 10 - это единственная российская САПР-платформа, позволяющая работать напрямую с форматом DWG (версии от R11 до DWG2018), в которой реализован весь спектр технологий формата DWG (поддержка блоков, слоев, текстовых и размерных стилей) используемых в международных САПР. Также nanoCAD Plus имеет уникальный функционал, разработанный специально для российского рынка. 12 специализированных решений на базе nanoCAD Plus позволяют проектировщикам существенно повысить скорость и качество выполняемых проектов.
+                    img(src='img/picture-nanocad4.jpg')
+
+                </div>
+                <div id="tabs-2">
+                h2 ВСЕ ВЕРСИИ NANOCAD
+                .divider
+                h3 nanoCAD Plus 10
+                p nanoCAD Plus 10 - это единственная российская САПР-платформа, позволяющая работать напрямую с форматом DWG (версии от R11 до DWG2018), в которой реализован весь спектр технологий формата DWG (поддержка блоков, слоев, текстовых и размерных стилей) используемых в международных САПР. Также nanoCAD Plus имеет уникальный функционал, разработанный специально для российского рынка. 12 специализированных решений на базе nanoCAD Plus позволяют проектировщикам существенно повысить скорость и качество выполняемых проектов.
+                img(src='img/picture-nanocad1.jpg')
+
+
+                </div>
+                <div id="tabs-3">
+                    h2 Отзывы о nanoCAD СПДС
+                    .divider
+                    .flex_row__start
+                        .left
+                            img(src='img/picture-nanocad2.jpg')
+                        .right
+                            p nanoCAD Plus 10 - это единственная российская САПР-платформа, позволяющая работать напрямую с форматом DWG (версии от R11 до DWG2018), в которой реализован весь спектр технологий формата DWG (поддержка блоков, слоев, текстовых и размерных стилей) используемых в международных САПР. Также nanoCAD Plus имеет уникальный функционал, разработанный специально для российского рынка. 12 специализированных решений на базе nanoCAD Plus позволяют проектировщикам существенно повысить скорость и качество выполняемых проектов. <a href=''>Подробнее...</a>
+                    .divider
+                    .flex_row__start
+                        .left
+                            img(src='img/picture-nanocad2.jpg')
+                        .right
+                            p nanoCAD Plus 10 - это единственная российская САПР-платформа, позволяющая работать напрямую с форматом DWG (версии от R11 до DWG2018), в которой реализован весь спектр технологий формата DWG (поддержка блоков, слоев, текстовых и размерных стилей) используемых в международных САПР. Также nanoCAD Plus имеет уникальный функционал, разработанный специально для российского рынка. 12 специализированных решений на базе nanoCAD Plus позволяют проектировщикам существенно повысить скорость и качество выполняемых проектов. <a href=''>Подробнее...</a>
+                    .divider
+                </div>
+                <div id="tabs-4">
+                    h2 ДОКУМЕНТЫ
+                    .divider
+                    a(class='downloadImg' href='') Сертификат соответствия.jpg <span class='size'>Размер 182 КБ.</span>
+                    a(class='downloadImg' href='') Сертификат соответствия.jpg <span class='size'>Размер 182 КБ.</span>
+                    a(class='downloadImg' href='') Сертификат соответствия.jpg <span class='size'>Размер 182 КБ.</span>
+                </div>
+                <div id="tabs-5">
+                    h2 ВИДЕО
+                    .divider
+                    .nanocad2__video
+                        <iframe width="809" height="456" src="https://www.youtube.com/embed/q77VeBH5N_M?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div id="tabs-6">
+                    h2 ВИДЕО
+                    .divider
+                    .nanocad2__video
+                        <iframe width="809" height="456" src="https://www.youtube.com/embed/q77VeBH5N_M?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+
+            </div>
+
+        .divider
+
+            .nanocad2__other
+                .container
+                    h3
+                        a(href='') ДРУГИЕ ВЕРСИИ NANOCAD
+                    ul
+                        li
+                            a(href='') nanoCAD Plus 10
+                        li
+                            a(href='') nanoCAD СПДС
+                        li
+                            a(href='') nanoCAD Стройплощадка
+                        li
+                            a(href='') nanoCAD Металлоконстр.
+                        li
+                            a(href='') nanoCAD Plus 10
+
+
+        .divider
+
+            .nanocad2__call
+                .container
+                    h3 Остались вопросы?

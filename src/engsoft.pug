@@ -1,0 +1,123 @@
+extends pug-components/layout
+
+block append title
+    -page = 'Инженерное ПО'
+
+block content
+    .engsoft
+        .container
+            // h1 must be. Not h2
+            h2.innerPage__title Электронные цифровые подписи
+            .crumbs
+                a(href='index.html') Главная
+                span.slash »
+                a(class='current' href='engsoft.html') Инженерное ПО
+
+
+
+        .engsoft__types
+            .container
+                a(href='') Проектирование
+                a(href='') Архитектура
+                a(href='') Чертежи
+
+        .engsoft__content
+            .container
+                .item
+                    a(href='')
+                        | nanoCAD
+                        img(src='img/logo-nanoCAD.jpg')
+                    .accordion
+                        .toggler.btn3 <span>Развернуть</span><span>Свернуть</span>
+                        ul.content
+                            li
+                                a(href='') PLUS 10
+                            li
+                                a(href='') Инженерный BIM
+                            li
+                                a(href='') СПДС Железобетон
+                            li
+                                a(href='') СКС
+                            li
+                                a(href='') Механика
+                            li
+                                a(href='') СПДС Стройплощадка
+                            li
+                                a(href='') Отопление
+                            li
+                                a(href='') Конструкции
+                            li
+                                a(href='') Геоника
+                            li
+                                a(href='') Электро
+                            li
+                                a(href='') ВК
+                            li
+                                a(href='') СПДС
+                            li
+                                a(href='') ОПС
+                            li
+                                a(href='') СПДС Металлоконструкции
+                            li
+                                a(href='') Схемы
+
+                .item
+                    a(href='')
+                        | nanoCAD
+                        img(src='img/logo-renga.png')
+                    .accordion
+                        .toggler.btn3 <span>Развернуть</span><span>Свернуть</span>
+                        ul.content
+                            li
+                                a(href='') Architecture
+                            li
+                                a(href='') Structure
+
+                .item
+                    a(href='')
+                        | Model Studio CS
+                        img(src='img/logo-csoft.jpg')
+                    .accordion
+                        .toggler.btn3 <span>Развернуть</span><span>Свернуть</span>
+                        ul.content
+                            li
+                                a(href='') Architecture
+                            li
+                                a(href='') Structure
+
+                .item
+                    a(href='')
+                        | Pilot-ICE
+                        img(src='img/logo-pilotICE.png')
+                    .accordion
+                        .toggler.btn3 <span>Развернуть</span><span>Свернуть</span>
+                        ul.content
+                            li
+                                a(href='') Architecture
+                            li
+                                a(href='') Structure
+
+                .item
+                    a(href='')
+                        | Project Studio CS
+                        img(src='img/logo-SP.jpg')
+                    .accordion
+                        .toggler.btn3 <span>Развернуть</span><span>Свернуть</span>
+                        ul.content
+                            li
+                                a(href='') Architecture
+                            li
+                                a(href='') Structure
+
+                .item
+                    a(href='')
+                        | КОМПАС
+                        img(src='img/logo-compass.jpg')
+                    .accordion
+                        .toggler.btn3 <span>Развернуть</span><span>Свернуть</span>
+                        ul.content
+                            li
+                                a(href='') Architecture
+                            li
+                                a(href='') Structure
+

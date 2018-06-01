@@ -1,0 +1,177 @@
+extends pug-components/layout
+
+block append title
+    -page = 'nanocad1'
+
+block content
+    .nanocad.nanocad1
+        .container
+            h1 nanoCAD
+            .crumbs
+                a(href='index.html') Главная
+                span.slash »
+                a(href='engsoft.html') Инженерное ПО
+                span.slash »
+                a(class='current' href='nanocad1.html') nanoCAD
+
+        .container
+            .nanocad1__img
+                img(src='img/logo-nanoCAD2.jpg')
+
+            <div class="tabs1">
+                .tabs__title__wrap
+                    .forshadow
+                    .forshadow2
+                    .forshadow3
+                    <ul class='tabs__title'>
+                        <li class='color1'><a href="#tabs-1">Все версии</a></li>
+                        <li class='color2'><a href="#tabs-2">Описание</a></li>
+                        <li class='color3'><a href="#tabs-3">Сотрудничество</a></li>
+                        <li class='color4'><a href="#tabs-4">Отзывы</a></li>
+                        <li class='color6'><a href="#tabs-5">Скачать</a></li>
+                    </ul>
+                .tabs__content
+                    <div id="tabs-1">
+                        h2 ВСЕ ВЕРСИИ NANOCAD
+                        .divider
+                        .item
+                            .left
+                                a(href='')
+                                    img(src='img/icon-nanocad1.png')
+                                .price <b>12 000</b> руб.
+                            .right
+                                h3 nanoCAD Plus 10
+                                p nanoCAD Plus 10 - это единственная российская САПР-платформа, позволяющая работать напрямую с форматом DWG (версии от R11 до DWG2018), в которой реализован весь спектр технологий формата DWG (поддержка блоков, слоев, текстовых и размерных стилей) используемых в международных САПР. Также nanoCAD Plus имеет уникальный функционал, разработанный специально для российского рынка. 12 специализированных решений на базе nanoCAD Plus позволяют проектировщикам существенно повысить скорость и качество выполняемых проектов.
+                                .flex_row__start
+                                    a(class='btn3 btn3--white' href='') Подробнее
+                                    button(class='btn3' type='button') Скачать
+                                    button(class='btn3 btn3--white' type='button') В корзину
+                        .divider
+                        .item
+                            .left
+                                a(href='')
+                                    img(src='img/icon-nanocad1.png')
+                                .price <b>12 000</b> руб.
+                            .right
+                                h3 nanoCAD Plus 10
+                                p nanoCAD Plus 10 - это единственная российская САПР-платформа, позволяющая работать напрямую с форматом DWG (версии от R11 до DWG2018), в которой реализован весь спектр технологий формата DWG (поддержка блоков, слоев, текстовых и размерных стилей) используемых в международных САПР. Также nanoCAD Plus имеет уникальный функционал, разработанный специально для российского рынка. 12 специализированных решений на базе nanoCAD Plus позволяют проектировщикам существенно повысить скорость и качество выполняемых проектов.
+                                .flex_row__start
+                                    a(class='btn3 btn3--white' href='') Подробнее
+                                    button(class='btn3' type='button') Скачать
+                                    button(class='btn3 btn3--white' type='button') В корзину
+                        .divider
+                        .item
+                            .left
+                                a(href='')
+                                    img(src='img/icon-nanocad1.png')
+                                .price <b>12 000</b> руб.
+                            .right
+                                h3 nanoCAD Plus 10
+                                p nanoCAD Plus 10 - это единственная российская САПР-платформа, позволяющая работать напрямую с форматом DWG (версии от R11 до DWG2018), в которой реализован весь спектр технологий формата DWG (поддержка блоков, слоев, текстовых и размерных стилей) используемых в международных САПР. Также nanoCAD Plus имеет уникальный функционал, разработанный специально для российского рынка. 12 специализированных решений на базе nanoCAD Plus позволяют проектировщикам существенно повысить скорость и качество выполняемых проектов.
+                                .flex_row__start
+                                    a(class='btn3 btn3--white' href='') Подробнее
+                                    button(class='nanocad__download btn3' type='button') Скачать
+                                    button(class='btn3 btn3--white' type='button') В корзину
+
+
+                    </div>
+                    <div id="tabs-2">
+                        h2 ВСЕ ВЕРСИИ NANOCAD
+                        .divider
+                        h3 nanoCAD Plus 10
+                        p nanoCAD Plus 10 - это единственная российская САПР-платформа, позволяющая работать напрямую с форматом DWG (версии от R11 до DWG2018), в которой реализован весь спектр технологий формата DWG (поддержка блоков, слоев, текстовых и размерных стилей) используемых в международных САПР. Также nanoCAD Plus имеет уникальный функционал, разработанный специально для российского рынка. 12 специализированных решений на базе nanoCAD Plus позволяют проектировщикам существенно повысить скорость и качество выполняемых проектов.
+                        img(src='img/picture-nanocad1.jpg')
+
+
+                    </div>
+                    <div id="tabs-3">
+                        h2 Группа компаний "НТПЦ" предлагает:
+                        .divider
+                        ul
+                            li <b>Бесплатная доставка</b> - в течении 1 дня в любую точку России.
+                            li <b>Консультация</b> - поможем подобрать нужную версию nanoCAD.
+                            li <b>Техническая поддержка</b> - поможем решить все технические опросы с установкой и работой nanoCAD.
+                            li <b>Российское ПО</b> - nanoCAD включен в реестр Минкомсвязи России в качестве замены иностранным САПР продуктам.
+                            li <b>Большой опыт внедрения</b> - C 2009 года ГК "НТПЦ" является ведущим центром внедрения продуктов nanoCAD в России.
+                            li <b>Авторизированный учебный центр</b> - Профессиональное обучение по продуктам nanoCAD в любой точке России.
+                            li <b>Бесплатная установка</b> - Установим и настроим любую версию nanoCAD.
+                            li <b>Бесплатная тестовая версия</b> - Бесплатная тестовая версия на 30 дней.
+                            li <b>Знакомый интерфейс</b> - Поддержка формата *.dwg. Понятный интерфейс.
+                            li <b>Быстродействие</b> - Обработка больших объемов облаков точек.
+                        .divider
+                        .link <a href=''>Внедрения и отзывы</a> - Обучение - Обучили более 100 специалистов.
+                        .link <a href=''>Наши клиенты</a> - более 400 клиентов, в том числе "Газпром", "Русгидро", "Россети", "Концерн ПВО "Алмаз-Антей", "Северсталь", "Росатом", Комитет по строительству Санкт-Петербурга и другие.
+                        .link <a href=''>Способы оплаты</a> - оплата лицензий осуществляется по выставленому счету
+                        .link <a href=''>Обучение</a> - Обучили более 100 специалистов
+
+                    </div>
+                    <div id="tabs-4">
+                        h2 Отзывы о nanoCAD СПДС
+                        .divider
+                        .flex_row__start
+                            .left
+                                img(src='img/picture-nanocad2.jpg')
+                            .right
+                                p nanoCAD Plus 10 - это единственная российская САПР-платформа, позволяющая работать напрямую с форматом DWG (версии от R11 до DWG2018), в которой реализован весь спектр технологий формата DWG (поддержка блоков, слоев, текстовых и размерных стилей) используемых в международных САПР. Также nanoCAD Plus имеет уникальный функционал, разработанный специально для российского рынка. 12 специализированных решений на базе nanoCAD Plus позволяют проектировщикам существенно повысить скорость и качество выполняемых проектов. <a href=''>Подробнее...</a>
+                        .divider
+                        .flex_row__start
+                            .left
+                                img(src='img/picture-nanocad2.jpg')
+                            .right
+                                p nanoCAD Plus 10 - это единственная российская САПР-платформа, позволяющая работать напрямую с форматом DWG (версии от R11 до DWG2018), в которой реализован весь спектр технологий формата DWG (поддержка блоков, слоев, текстовых и размерных стилей) используемых в международных САПР. Также nanoCAD Plus имеет уникальный функционал, разработанный специально для российского рынка. 12 специализированных решений на базе nanoCAD Plus позволяют проектировщикам существенно повысить скорость и качество выполняемых проектов. <a href=''>Подробнее...</a>
+                        .divider
+
+                    </div>
+                    <div id="tabs-5">
+                        h2 Чтобы скачать заполните форму
+                        .divider
+                        p После заполнения формы ссылки на скачивание будут доступны. Можно будет скачать <b>бесплатную</b> русскую версию nanacad на месяц.
+                        .divider
+                        .flex_row__between
+                            .left
+                                .form__number 1
+                                h3.form__title ЗАПОЛНИТЕ ФОРМУ
+                                form(class='nanocad__form form__submit')
+                                    input(class='name' type='text' placeholder='Имя ...')
+                                    input(class='tel' type='tel' placeholder='Телефон ...')
+                                    input(class='email' type='email' placeholder='E-mail ...')
+                                    input(class='organization' type='text' placeholder='Организация ...')
+                                    .checkbox.checkbox--cirle
+                                        input(type='radio' name='org' id='ck_org1')
+                                        label(for='ck_org1') Юридическое лицо
+                                    .checkbox.checkbox--cirle
+                                        input(type='radio' name='org' id='ck_org2')
+                                        label(for='ck_org2') Физическое лицо
+
+                                    button(class='btn2 btn2--red' type='button') ОТКРЫТЬ СКАЧИВАНИЕ
+                                    <div class="agreement checkbox">
+                                    <input type="checkbox" id="checkbox-icon-1"/>
+                                    <label for="checkbox-icon-1">Я принимаю <a href=''>условия</a> передачи инф.</label>
+                                    </div>
+                            .right
+                                .number 2
+                                h3
+                    </div>
+
+            </div>
+
+        .modal.nanocad__modal
+            span.modal__close X
+            h3.form__title ЗАПОЛНИТЕ ФОРМУ <span>И ССЫЛКИ БУДУТ ДОСТУПНЫ</span>
+            form(class='nanocad__form form__submit')
+                input(class='name' type='text' placeholder='Имя ...')
+                input(class='tel' type='tel' placeholder='Телефон ...')
+                input(class='email' type='email' placeholder='E-mail ...')
+                input(class='organization' type='text' placeholder='Организация ...')
+                .checkbox.checkbox--cirle
+                    input(type='radio' name='org' id='ck_org3')
+                    label(for='ck_org3') Юридическое лицо
+                .checkbox.checkbox--cirle
+                    input(type='radio' name='org' id='ck_org4')
+                    label(for='ck_org4') Физическое лицо
+
+                button(class='btn2 btn2--red' type='button') ОТКРЫТЬ СКАЧИВАНИЕ
+                <div class="agreement checkbox">
+                <input type="checkbox" id="checkbox-icon-2"/>
+                <label for="checkbox-icon-2">Я принимаю <a href=''>условия</a> передачи инф.</label>
+                </div>
