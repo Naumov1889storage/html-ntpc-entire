@@ -302,20 +302,51 @@ form.form__submit .agreement input[type='checkbox'] {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 10px 0 10px;
   min-width: 113px;
   height: 27px;
-  font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #545454;
   border: 1px solid #9e9e9e;
   border-radius: 4px;
   background-color: #fcf4c0;
   cursor: pointer;
 }
+.btn3,
+.btn3 span {
+  font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #545454;
+}
 .btn3--white {
   background: #fff;
+}
+.btn3--arrow {
+  position: relative;
+  padding-left: 35px;
+}
+.btn3--arrow:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 27px;
+  width: 1px;
+  height: 100%;
+  background: #9e9e9e;
+}
+.btn3--arrow:after {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 6px;
+  width: 15px;
+  height: 9px;
+  background: url("/img/icon-arrow2.png") no-repeat;
+  transition: 0.3s;
+}
+.btn3--arrow.active:after {
+  top: 7px;
+  transform: rotate(180deg);
 }
 .font-red {
   color: #d76546;
@@ -1683,3 +1714,9 @@ form.form__submit .agreement input[type='checkbox'] {
   }
 }
 /*MODAL END*/
+.text.short span.active {
+  display: inline !important;
+}
+.text.short a.morelink {
+  color: #4984ad;
+}

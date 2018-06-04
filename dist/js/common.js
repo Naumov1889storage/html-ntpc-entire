@@ -1,13 +1,24 @@
 $( function() {
     $( "#tabs" ).tabs();
 
-    $(".ecp__dscr .text").shorten({
+    $(".text.short").shorten({
         "showChars" : 350,
         "moreText"	: "Подробнее",
         "lessText"	: "Скрыть",
     });
     $('.morelink').click(function () {
        $(this).parents('.text.shortened').find('span').not('.moreellipses').not('.morecontent').toggleClass('active').toggle()
+    });
+
+    $('.circleslider').tinycircleslider({
+        interval:true,
+        intervalTime: 3000,
+        radius   : 200,
+        dotsSnap: true,
+        dotsHide: false });
+    $('.circleslider').bind("move", function()
+    {
+        console.log();
     });
 
 
@@ -195,6 +206,10 @@ $( function() {
         $('.nanocad .gallery .current img').attr('src', $(this).attr('src'))
     });
     /*img gallery end*/
+
+    $('.btn3--arrow').click(function () {
+        $(this).toggleClass('active')
+    })
 
 } );
 

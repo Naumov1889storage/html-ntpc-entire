@@ -178,12 +178,6 @@
   font-weight: 400;
   line-height: 20px;
 }
-.ecp__dscr span.active {
-  display: inline !important;
-}
-.ecp__dscr a.morelink {
-  color: #4984ad;
-}
 .ecp__links {
   display: flex;
   justify-content: center;

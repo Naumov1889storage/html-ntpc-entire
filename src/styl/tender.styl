@@ -1,0 +1,75 @@
+.tender {
+  .wrap {
+    margin: 0 auto
+    width: 400px
+  }
+  .circleslider {
+    //margin: 0 auto
+    height:400px; position:relative; width:400px;
+    background: #ccc
+    .viewport{
+      position: relative;
+      top: 50%
+      transform: translateY(-50%)
+      margin:0 auto;
+      width:300px;
+      height:300px;
+      overflow:hidden;
+      //pointer-events: none
+    }
+    .overview {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      left: 0;
+      top: 0;
+      width: 798px;
+      list-style: none;
+      li {
+        position: relative;
+        width:300px;
+        height:300px;
+        float: left;
+      }
+    }
+    .overlay {
+      position: absolute;
+      left: 0; top: 0;
+      width:300px;
+      height:300px;
+    }
+    .thumb {
+      background: red no-repeat 50% 50%;
+      touch-action: none; -ms-touch-action: none;
+      position: absolute; top: -3px;
+      cursor: pointer;
+      left: 137px;
+      width: 100px;
+      z-index: 200;
+      height: 100px;
+    }
+    .dot { background:url(images/bg-dot.png) no-repeat 0 0; display: none; height: 12px; width: 12px; position: absolute; left: 155px; top: 3px; z-index: 100; }
+    .dot span { display: none; }
+
+
+    ul {
+      li, li b {
+        width: 174px
+        font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif
+        font-size: 16px
+        font-weight: 400
+        line-height: 20px
+        color: #545454
+      }
+      li b {
+        font-weight: bold
+      }
+    }
+    
+    .dot-1 {
+      background: #000
+    }
+  }
+}
+
+

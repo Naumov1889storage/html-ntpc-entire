@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <title>ntpc - Отзывы</title>
+    <title>ntpc - ЭЦП для государственных порталов</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calibri:400,700,400italic,700italic">
     <link rel="stylesheet" href="css/concat-css-libs.css">
     <!--link(rel='stylesheet', href='css/concat-css.css')-->
@@ -88,90 +88,129 @@
                 <li><a href="pricedown.html">Акции</a><span class="slash"></span></li>
                 <li><a href="news.html">Новости</a><span class="slash"></span></li>
                 <li><a href="article.html">Статьи</a><span class="slash"></span></li>
-                <li><a class="active" href="feedback.html">Отзывы</a><span class="slash"></span></li>
+                <li><a href="feedback.html">Отзывы</a><span class="slash"></span></li>
                 <li><a href="about.html">О компании</a><span class="slash"></span></li>
                 <li><a href="contact.html">Контакты</a><span class="slash"></span></li>
           <li class="authorization"><span>Вход</span><span class="slash"></span><span>Регистрация</span></li>
         </ul>
       </div>
-      <div class="innerPage">
+      <div class="ecp ecp2">
         <div class="container">
-          <h2 class="innerPage__title">Отзывы</h2>
-          <div class="crumbs"><a href="index.html">Главная</a><span class="slash">»</span><a class="current" href="feedback.html">Отзывы</a></div>
+          <!--h2.innerPage__title Электронные цифровые подписи-->
+          <div class="crumbs"><a href="index.html">Главная</a><span class="slash">»</span><a href="ecp.html">ЭЦП</a><span class="slash">»</span><a class="current" href="ecp2.html">Тендерное сопровождение</a></div>
         </div>
-        <div class="innerPage__wrap">
-          <div class="container flex_row__start">
-            <ul class="innerPage__menu">
-              <li><a href="about.html"><span>О компании</span></a></li>
-              <li><a href=""><span>Работа в компании</span></a></li>
-              <li><a href="license.html"><span>Сертификаты и лиценз.</span></a></li>
-              <li class="current"><a href="feedback.html"><span>Отзывы</span></a></li>
+        <form class="container" method="post">
+          <div class="ecp__tel">
+            <input type="tel" placeholder="+7 (___) - ___ - __ - __">
+            <button type="submit">ЗАКАЗАТЬ ЭЦП</button>
+          </div>
+        </form>
+        <div class="ecp__form2 transpBox">
+          <h2><span class="top" id="ecp__form2"><span class='font-red'>ЦЕНЫ</span> НА ЭЛЕКТРОННУЮ ПОДПИСЬ</span><span class="bottom">ВЫБЕРИТЕ ПОДПИСЬ И РАСЧИТАЙТЕ СТОИМОСТЬ</span></h2>
+          <form method="post"><table style="width:100%">
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+<th>Age</th>
+</tr>
+<tr>
+<td>Jill</td>
+<td>Smith</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Eve</td>
+<td>Jackson</td>
+<td>94</td>
+</tr>
+</table><a class="font-red" href="">ЭЛЕКТРОННАЯ ОТЧЕТНОСТЬ</a>
+            <ul class="ecp__stair ecp__stair--none ecp__level1">
+              <li class="checkbox">
+                <input id="ecp-product56" type="checkbox">
+                <label for="ecp-product56"><span class="forHint"><span class="text">Пакет «Стандарт»</span><span class="ecp__hint">
+                      <button type="button"></button><span class="hint__text">Полное описание, что входит и так далее Полное описание, что входит и так далее</span></span></span><span class="ecp__divider"></span><span class="price">6490 руб.</span></label>
+              </li>
+              <li class="checkbox">
+                <input id="ecp-product525" type="checkbox">
+                <label for="ecp-product525"><span class="forHint"><span class="text">Пакет «Эконом»</span><span class="ecp__hint">
+                      <button type="button"></button><span class="hint__text">Полное описание, что входит и так далее Полное описание, что входит и так далее Полное описание, что входит и так далее что входит и так далее что входит и так далее сание, что входит и так далее что входит и так далее что входит и так далее</span></span></span><span class="ecp__divider"></span><span class="price">6490 руб.</span></label>
+              </li>
+              <li class="checkbox">
+                <input id="ecp-product55" type="checkbox">
+                <label for="ecp-product55"><span class="forHint"><span class="text">Пакет «Эконом»</span><span class="ecp__hint">
+                      <button type="button"></button><span class="hint__text">Полное описание, что входит и так далее Полное описание, что входит и так далее Полное описание, что входит и так далее что входит и так далее что входит и так далее сание, что входит и так далее что входит и так далее что входит и так далее</span></span></span><span class="ecp__divider"></span><span class="price">6490 руб.</span></label>
+              </li>
+            </ul><a class="font-red" href="">ДОКУМЕНТООБОРОТ</a>
+            <ul class="ecp__stair ecp__stair--none ecp__level1">
+              <li class="checkbox">
+                <input id="ecp-product57" type="checkbox">
+                <label for="ecp-product57"><span class="text">Электронный документооборот на 1 год</span><span class="ecp__divider"></span><span class="price">6490 руб.</span></label>
+              </li>
             </ul>
-            <div class="feedbackPage">
-              <div id="feedbackPage__accordion">
-                <div class="toggler btn2"><i></i>Оставить отзыв</div>
-                <div class="content">
-                  <div class="title">Оставить отзыв о компании "НТПЦ"</div>
-                  <form class="form__submit">
-                    <div class="input__wrap flex_row__between">
-                      <div class="flex_column">
-                        <input class="name" type="text" placeholder="Ваше имя ...">
-                        <input class="tel" type="text" placeholder="Ваш телефон ...">
-                      </div>
-                      <div class="flex_column">
-                        <input type="text" placeholder="Компания ...">
-                        <input type="text" placeholder="Должность ...">
-                      </div>
-                    </div>
-                    <textarea placeholder="Отзыв..."></textarea>
-                    <div class="flex3 flex_row__between"><div class="agreement checkbox">
+            <div class="checkbox__wrap"><a class="font-red" href="">ВЫБЕРИТЕ БРЕЛОК В ПОДАРОК</a>
+              <ul>
+                <li class="checkbox checkbox--picture">
+                  <input id="ecp-gift7" type="radio" name="ecp-gift">
+                  <label for="ecp-gift7"><span class="img__wrap"><img src="img/picture-ecp-gift1.png"></span><span class="text">Ципленок</span></label>
+                </li>
+                <li class="checkbox checkbox--picture">
+                  <input id="ecp-gift8" type="radio" name="ecp-gift">
+                  <label for="ecp-gift8"><span class="img__wrap"><img src="img/picture-ecp-gift2.png"></span><span class="text">Миньон</span></label>
+                </li>
+                <li class="checkbox checkbox--picture">
+                  <input id="ecp-gift9" type="radio" name="ecp-gift">
+                  <label for="ecp-gift9"><span class="img__wrap"><img src="img/picture-ecp-gift3.png"></span><span class="text">Дарт Вейдер</span></label>
+                </li>
+                <li class="checkbox checkbox--picture">
+                  <input id="ecp-gift10" type="radio" name="ecp-gift">
+                  <label for="ecp-gift10"><span class="img__wrapspan img__wrap"><img src="img/picture-ecp-gift4.png"></span><span class="text">Рука Халка</span></label>
+                </li>
+                <li class="checkbox checkbox--picture">
+                  <input id="ecp-gift11" type="radio" name="ecp-gift">
+                  <label for="ecp-gift11"><span class="img__wrap"><img src="img/picture-ecp-gift5.png"></span><span class="text">Фламинго</span></label>
+                </li>
+                <li class="checkbox checkbox--picture">
+                  <input id="ecp-gift12" type="radio" name="ecp-gift">
+                  <label for="ecp-gift12"><span class="img__wrap"><img src="img/picture-ecp-gift6.png"></span><span class="text">Танк</span></label>
+                </li>
+              </ul>
+            </div>
+            <div class="ecp__form2__footer">
+              <button class="btn2" type="button">ЗАКАЗАТЬ</button>
+              <div class="result">ИТОГО: <span><span class='number'>0</span> руб.</span></div>
+            </div>
+            <div class="modal"><span class="modal__close">X</span>
+              <div class="title font-red">ЗАПОЛНИТЕ ФОРМУ</div>
+              <input class="name" type="text" placeholder="Ваше имя ...">
+              <input class="tel" type="text" placeholder="Ваш телефон ..."><div class="agreement checkbox">
 <input type="checkbox" id="checkbox-icon-1"/>
 <label for="checkbox-icon-1">Я принимаю <a href=''>условия</a> передачи инф.</label>
 </div>
-                      <div class="attach__wrap"><span>Прикрепить файл</span>
-                        <input type="file" placeholder="sdfsdf">
-                      </div>
-                    </div>
-                    <button class="btn2" type="submit"><span>Отправить</span></button>
-                  </form>
-                </div>
-              </div>
-              <div class="feedbackPage__content">
-                <div class="item flex_row__between align_center">
-                  <div class="text">
-                    <div class="name">Дмитрий Блинов</div>
-                    <div class="job">Директор компании Нанософт</div>
-                    <p>Програмка не такая красочная как версии AutoCAD, но по удобству пользования превосходит. Очень порадовало что программа корректно открывает dwg файлы акада, что нехватает Компасу, а особенно большой + что она видит объекты созданные с помощью связки  <a href=''>Подробнее...</a></p>
-                  </div>
-                  <div class="photo"><img src="img/picture-feedback-logo.jpg"><img src="img/picture-feedback-photo.jpg"></div>
-                </div>
-                <div class="item flex_row__between align_center">
-                  <div class="text">
-                    <div class="name">Дмитрий Блинов</div>
-                    <div class="job">Директор компании Нанософт</div>
-                    <p>Програмка не такая красочная как версии AutoCAD, но по удобству пользования превосходит. Очень порадовало что программа корректно открывает dwg файлы акада, что нехватает Компасу, а особенно большой + что она видит объекты созданные с помощью связки  <a href=''>Подробнее...</a></p>
-                  </div>
-                  <div class="photo"><img src="img/picture-feedback-logo.jpg"><img src="img/picture-feedback-photo.jpg"></div>
-                </div>
-                <div class="item flex_row__between align_center">
-                  <div class="text">
-                    <div class="name">Дмитрий Блинов</div>
-                    <div class="job">Директор компании Нанософт</div>
-                    <p>Програмка не такая красочная как версии AutoCAD, но по удобству пользования превосходит. Очень порадовало что программа корректно открывает dwg файлы акада, что нехватает Компасу, а особенно большой + что она видит объекты созданные с помощью связки  <a href=''>Подробнее...</a></p>
-                  </div>
-                  <div class="photo"><img src="img/picture-feedback-logo.jpg"><img src="img/picture-feedback-photo.jpg"></div>
-                </div>
-                <div class="item flex_row__between align_center">
-                  <div class="text">
-                    <div class="name">Дмитрий Блинов</div>
-                    <div class="job">Директор компании Нанософт</div>
-                    <p>Програмка не такая красочная как версии AutoCAD, но по удобству пользования превосходит. Очень порадовало что программа корректно открывает dwg файлы акада, что нехватает Компасу, а особенно большой + что она видит объекты созданные с помощью связки  <a href=''>Подробнее...</a></p>
-                  </div>
-                  <div class="photo"><img src="img/picture-feedback-logo.jpg"><img src="img/picture-feedback-photo.jpg"></div>
-                </div>
-              </div>
-              <div class="pagination"><a class="pag arrow" href="">«</a><a class="pag" href="">1</a><a class="pag active" href="">2</a><a class="pag" href="">3</a><a class="pag arrow" href="">»</a></div>
+              <button class="btn2" type="submit">ЗАКАЗАТЬ</button>
             </div>
+          </form>
+        </div>
+        <div class="divider"></div>
+        <div class="ecp__steps">
+          <div class="container">
+            <h2 class="title">3 ПРОСТЫХ ШАГА <span class='font-red'>ПОЛУЧЕНИЯ</span> ЭЦП</h2>
+            <ul>
+              <li>
+                <div class="number">1</div>
+                <h3 class="title">ВЫБЕРИТЕ ЭЦП</h3>
+                <div class="text"><a id='linkTo-Ecp__form2' href='#'>Выберите</a> нужную подпись и свяжитесь с нами</div>
+              </li>
+              <li>
+                <div class="number">2</div>
+                <h3 class="title">ПОДГОТОВЬТЕ ДОКУМЕНТЫ</h3>
+                <div class="text">Всего 2 документа:<br><b>Паспорт, СНИЛС</b><br>для ИП + <b>Свидетельство ИНН</b></div>
+              </li>
+              <li>
+                <div class="number">3</div>
+                <h3 class="title">ПОЛУЧИТЕ ПОДПИСЬ</h3>
+                <div class="text">Забирите подпись в <a href=''>нашем офисе</a> или закажите <a href=''>доставку</a></div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

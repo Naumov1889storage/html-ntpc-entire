@@ -1,0 +1,165 @@
+extends pug-components/layout
+
+block append title
+    -page = 'ЭЦП для государственных порталов'
+
+block content
+    .ecp.ecp2
+        .container
+            //h2.innerPage__title Электронные цифровые подписи
+            .crumbs
+                a(href='index.html') Главная
+                span.slash »
+                a(href='ecp.html') ЭЦП
+                span.slash »
+                a(class='current' href='ecp2.html') Тендерное сопровождение
+
+
+        form(class='container' method='post')
+            .ecp__tel
+                input(type='tel' placeholder='+7 (___) - ___ - __ - __')
+                button(type='submit') ЗАКАЗАТЬ ЭЦП
+
+        .ecp__form2.transpBox
+            h2
+                span.top#ecp__form2 <span class='font-red'>ЦЕНЫ</span> НА ЭЛЕКТРОННУЮ ПОДПИСЬ
+                span.bottom ВЫБЕРИТЕ ПОДПИСЬ И РАСЧИТАЙТЕ СТОИМОСТЬ
+
+            form(method='post')
+                <table style="width:100%">
+                <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+                </tr>
+                <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                </tr>
+                <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+                </tr>
+                </table>
+
+                a(class='font-red' href='') ЭЛЕКТРОННАЯ ОТЧЕТНОСТЬ
+                ul.ecp__stair.ecp__stair--none.ecp__level1
+                    li.checkbox
+                        input(id='ecp-product56' type='checkbox')
+                        label(for='ecp-product56')
+                            span.forHint
+                                span.text Пакет «Стандарт»
+                                span.ecp__hint
+                                    button(type='button')
+                                    span.hint__text Полное описание, что входит и так далее Полное описание, что входит и так далее
+                            span.ecp__divider
+                            span.price 6490 руб.
+                    li.checkbox
+                        input(id='ecp-product525' type='checkbox')
+                        label(for='ecp-product525')
+                            span.forHint
+                                span.text Пакет «Эконом»
+                                span.ecp__hint
+                                    button(type='button')
+                                    span.hint__text Полное описание, что входит и так далее Полное описание, что входит и так далее Полное описание, что входит и так далее что входит и так далее что входит и так далее сание, что входит и так далее что входит и так далее что входит и так далее
+                            span.ecp__divider
+                            span.price 6490 руб.
+                    li.checkbox
+                        input(id='ecp-product55' type='checkbox')
+                        label(for='ecp-product55')
+                            span.forHint
+                                span.text Пакет «Эконом»
+                                span.ecp__hint
+                                    button(type='button')
+                                    span.hint__text Полное описание, что входит и так далее Полное описание, что входит и так далее Полное описание, что входит и так далее что входит и так далее что входит и так далее сание, что входит и так далее что входит и так далее что входит и так далее
+                            span.ecp__divider
+                            span.price 6490 руб.
+
+                a(class='font-red' href='') ДОКУМЕНТООБОРОТ
+                ul.ecp__stair.ecp__stair--none.ecp__level1
+                    li.checkbox
+                        input(id='ecp-product57' type='checkbox')
+                        label(for='ecp-product57')
+                            span.text Электронный документооборот на 1 год
+                            span.ecp__divider
+                            span.price 6490 руб.
+
+                .checkbox__wrap
+                    a(class='font-red' href='') ВЫБЕРИТЕ БРЕЛОК В ПОДАРОК
+                    ul
+                        li.checkbox.checkbox--picture
+                            input(id='ecp-gift7' type='radio' name='ecp-gift')
+                            label(for='ecp-gift7')
+                                span.img__wrap
+                                    img(src='img/picture-ecp-gift1.png')
+                                span.text Ципленок
+
+                        li.checkbox.checkbox--picture
+                            input(id='ecp-gift8' type='radio' name='ecp-gift')
+                            label(for='ecp-gift8')
+                                span.img__wrap
+                                    img(src='img/picture-ecp-gift2.png')
+                                span.text Миньон
+
+                        li.checkbox.checkbox--picture
+                            input(id='ecp-gift9' type='radio' name='ecp-gift')
+                            label(for='ecp-gift9')
+                                span.img__wrap
+                                    img(src='img/picture-ecp-gift3.png')
+                                span.text Дарт Вейдер
+
+                        li.checkbox.checkbox--picture
+                            input(id='ecp-gift10' type='radio' name='ecp-gift')
+                            label(for='ecp-gift10')
+                                span.img__wrapspan.img__wrap
+                                    img(src='img/picture-ecp-gift4.png')
+                                span.text Рука Халка
+
+                        li.checkbox.checkbox--picture
+                            input(id='ecp-gift11' type='radio' name='ecp-gift')
+                            label(for='ecp-gift11')
+                                span.img__wrap
+                                    img(src='img/picture-ecp-gift5.png')
+                                span.text Фламинго
+                        li.checkbox.checkbox--picture
+                            input(id='ecp-gift12' type='radio' name='ecp-gift')
+                            label(for='ecp-gift12')
+                                span.img__wrap
+                                    img(src='img/picture-ecp-gift6.png')
+                                span.text Танк
+
+                .ecp__form2__footer
+                    button(class='btn2' type='button') ЗАКАЗАТЬ
+                    .result ИТОГО: <span><span class='number'>0</span> руб.</span>
+                .modal
+                    span.modal__close X
+                    .title.font-red ЗАПОЛНИТЕ ФОРМУ
+                    input(class='name' type='text' placeholder='Ваше имя ...')
+                    input(class='tel' type='text' placeholder='Ваш телефон ...')
+                    <div class="agreement checkbox">
+                    <input type="checkbox" id="checkbox-icon-1"/>
+                    <label for="checkbox-icon-1">Я принимаю <a href=''>условия</a> передачи инф.</label>
+                    </div>
+                    button(class='btn2' type='submit') ЗАКАЗАТЬ
+
+        .divider
+        .ecp__steps
+            .container
+                h2.title 3 ПРОСТЫХ ШАГА <span class='font-red'>ПОЛУЧЕНИЯ</span> ЭЦП
+                ul
+                    li
+                        .number 1
+                        h3.title ВЫБЕРИТЕ ЭЦП
+                        .text <a id='linkTo-Ecp__form2' href='#'>Выберите</a> нужную подпись и свяжитесь с нами
+
+                    li
+                        .number 2
+                        h3.title ПОДГОТОВЬТЕ ДОКУМЕНТЫ
+                        .text Всего 2 документа:<br><b>Паспорт, СНИЛС</b><br>для ИП + <b>Свидетельство ИНН</b>
+
+                    li
+                        .number 3
+                        h3.title ПОЛУЧИТЕ ПОДПИСЬ
+                        .text Забирите подпись в <a href=''>нашем офисе</a> или закажите <a href=''>доставку</a>
