@@ -4,9 +4,10 @@ block append title
     -page = 'ЭЦП'
 
 block content
-    .tender.ecp.ecp2
-        .container
-            //h2.innerPage__title Электронные цифровые подписи
+    .container
+        .transpBox.transpBox--title
+            h1.innerPage__title Тендерное сопровождение
+            <br>
             .crumbs
                 a(href='index.html') Главная
                 span.slash »
@@ -14,23 +15,303 @@ block content
                 span.slash »
                 a(class='current' href='ecp2.html') ЭЦП для государственных порталов
 
+    .tender.ecp
+
+        .ecp__background
+
+        .ecp__topcenter.container
+            p ЭЦП ДЛЯ ГОС. ПОРТАЛОВ
+            form(method='post')
+                .ecp__tel
+                    input(type='tel' placeholder='+7 (___) - ___ - __ - __')
+                    button(type='submit') ЗАКАЗАТЬ ЭЦП
+            a(class='togift' href='#ecp__gift') + БРЕЛОК В ПОДАРОК
+                span.ecp__hint.tender__hint
+                    button(type='button')
+                    span.hint__text Полное описание, что входит и так далее Полное описание, что входит и так далее
+
+
+        .tender__form1.ecp__form2.transpBox.transpBox--wide
+            h2.ecp__h2 <span class='font-red'>СТОИМОСТЬ</span> ТЕНДЕРНОГО СОПРОВОЖДЕНИЯ
+            .table1__forscroll
+                table.table1
+                    tr
+                        th(colspan="2") Тариф
+                        th Скрок
+                        th Цена
+                    tr
+                        td.td--check
+                            .checkbox.checkbox--circle
+                                input(id='ch-tender1' type='checkbox')
+                                label(for='ch-tender1')
+                        td
+                            label(for='ch-tender1') «Быстрый старт»
+                        td.td--price
+                            label(for='ch-tender1') 1 месяц
+                        td.td--price
+                            label(for='ch-tender1') 8 500 руб.
+                    tr
+                        td.td--check
+                            .checkbox.checkbox--circle
+                                input(id='ch-tender2' type='checkbox')
+                                label(for='ch-tender2')
+                        td
+                            label(for='ch-tender2') «3 месяца»
+                        td.td--price
+                            label(for='ch-tender2') 3 месяца
+                        td.td--price
+                            label(for='ch-tender2') 24 000 руб.
+                    tr
+                        td.td--check
+                            .checkbox.checkbox--circle
+                                input(id='ch-tender3' type='checkbox')
+                                label(for='ch-tender3')
+                        td
+                            label(for='ch-tender3') «Полгода»
+                        td.td--price
+                            label(for='ch-tender3') 6 месяцев
+                        td.td--price
+                            label(for='ch-tender3') 40 800 руб.
+                    tr
+                        td.td--check
+                            .checkbox.checkbox--circle
+                                input(id='ch-tender4' type='checkbox')
+                                label(for='ch-tender4')
+                        td
+                            label(for='ch-tender4') «9 месяцев»
+                        td.td--price
+                            label(for='ch-tender4') 9 месяцев
+                        td.td--price
+                            label(for='ch-tender4') 58 500 руб.
+                    tr
+                        td.td--check
+                            .checkbox.checkbox--circle
+                                input(id='ch-tender5' type='checkbox')
+                                label(for='ch-tender5')
+                        td
+                            label(for='ch-tender5') «Год»
+                        td.td--price
+                            label(for='ch-tender5') 12 месяцев
+                        td.td--price
+                            label(for='ch-tender5') 74 400 руб.
+
+
+            .accordion.accordion--noanimation
+                .title + КОМИССИЯ ПРИ ПОБЕДЕ В ТЕНДЕРЕ <i class="arrow"></i>
+                .content
+                    .table1__forscroll
+                        table.table1
+                            tr
+                                th.withHint Сумма контракта
+                                    span.ecp__hint.tender__hint
+                                        button(type='button')
+                                        span.hint__text Полное описание, что входит и так далее Полное описание, что входит и так далее
+                                th.withHint Комисиия
+                                    span.ecp__hint.tender__hint
+                                        button(type='button')
+                                        span.hint__text Полное описание, что входит и так далее Полное описание, что входит и так далее
+                            tr
+                                td до 1 млн. руб.
+                                td 2 000 руб. + 0,8%
+                            tr
+                                td 1 - 10 млн. руб.
+                                td 8 000 руб. + 0,2%
+                            tr
+                                td 10 - 100 млн. руб.
+                                td 18 000 руб. + 0,1%
+                            tr
+                                td от 100 млн. руб.
+                                td 0,1%
+
+
+                    a(class='tender__percent' href='') ХОЧУ БЕЗ КОМИСИИИ
+
+            .ecp__form2__footer
+                button(class='btn2' type='button') ЗАКАЗАТЬ
+            .modal
+                span.modal__close X
+                .title.font-red ЗАПОЛНИТЕ ФОРМУ
+                input(class='name' type='text' placeholder='Ваше имя ...')
+                input(class='tel' type='text' placeholder='Ваш телефон ...')
+                <div class="agreement checkbox">
+                <input type="checkbox" id="checkbox-icon-1"/>
+                <label for="checkbox-icon-1">Я принимаю <a href=''>условия</a> передачи инф.</label>
+                </div>
+                button(class='btn2' type='submit') ЗАКАЗАТЬ
+
+
+        .tender__included
+            h2.ecp__h2 ЧТО <span class='font-red'>ВХОДИТ</span> В ТАРИФ:
+            .container
+                table.table1
+                    tr
+                        td
+                        td <b>Составление критерии поиска</b> - составлениее фильтра для поиска по федеральным или коммерческим площадкам: региональность, сумма, ключевые слова и другие критерии (зависит от специфики). Оптимально составим фильтр, чтобы максимально охватить, без лишних вариантов.
+                    tr
+                        td
+                        td Получение ЭЦП - получение ЭЦП исходя из выбранного фильтра по оптимальной цене (федеральные или коммерческие)
+                    tr
+                        td
+                        td Подключение к интеллектуальному поиску - подключаем к экспресс тендеру Гарант, что позволит искать по всем тендерам на всей территории РФ. Проводим тонкую настройку поиска.
+                    tr
+                        td
+                        td Отчеты по конкурентам - отчеты по динамике в регионах, площадках по вашим критериям. Аналитика по потонциальным заказчикам. Анализ конкурентов в вашей сфере.
+                    tr
+                        td
+                        td Акредитация - акредитация на всех нужных площадках (на 6 федеральных площадках и на коммерческих)
+                    tr
+                        td
+                        td Подбираем каждый день подходящие тендеры - предоставляем отобранный список тендеров каждый день.
+                    tr
+                        td
+                        td Прощитываем оптимальные варианты - помогаем выбрать нужный тендор для участия из ежедневного списка, советуем по выгодным предложения.
+                    tr
+                        td
+                        td Оформляем обеспечение - помощь при оформлении обоспечения.
+                    tr
+                        td
+                        td Банковская гарантия - при необходимости оформляем банковскую гарантию по обеспечению.
+                    tr
+                        td
+                        td Подаем заявку	 - подача заявки на выбранные тендеры с максимально правильно заполнеными данными и документами, что повышает шанс выиграть тендер.
+                    tr
+                        td
+                        td 44 фз и 223 фз	- изучим все требования тендера. В случае с 223 фз необходимо изучить все требования и договор, обнаружить все минусы и плюсы.
+                    tr
+                        td
+                        td Форма 2 - расмотрим все ньюансы и требования в тендере, заполним всю необходимую информацию, что повысит шансы на победу в тендере.
+                    tr
+                        td
+                        td Сопровождение тендера - ведем тендер по выгодным для вас условиям в случае если это аукцион.
+                    tr
+                        td
+                        td Безлимитная подача заявок - подаем заявки безлимитно во всех тарифных планах
+                    tr
+                        td
+                        td Подача жалоб в ФАС - при необходимисти подаем жалобы в ФАС для перерасмотрения решения по тендеру.
+
+
+        h2.ecp__h2 <span class='font-red'>ЦЕНЫ</span> НА ОТДЕЛЬНЫЕ УСЛУГИ
+        .tender__form2.ecp__form2
+            table.table1
+                tr
+                    th(colspan="2") Услуга
+                    th Цена
+                tr
+                    td.td--check
+                        .checkbox.checkbox--square
+                            input(id='ch-tender6' type='checkbox')
+                            label(for='ch-tender6')
+                    td.withHint
+                        label(for='ch-tender6') Аккредитация на одной федеральной торговой площадке
+                            span.ecp__hint.tender__hint
+                                button(type='button')
+                                span.hint__text Полное описание, что входит и так далее Полное описание, что входит и так далее
+                    td.td--price
+                        label(for='ch-tender6') 2 500 руб.
+                tr
+                    td.td--check
+                        .checkbox.checkbox--square
+                            input(id='ch-tender8' type='checkbox')
+                            label(for='ch-tender8')
+                    td.withHint
+                        label(for='ch-tender8') Составление и подача 1 и 2 части заявки на аукцион / запрос котировок в электр. и бумажном виде
+                            span.ecp__hint.tender__hint
+                                button(type='button')
+                                span.hint__text Полное описание, что входит и так далее Полное описание, что входит и так далее
+                    td.td--price
+                        label(for='ch-tender8') от 7000 до 16000  руб.
+                tr
+                    td.td--check
+                        .checkbox.checkbox--square
+                            input(id='ch-tender9' type='checkbox')
+                            label(for='ch-tender9')
+                    td
+                        label(for='ch-tender9') Подача жалобы в ФАС (при необходимости)
+                    td.td--price
+                        label(for='ch-tender9') 1500 руб.
+                tr
+                    td.td--check
+                        .checkbox.checkbox--square
+                            input(id='ch-tender10' type='checkbox')
+                            label(for='ch-tender10')
+                    td
+                        label(for='ch-tender10') Подготовка формы 2 (конкретных показателей) для аукциона на строительство и ремонт
+                    td.td--price.withHint
+                        label(for='ch-tender10') 2% от начальной цены
+                            span.ecp__hint.tender__hint
+                                button(type='button')
+                                span.hint__text Полное описание, что входит и так далее Полное описание, что входит и так далее
+
+
+            .ecp__form2__footer
+                button(class='btn2' type='button') ЗАКАЗАТЬ
+                .result ИТОГО: <span><span class='number'>0</span> руб.</span>
+            .modal
+                span.modal__close X
+                .title.font-red ЗАПОЛНИТЕ ФОРМУ
+                input(class='name' type='text' placeholder='Ваше имя ...')
+                input(class='tel' type='text' placeholder='Ваш телефон ...')
+                <div class="agreement checkbox">
+                <input type="checkbox" id="checkbox-icon-1"/>
+                <label for="checkbox-icon-1">Я принимаю <a href=''>условия</a> передачи инф.</label>
+                </div>
+                button(class='btn2' type='submit') ЗАКАЗАТЬ
+
+        .tender__getcost
+            .container
+                h3.ecp__h2 ЧТО <span class='font-red'>ОЦЕНИТЬ</span> СТОИМОСТЬ УСЛУГИ
+                p Для оценки стоимости услуги пришлите ссылку на закупку и мы посчитаем оптимальный вариант и предоставим вам лучшее решение
+                form(class='form__submit')
+                    .title ЗАПОЛНИТЕ ФОРМУ
+                    input(class='attach' type='text' placeholder='Ссылка на закупку...')
+                    .flex_row__between
+                        input(class='name' type='text' placeholder='Ваше имя ...')
+                        input(class='tel' type='text' placeholder='Ваш телефон ...')
+                    <div class="agreement checkbox">
+                        <input type="checkbox" id="checkbox-icon-1"/>
+                        <label for="checkbox-icon-1">Я принимаю <a href=''>условия</a> передачи инф.</label>
+                    </div>
+                    button(class='btn2 btn2--red' type='submit') УЗНАТЬ СТОИМОСТЬ
 
 
         .tender__slider
             .container
-                .wrap
+                h3.ecp__h2 ЧТО <span class='font-red'>ВЫГОДНО</span> ДЛЯ ВАС!
+                .circleslider__wrap
                     .circleslider
                         .viewport
                             ul.overview
-                                li У нас вы <b>не переплатите</b>, так как мы оформляем безлимитное количество заявок и вы платите один минимальный взнос плюс маленьки процент от сделки в зависимости от тарифа
-                                li У нас вы не переплатите, так как мы оформляем безлимитное количество заявок и вы платите один минимальный взнос плюс маленьки процент от сделки в зависимости от тарифа
-                                li У нас вы не переплатите, так как мы оформляем безлимитное количество заявок и вы платите один минимальный взнос плюс маленьки процент от сделки в зависимости от тарифа
-                                li У нас вы не переплатите, так как мы оформляем безлимитное количество заявок и вы платите один минимальный взнос плюс маленьки процент от сделки в зависимости от тарифа
-                                li У нас вы не переплатите, так как мы оформляем безлимитное количество заявок и вы платите один минимальный взнос плюс маленьки процент от сделки в зависимости от тарифа
-                        .overlay
-                        .thumb
+                                li
+                                    p У нас вы <b>не переплатите</b>, так как мы оформляем безлимитное количество заявок и вы платите один минимальный взнос плюс маленьки процент от сделки в зависимости от тарифа
+                                li
+                                    p У нас вы <b>не переплатите</b>, так как мы
+                                li
+                                    p У нас вы <b>не переплатите</b>, так как мы оформляем безлимитное количество заявок и вы платите один минимальный взнос плюс маленьки процент от сроцент от сделки в зависимости от тарифа
+                                li
+                                    p У нас вы <b>не переплатите</b>, так как мы оформляем безлимитное количество заявок и вы платите один минимальный взнос плюс маленьки процент от сделки в зависимости от тарифа
+                                li
+                                    p У нас вы <b>не переплатите</b>, так как мы оформляем безлимитное количество заявок и вы платите один минимальный взнос плюс маленьки процент от сделки в зависимости от тарифа
+                        //.overlay
+                        //.thumb
                         div(class='dot dot-1' data-slide-index='0')
                         div(class='dot dot-2' data-slide-index='1')
                         div(class='dot dot-3' data-slide-index='2')
                         div(class='dot dot-4' data-slide-index='3')
                         div(class='dot dot-5' data-slide-index='4')
+
+        .ecp__dscr
+            .container
+                h3.ecp__h2 <span class='font-red'>ПОДРОБНЕЕ</span> О ТЕНДЕРНОМ СОПРОВОЖДЕНИИ
+                p.text.short Электронная подпись (эп), Электронная цифровая подпись (эцп) — реквизит электронного документа, полученный в результате криптографического преобразования информации с использованием закрытого ключа подписи. Электронная подпись (эп), Электронная цифровая подпись (эцп) — реквизит электронного документа, полученный в результате криптографического преобразования информации с использованием закрытого ключа подписи. Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст
+
+        .ecp__items
+            .container
+                h3.ecp__h2.ecp__h2--20.font-blue ТЕНДЕРНОЕ СОПРОВОЖДЕНИЕ
+                ul
+                    li
+                        a(href='') Аккредитация / Установка
+                    li
+                        a(href='') Обучение Торгам
+                    li
+                        a(href='') Подготовка для участия в тендере

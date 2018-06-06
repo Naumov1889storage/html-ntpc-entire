@@ -1,0 +1,660 @@
+/*common for ecp BEGIN*/
+
+.ecp {
+  color: #545454
+  &__form2 {
+    border-bottom: 1px solid #cacaca
+    .ecp__h2 {
+      padding-top: 35px !important
+    }
+  }
+}
+
+.ecp__items {
+  margin-top: 70px
+  margin-bottom: 70px
+  a {
+    display: block
+    margin: 0 auto
+  }
+  ul {
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    margin-top: 15px
+    li {
+      margin: 15px 30px 15px 30px
+      a {
+        padding-top: 60px
+        position: relative
+        font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif
+        font-size: 16px
+        font-weight: 400
+        color: #4984ad
+        &:before {
+          content: ''
+          position: absolute
+          top: 0
+          left: 50%
+          transform: translateX(-50%)
+          width: 50px
+          height: 50px
+          background: url(/img/icon-ecpitems1.png) no-repeat bottom center
+        }
+      }
+    }
+  }
+}
+.ecp.ecp2 {
+  .ecp__items {
+    ul {
+      li:nth-child(2) {
+        a {
+          &:before {
+            background-image: url(/img/icon-ecpitems2.png)
+          }
+        }
+      }
+      li:nth-child(3) {
+        a {
+          &:before {
+            background-image: url(/img/icon-ecpitems3.png)
+          }
+        }
+      }
+      li:nth-child(4) {
+        a {
+          &:before {
+            background-image: url(/img/icon-ecpitems4.png)
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.ecp.tender {
+  .ecp__items {
+    margin-top: 0
+    .ecp__h2 {
+      padding-top: 25px
+      padding-bottom: 0 !important
+    }
+    ul {
+      li:nth-child(1) {
+        a {
+          &:before {
+            background-image: url(/img/icon-ecpitems5.png)
+          }
+        }
+      }
+      li:nth-child(2) {
+        a {
+          &:before {
+            background-image: url(/img/icon-ecpitems6.png)
+          }
+        }
+      }
+      li:nth-child(3) {
+        a {
+          &:before {
+            background-image: url(/img/icon-ecpitems7.png)
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .ecp__items {
+    ul {
+      li {
+        margin-left: 0
+        margin-right: 0
+        width: 100%
+        text-align: center
+      }
+    }
+  }
+}
+
+.ecp__background {
+  position: absolute
+  margin-top: -280px
+  z-index: -1
+  width: 100%
+  height: 760px
+  background: url(/img/bg-ecp2.jpg) bottom
+  background-size: cover
+}
+.ecp__topcenter {
+  padding-top: 65px
+  padding-bottom: 102px
+  text-align: center
+  p {
+    padding-bottom: 30px
+    font-family: latoblack
+    font-size: 38px
+    font-weight: bold
+    color: #ffffff
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.6)
+  }
+  form {
+    .ecp__tel {
+      display: inline-block
+      font-size: 0
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4)
+      input {
+        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: #545454;
+          opacity: 1; /* Firefox */
+        }
+        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+          color: #545454;
+        }
+        &::-ms-input-placeholder { /* Microsoft Edge */
+          color: #545454;
+        }
+      }
+    }
+  }
+  .togift {
+    position: relative
+    display: inline-block
+    padding: 9px 35px 9px 17px
+    min-height: 42px
+    
+    font-family: lato
+    font-size: 16px
+    font-weight: bold
+    line-height: 24px
+    color: #545454
+    text-decoration: none
+    &:before {
+      content: ''
+      position: absolute
+      z-index: -1
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: #fff
+    }
+
+    .ecp__hint {
+      margin-top: 3px
+    }
+  }
+}
+.ecp__h2 {
+  margin-bottom: 0 !important
+  padding-bottom: 0 !important
+  border-bottom: none !important
+}
+input[name='keyword'] {
+  position: static
+  margin-bottom: 12px
+  padding: 0 35px 0 13px
+  max-width: 384px
+  width: 100%
+  height: 33px
+  border-radius: 4px
+  border: 1px solid #ababab
+  opacity: 1
+  color: #787878
+  font-family: Calibri
+  font-size: 18px
+  font-weight: 400
+  line-height: 28px
+  background: url(/img/icon-search.png) no-repeat right center
+  background-size: 19px
+  background-position-x: 98%
+}
+.ecp__search__top {
+  padding: 20px 9px 0 9px
+  background: #f1f1f1
+  input {
+    margin: 13px 0 19px 0
+    max-width: 100%
+    background-color: #ffffff
+  }
+}
+  
+.form2__item {
+  padding: 30px 26px 0 26px
+}
+.ecp__search.form2__item {
+  margin: 30px 26px 0 26px
+  padding: 0
+  border: 1px solid #d1d1d1
+  .ecp__h2,
+  .ecp__h2 .font-red {
+    font-size: 18px
+  }
+}
+.scroll__wrap {
+  table {
+    border: none
+    td:first-child {
+      border-left: none
+    }
+    td:last-child {
+      border-right: none
+    }
+  }
+}
+.ecp {
+  table {
+    td {
+      img {
+        display: block
+        margin: 0 auto
+        max-width: 16px
+        max-height: 16px
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .form2__item {
+    padding: 30px 0 0 0
+  }
+  .ecp__search.form2__item {
+    margin: 30px 0 0 0
+  }
+}
+
+@media (max-width: 560px) {
+    .ecp__tel {
+      display: flex !important
+    }
+}
+/*common for ecp END*/
+
+
+/*ecp2 -- ЭЦП для государственных порталов BEGIN*/
+
+.ecp2 {
+  .ecp__form2 {
+    h3.font-red {
+      position: relative
+      z-index: 2
+      display: block
+      margin: 10px 30px 7px 30px
+      font-family: latoblack
+      font-size: 18px
+      font-weight: 400
+      line-height: 33px
+      text-decoration: underline
+    }
+  }
+
+  table.table1 {
+    td {
+      label.ecp__h2 {
+        span {
+          font-size: 16px
+        }
+      }
+    }
+  }
+  .ecp2__scroll__top {
+    //position: absolute
+    z-index: 3
+    top: 0
+  }
+  .ecp2__scroll__top,
+  .ecp2__scroll__top td:not(.td--check) {
+    width: "calc(100% + %s)" % 10px
+  }
+  .ecp2__scroll__top td {
+    background: #fffce6
+  }
+  .scroll__wrap {
+    padding-right: 10px
+    //padding-top: 34px
+    padding-bottom: 30px
+    .forScrollOuterTrack {
+      position: relative
+      &:after {
+        content: ''
+        position: absolute
+        z-index: 1
+        top: 0
+        bottom: 0
+        right: -10px
+        width: 30px
+        background: #f1f1f1
+        border-left: 1px solid #d1d1d1
+      }
+    }
+    .scroll {
+      position: relative
+      z-index: 2
+      padding-right: 11px
+      &.active {
+        z-index: 0
+      }
+      table.table1 {
+        max-width: 643px
+        tr:first-child {
+          td {
+            border-top: none
+          }
+        }
+      }
+    }
+  }
+
+  .ecp__form2 {
+    .ecp__h2.ecp__h2--18 {
+      padding-top: 28px
+    }
+  }
+}
+
+@media (max-width: 700px) {
+    .ecp2 {
+      .ecp__form2 {
+        h3.font-red {
+          margin: 10px 15px 7px 15px
+        }
+      }
+    }
+}
+/*ecp2 -- ЭЦП для государственных порталов END*/
+
+/*TENDER -- Тендерное сопровождение BEGIN*/
+.tender {
+
+  .ecp__h2 {
+    padding-top: 65px
+    padding-bottom: 30px !important
+  }
+
+  .ecp__background {
+    background-image: url(/img/bg-tender.jpg)
+  }
+
+  &__hint {
+    transform: translateY(2px) translateX(6px) //translateY(4px) translateX(-26px)
+    background: transparent
+    &.active {
+      transform: translateY(-5px) translateX(-1px)
+    }
+  }
+
+  &__form1 {
+    .ecp__h2 {
+      padding-bottom: 30px !important
+    }
+
+    table.table1,
+    .accordion {
+      margin: 0 auto
+      max-width: 385px
+    }
+
+    .ecp__form2__footer {
+      .btn2 {
+        margin: 0 auto
+      }
+    }
+
+    .accordion {
+      margin-bottom: 23px
+      a {
+        display: block
+        margin-top: 8px
+        text-align: right
+        font-family: latobold
+        color: #417aa3
+      }
+      .ecp__hint {
+        display: none
+      }
+      &.active {
+        .ecp__hint {
+          display: inline-block
+        }
+      }
+      .title {
+        position: relative
+        margin: 12px 0 12px 0
+        padding: 4px 45px 4px 17px
+        width: 100%
+        min-height: 32px
+        background: #f1f1f1
+        border: 1px solid #d1d1d1
+        &:before {
+          content: ''
+          position: absolute
+          top: 0
+          right: 35px
+          width: 1px
+          height: 100%
+          background: #d1d1d1
+        }
+        .arrow {
+          position: absolute
+          margin: 0
+          top: 0
+          right: 0
+          width: 35px
+          height: 100%
+          background-position: center
+        }
+      }
+    }
+  }
+  &__form2 {
+    border: none
+    max-width: 1030px
+    tr {
+      td.td--price {
+        width: 25%
+      }
+    }
+    .ecp__form2__footer {
+      border: 1px solid #c1c1c1
+      border-top: none
+    }
+  }
+
+  &__included {
+    tr {
+      td:first-child {
+        position: relative
+        width: 70px
+        min-height: 60px
+        height: 60px
+        opacity: 0.5
+        &:before {
+          content: ''
+          position: absolute
+          top: 50%
+          transform: translateY(-50%)
+          left: 0
+          width:  100%
+          height: 50px
+          background: url(/img/iconset-tender.png) no-repeat 10px 2px
+        }
+      }
+      &:hover {
+        td:first-child {
+          opacity: 1
+        }
+      }
+      &:nth-child(2) {
+        td:first-child {
+          &:before {
+            background-position-y:  -55px
+          }
+        }
+      }
+      &:nth-child(3) {
+        td:first-child {
+          &:before {
+            background-position-y:  -115px
+          }
+        }
+      }
+      &:nth-child(4) {
+        td:first-child {
+          &:before {
+            background-position-y:  -174px
+          }
+        }
+      }
+      &:nth-child(5) {
+        td:first-child {
+          &:before {
+            background-position-y:  -235px
+          }
+        }
+      }
+      &:nth-child(6) {
+        td:first-child {
+          &:before {
+            background-position-y:  -294px
+          }
+        }
+      }
+      &:nth-child(7) {
+        td:first-child {
+          &:before {
+            background-position-y:  -353px
+          }
+        }
+      }
+      &:nth-child(8) {
+        td:first-child {
+          &:before {
+            background-position-y:  -416px
+          }
+        }
+      }
+      &:nth-child(9) {
+        td:first-child {
+          &:before {
+            background-position-y:  -472px
+          }
+        }
+      }
+      &:nth-child(10) {
+        td:first-child {
+          &:before {
+            background-position-y:  -534px
+          }
+        }
+      }
+      &:nth-child(11) {
+        td:first-child {
+          &:before {
+            background-position-y:  -593px
+          }
+        }
+      }
+      &:nth-child(12) {
+        td:first-child {
+          &:before {
+            background-position-y:  -655px
+          }
+        }
+      }
+      &:nth-child(13) {
+        td:first-child {
+          &:before {
+            background-position-y:  -715px
+          }
+        }
+      }
+      &:nth-child(14) {
+        td:first-child {
+          &:before {
+            background-position-y:  -775px
+          }
+        }
+      }
+      &:nth-child(15) {
+        td:first-child {
+          &:before {
+            background-position-y:  -839px
+          }
+        }
+      }
+
+    }
+  }
+
+  &__getcost {
+    p {
+      margin: 0 auto
+      max-width: 380px
+      text-align: center
+    }
+    form {
+      align-items: flex-start
+      margin: 25px auto 0 auto
+      padding-right: 27px
+      padding-left: 27px
+      padding-top: 18px
+      padding-bottom: 22px
+      max-width: 522px
+      width: 100%
+      border: 1px solid #c7c7c7
+      background-color: #f9f9f9
+      .title {
+        margin: 0 auto 18px auto
+        font-family: latobold
+        font-size: 20px
+        line-height: 24px
+      }
+      .flex_row__between {
+        width: 100%
+      }
+      .btn2 {
+        margin-left: 4px
+      }
+      input {
+        margin-bottom: 14px
+        &.attach {
+          max-width: 100%
+          width: 100%
+          background-color: #fffadd
+        }
+      }
+      .agreement {
+        margin-top: -5px
+        margin-bottom: 10px
+      }
+    }
+  }
+
+
+  &__slider {
+    .ecp__h2 {
+      padding-bottom: 90px !important
+    }
+  }
+
+}
+
+@media (max-width: 700px) {
+  .tender {
+    &__included {
+      .container {
+        padding: 0
+      }
+    }
+    &__form2 {
+      padding: 0
+    }
+  }
+}
+
+/*TENDER -- Тендерное сопровождение END*/

@@ -12,13 +12,17 @@ $( function() {
 
     $('.circleslider').tinycircleslider({
         interval:true,
-        intervalTime: 3000,
-        radius   : 200,
+        intervalTime: 10000,
+        radius   : 182,
         dotsSnap: true,
-        dotsHide: false });
+        dotsHide: false,
+        slideCurrent: 2});
+    var box = $('.circleslider').data("plugin_tinycircleslider");
     $('.circleslider').bind("move", function()
     {
-        console.log();
+        console.log(box.slideCurrent);
+        $('.circleslider .dot').removeClass('active')
+        $('.circleslider .dot').eq(box.slideCurrent).addClass('active')
     });
 
 
@@ -119,11 +123,24 @@ $( function() {
         }
     });
 
-    var $input = $(".ecp__search input[name='keyword']"),
-        $context = $(".ecp__search li.checkbox label");
+    //var $input = $(".ecp__search input[name='keyword']"),
+    //    $context = $(".ecp__search li.checkbox label");
     $(".ecp__search input[name='keyword']").on("input", function() {
         var term = $(this).val(),
             $context = $(this).parent('.ecp__search').find('ul li.checkbox label');
+        $context.show().unmark();
+        if (term) {
+            $context.mark(term, {
+                done: function() {
+                    $context.not(":has(mark)").hide();
+                }
+            });
+        }
+    });
+
+    $(".ecp__search input[name='keyword']").on("input", function() {
+        var term = $(this).val(),
+            $context = $(this).closest('.ecp__search').find('.search__content');
         $context.show().unmark();
         if (term) {
             $context.mark(term, {
@@ -209,7 +226,20 @@ $( function() {
 
     $('.btn3--arrow').click(function () {
         $(this).toggleClass('active')
-    })
+    });
+
+    $('.scroll__showall').click(function () {
+       $(this).closest('.scroll__wrap').find('.scroll').toggleClass('active');
+       $(this).toggleClass('active')
+    });
+
+    $('.accordion .title').click(function () {
+        $this = $(this);
+        $(this).closest('.accordion').toggleClass('active');
+        setTimeout(function() {
+            $this.closest('.accordion').toggleClass('active--additinal');
+        }, 370);
+    });
 
 } );
 

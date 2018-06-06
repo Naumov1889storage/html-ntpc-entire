@@ -4,47 +4,315 @@ block append title
     -page = 'ЭЦП для государственных порталов'
 
 block content
-    .ecp.ecp2
-        .container
-            //h2.innerPage__title Электронные цифровые подписи
+    .container
+        .transpBox.transpBox--title
+            h1.innerPage__title Электронная подпись для государственных порталов
+            <br>
             .crumbs
                 a(href='index.html') Главная
                 span.slash »
                 a(href='ecp.html') ЭЦП
                 span.slash »
-                a(class='current' href='ecp2.html') Тендерное сопровождение
+                a(class='current' href='ecp2.html') ЭЦП для государственных порталов
 
+    .ecp.ecp2
 
-        form(class='container' method='post')
-            .ecp__tel
-                input(type='tel' placeholder='+7 (___) - ___ - __ - __')
-                button(type='submit') ЗАКАЗАТЬ ЭЦП
+        .ecp__background
 
-        .ecp__form2.transpBox
-            h2
-                span.top#ecp__form2 <span class='font-red'>ЦЕНЫ</span> НА ЭЛЕКТРОННУЮ ПОДПИСЬ
-                span.bottom ВЫБЕРИТЕ ПОДПИСЬ И РАСЧИТАЙТЕ СТОИМОСТЬ
+        .ecp__topcenter.container
+            p ЭЦП ДЛЯ ГОС. ПОРТАЛОВ
+            form(method='post')
+                .ecp__tel
+                    input(type='tel' placeholder='+7 (___) - ___ - __ - __')
+                    button(type='submit') ЗАКАЗАТЬ ЭЦП
+            a(class='togift' href='#ecp__gift') + БРЕЛОК В ПОДАРОК
+                span.ecp__hint.tender__hint
+                    button(type='button')
+                    span.hint__text Полное описание, что входит и так далее Полное описание, что входит и так далее
+
+        .ecp__form2.transpBox.transpBox--wide
+            h2.ecp__h2#ecp__form2 <span class='font-red'>ЦЕНЫ</span> НА ЭЛЕКТРОННУЮ ПОДПИСЬ
+            p.ecp__h2__subtitle ДЛЯ ГОСУДАРСТВЕННЫХ ПОРТАЛОВ
 
             form(method='post')
-                <table style="width:100%">
-                <tr>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Age</th>
-                </tr>
-                <tr>
-                <td>Jill</td>
-                <td>Smith</td>
-                <td>50</td>
-                </tr>
-                <tr>
-                <td>Eve</td>
-                <td>Jackson</td>
-                <td>94</td>
-                </tr>
-                </table>
 
-                a(class='font-red' href='') ЭЛЕКТРОННАЯ ОТЧЕТНОСТЬ
+                .form2__item
+                    .table1__forscroll
+                        table.table1
+                            tr
+                                th(colspan="2") Название государственного портала
+                                th(colspan="2") Сайт
+                                th Цена
+                            tr
+                                td.td--check
+                                    .checkbox.checkbox--square
+                                        input(id='ch-tender1' type='checkbox')
+                                        label(for='ch-tender1')
+                                td
+                                    label(for='ch-tender1') Росреестр
+                                td.td--logo
+                                    img(src='img/icon-nanocad1.png')
+                                td
+                                    label(for='ch-tender1') roseltorg.ru
+                                td.td--price
+                                    label(for='ch-tender1') 8 500 руб.
+                            tr
+                                td.td--check
+                                    .checkbox.checkbox--square
+                                        input(id='ch-tender2' type='checkbox')
+                                        label(for='ch-tender2')
+                                td
+                                    label(for='ch-tender2') СМЭВ
+                                td.td--logo
+                                    img(src='img/icon-nanocad2.png')
+                                td
+                                    label(for='ch-tender2') sberbank-ast.ru
+                                td.td--price
+                                    label(for='ch-tender2') 8 500 руб.
+                            tr
+                                td.td--check
+                                    .checkbox.checkbox--square
+                                        input(id='ch-tender3' type='checkbox')
+                                        label(for='ch-tender3')
+                                td
+                                    label(for='ch-tender3') Федеральная Таможенная Служба
+                                td.td--logo
+                                    img(src='img/icon-nanocad3.png')
+                                td
+                                    label(for='ch-tender3') rts-tender.ru
+                                td.td--price
+                                    label(for='ch-tender3') 8 500 руб.
+                            tr
+                                td.td--check
+                                    .checkbox.checkbox--square
+                                        input(id='ch-tender4' type='checkbox')
+                                        label(for='ch-tender4')
+                                td
+                                    label(for='ch-tender4') ФСРАР
+                                td.td--logo
+                                    img(src='img/icon-nanocad3.png')
+                                td
+                                    label(for='ch-tender4') otc.ru
+                                td.td--price
+                                    label(for='ch-tender4') 8 500 руб.
+
+
+                .ecp__search.form2__item
+                    .ecp__search__top
+                        h3.ecp__h2 СТОИМОСТЬ 1 ПОРТАЛА ИЗ СПИСКА - <span class='font-red'>1 950 РУБ.</span>
+                        input(type='text' name='keyword' placeholder='Введите название или сайт...')
+
+                    .scroll__wrap
+                        table.table1.ecp2__scroll__top
+                            tr
+                                td.td--check
+                                    .checkbox.checkbox--square
+                                        input(id='ch-tender9' type='checkbox')
+                                        label(for='ch-tender9')
+                                td(colspan="3")
+                                    label(class='ecp__h2' for='ch-tender9') Универсальная <span class='font-reg'>(для всех порталов из списка) -</span> <span class='font-red'>3 800 руб.</span>
+
+                        .forScrollOuterTrack
+                            .scroll
+                                table.table1
+
+                                    tr.search__content
+                                        td.td--check
+                                            .checkbox.checkbox--square
+                                                input(id='ch-tender10' type='checkbox')
+                                                label(for='ch-tender10')
+                                        td
+                                            label(for='ch-tender10') АО «ЕЭТП», «Росэлторг»
+                                        td.td--logo
+                                            img(src='img/icon-nanocad1.png')
+                                        td
+                                            label(for='ch-tender10') roseltorg.ru
+
+                                    tr.search__content
+                                        td.td--check
+                                            .checkbox.checkbox--square
+                                                input(id='ch-tender11' type='checkbox')
+                                                label(for='ch-tender11')
+                                        td
+                                            label(for='ch-tender11') Сбербанк-АСТ
+                                        td.td--logo
+                                            img(src='img/icon-nanocad2.png')
+                                        td
+                                            label(for='ch-tender11') sberbank-ast.ru
+
+                                    tr.search__content
+                                        td.td--check
+                                            .checkbox.checkbox--square
+                                                input(id='ch-tender12' type='checkbox')
+                                                label(for='ch-tender12')
+                                        td
+                                            label(for='ch-tender12') РТС-тендер
+                                        td.td--logo
+                                            img(src='img/icon-nanocad3.png')
+                                        td
+                                            label(for='ch-tender12') rts-tender.ru
+
+                                    tr.search__content
+                                        td.td--check
+                                            .checkbox.checkbox--square
+                                                input(id='ch-tender13' type='checkbox')
+                                                label(for='ch-tender13')
+                                        td
+                                            label(for='ch-tender13') ФСРАР
+                                        td.td--logo
+                                            img(src='img/icon-nanocad3.png')
+                                        td
+                                            label(for='ch-tender13') otc.ru
+
+                                    tr.search__content
+                                        td.td--check
+                                            .checkbox.checkbox--square
+                                                input(id='ch-tender14' type='checkbox')
+                                                label(for='ch-tender14')
+                                        td
+                                            label(for='ch-tender14') Российский аукционный дом
+                                        td.td--logo
+                                            img(src='img/icon-nanocad1.png')
+                                        td
+                                            label(for='ch-tender14') otc.ru
+
+                                    tr.search__content
+                                        td.td--check
+                                            .checkbox.checkbox--square
+                                                input(id='ch-tender15' type='checkbox')
+                                                label(for='ch-tender15')
+                                        td
+                                            label(for='ch-tender15') АО «ЕЭТП», «Росэлторг»
+                                        td.td--logo
+                                            img(src='img/icon-nanocad1.png')
+                                        td
+                                            label(for='ch-tender15') roseltorg.ru
+
+                                    tr.search__content
+                                        td.td--check
+                                            .checkbox.checkbox--square
+                                                input(id='ch-tender16' type='checkbox')
+                                                label(for='ch-tender16')
+                                        td
+                                            label(for='ch-tender16') Сбербанк-АСТ
+                                        td.td--logo
+                                            img(src='img/icon-nanocad2.png')
+                                        td
+                                            label(for='ch-tender16') sberbank-ast.ru
+
+                                    tr.search__content
+                                        td.td--check
+                                            .checkbox.checkbox--square
+                                                input(id='ch-tender17' type='checkbox')
+                                                label(for='ch-tender17')
+                                        td
+                                            label(for='ch-tender17') РТС-тендер
+                                        td.td--logo
+                                            img(src='img/icon-nanocad3.png')
+                                        td
+                                            label(for='ch-tender17') rts-tender.ru
+
+                                    tr.search__content
+                                        td.td--check
+                                            .checkbox.checkbox--square
+                                                input(id='ch-tender18' type='checkbox')
+                                                label(for='ch-tender18')
+                                        td
+                                            label(for='ch-tender18') ФСРАР
+                                        td.td--logo
+                                            img(src='img/icon-nanocad3.png')
+                                        td
+                                            label(for='ch-tender18') otc.ru
+
+                                    tr.search__content
+                                        td.td--check
+                                            .checkbox.checkbox--square
+                                                input(id='ch-tender19' type='checkbox')
+                                                label(for='ch-tender19')
+                                        td
+                                            label(for='ch-tender19') Российский аукционный дом
+                                        td.td--logo
+                                            img(src='img/icon-nanocad1.png')
+                                        td
+                                            label(for='ch-tender19') otc.ru
+
+                                    tr.search__content
+                                        td.td--check
+                                            .checkbox.checkbox--square
+                                                input(id='ch-tender20' type='checkbox')
+                                                label(for='ch-tender20')
+                                        td
+                                            label(for='ch-tender20') АО «ЕЭТП», «Росэлторг»
+                                        td.td--logo
+                                            img(src='img/icon-nanocad1.png')
+                                        td
+                                            label(for='ch-tender20') roseltorg.ru
+
+                                    tr.search__content
+                                        td.td--check
+                                            .checkbox.checkbox--square
+                                                input(id='ch-tender21' type='checkbox')
+                                                label(for='ch-tender21')
+                                        td
+                                            label(for='ch-tender21') Сбербанк-АСТ
+                                        td.td--logo
+                                            img(src='img/icon-nanocad2.png')
+                                        td
+                                            label(for='ch-tender21') sberbank-ast.ru
+
+                                    tr.search__content
+                                        td.td--check
+                                            .checkbox.checkbox--square
+                                                input(id='ch-tender22' type='checkbox')
+                                                label(for='ch-tender22')
+                                        td
+                                            label(for='ch-tender22') РТС-тендер
+                                        td.td--logo
+                                            img(src='img/icon-nanocad3.png')
+                                        td
+                                            label(for='ch-tender22') rts-tender.ru
+
+                                    tr.search__content
+                                        td.td--check
+                                            .checkbox.checkbox--square
+                                                input(id='ch-tender23' type='checkbox')
+                                                label(for='ch-tender23')
+                                        td
+                                            label(for='ch-tender23') ФСРАР
+                                        td.td--logo
+                                            img(src='img/icon-nanocad3.png')
+                                        td
+                                            label(for='ch-tender23') otc.ru
+
+                                    tr.search__content
+                                        td.td--check
+                                            .checkbox.checkbox--square
+                                                input(id='ch-tender24' type='checkbox')
+                                                label(for='ch-tender24')
+                                        td
+                                            label(for='ch-tender24') Российский аукционный дом
+                                        td.td--logo
+                                            img(src='img/icon-nanocad1.png')
+                                        td
+                                            label(for='ch-tender24') otc.ru
+
+                                    tr.search__content
+                                        td.td--check
+                                            .checkbox.checkbox--square
+                                                input(id='ch-tender8' type='checkbox')
+                                                label(for='ch-tender8')
+                                        td
+                                            label(for='ch-tender8') Российский аукционный дом
+                                        td.td--logo
+                                            img(src='img/icon-nanocad1.png')
+                                        td
+                                            label(for='ch-tender8') otc.ru
+
+                        .scroll__footer
+                            button(class='scroll__showall' type='button') ОТКРЫТЬ ВЕСЬ СПИСОК
+
+
+                h3.font-red ЭЛЕКТРОННАЯ ОТЧЕТНОСТЬ
                 ul.ecp__stair.ecp__stair--none.ecp__level1
                     li.checkbox
                         input(id='ecp-product56' type='checkbox')
@@ -77,7 +345,7 @@ block content
                             span.ecp__divider
                             span.price 6490 руб.
 
-                a(class='font-red' href='') ДОКУМЕНТООБОРОТ
+                h3.font-red ДОКУМЕНТООБОРОТ
                 ul.ecp__stair.ecp__stair--none.ecp__level1
                     li.checkbox
                         input(id='ecp-product57' type='checkbox')
@@ -87,7 +355,7 @@ block content
                             span.price 6490 руб.
 
                 .checkbox__wrap
-                    a(class='font-red' href='') ВЫБЕРИТЕ БРЕЛОК В ПОДАРОК
+                    h3(class='ecp__h2 ecp__h2--18' id='ecp__gift' href='') ВЫБЕРИТЕ <span class='font-red'>БРЕЛОК</span> В ПОДАРОК
                     ul
                         li.checkbox.checkbox--picture
                             input(id='ecp-gift7' type='radio' name='ecp-gift')
@@ -144,7 +412,7 @@ block content
                     </div>
                     button(class='btn2' type='submit') ЗАКАЗАТЬ
 
-        .divider
+
         .ecp__steps
             .container
                 h2.title 3 ПРОСТЫХ ШАГА <span class='font-red'>ПОЛУЧЕНИЯ</span> ЭЦП
@@ -163,3 +431,21 @@ block content
                         .number 3
                         h3.title ПОЛУЧИТЕ ПОДПИСЬ
                         .text Забирите подпись в <a href=''>нашем офисе</a> или закажите <a href=''>доставку</a>
+
+        .ecp__dscr
+            .container
+                h3.ecp__h3--calibri.font-blue ПОДРОБНОЕ ОПИСАНИЕ ЭЛЕКТРОННАЯ ПОДПИСЬ
+                p.text.short Электронная подпись (эп), Электронная цифровая подпись (эцп) — реквизит электронного документа, полученный в результате криптографического преобразования информации с использованием закрытого ключа подписи. Электронная подпись (эп), Электронная цифровая подпись (эцп) — реквизит электронного документа, полученный в результате криптографического преобразования информации с использованием закрытого ключа подписи. Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст
+
+        .ecp__items
+            .container
+                a(class='ecp__h2 ecp__h2--20 font-blue' href='') ЭЛЕКТРОННАЯ ПОДПИСЬ
+                ul
+                    li
+                        a(href='') ЭЦП для торгов
+                    li
+                        a(href='') Электронная отчетность
+                    li
+                        a(href='') Электронный документооборот
+                    li
+                        a(href='') Электронные кассы

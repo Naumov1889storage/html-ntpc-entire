@@ -1,0 +1,526 @@
+/*common for ecp BEGIN*/
+.ecp {
+  color: #545454;
+}
+.ecp__form2 {
+  border-bottom: 1px solid #cacaca;
+}
+.ecp__form2 .ecp__h2 {
+  padding-top: 35px !important;
+}
+.ecp__items {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.ecp__items a {
+  display: block;
+  margin: 0 auto;
+}
+.ecp__items ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-top: 15px;
+}
+.ecp__items ul li {
+  margin: 15px 30px 15px 30px;
+}
+.ecp__items ul li a {
+  padding-top: 60px;
+  position: relative;
+  font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #4984ad;
+}
+.ecp__items ul li a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background: url("../img/icon-ecpitems1.png") no-repeat bottom center;
+}
+.ecp.ecp2 .ecp__items ul li:nth-child(2) a:before {
+  background-image: url("../img/icon-ecpitems2.png");
+}
+.ecp.ecp2 .ecp__items ul li:nth-child(3) a:before {
+  background-image: url("../img/icon-ecpitems3.png");
+}
+.ecp.ecp2 .ecp__items ul li:nth-child(4) a:before {
+  background-image: url("../img/icon-ecpitems4.png");
+}
+.ecp.tender .ecp__items {
+  margin-top: 0;
+}
+.ecp.tender .ecp__items .ecp__h2 {
+  padding-top: 25px;
+  padding-bottom: 0 !important;
+}
+.ecp.tender .ecp__items ul li:nth-child(1) a:before {
+  background-image: url("../img/icon-ecpitems5.png");
+}
+.ecp.tender .ecp__items ul li:nth-child(2) a:before {
+  background-image: url("../img/icon-ecpitems6.png");
+}
+.ecp.tender .ecp__items ul li:nth-child(3) a:before {
+  background-image: url("../img/icon-ecpitems7.png");
+}
+@media (max-width: 550px) {
+  .ecp__items ul li {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+.ecp__background {
+  position: absolute;
+  margin-top: -280px;
+  z-index: -1;
+  width: 100%;
+  height: 760px;
+  background: url("../img/bg-ecp2.jpg") bottom;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+.ecp__topcenter {
+  padding-top: 65px;
+  padding-bottom: 102px;
+  text-align: center;
+}
+.ecp__topcenter p {
+  padding-bottom: 30px;
+  font-family: latoblack;
+  font-size: 38px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+.ecp__topcenter form .ecp__tel {
+  display: inline-block;
+  font-size: 0;
+  -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+          box-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+}
+.ecp__topcenter form .ecp__tel input::-webkit-input-placeholder {
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #545454;
+  opacity: 1; /* Firefox */
+}
+.ecp__topcenter form .ecp__tel input::-moz-placeholder {
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #545454;
+  opacity: 1; /* Firefox */
+}
+.ecp__topcenter form .ecp__tel input:-ms-input-placeholder {
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #545454;
+  opacity: 1; /* Firefox */
+}
+.ecp__topcenter form .ecp__tel input::-ms-input-placeholder {
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #545454;
+  opacity: 1; /* Firefox */
+}
+.ecp__topcenter form .ecp__tel input::placeholder {
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #545454;
+  opacity: 1; /* Firefox */
+}
+.ecp__topcenter form .ecp__tel input:-ms-input-placeholder {
+/* Internet Explorer 10-11 */
+  color: #545454;
+}
+.ecp__topcenter form .ecp__tel input::-ms-input-placeholder {
+/* Microsoft Edge */
+  color: #545454;
+}
+.ecp__topcenter .togift {
+  position: relative;
+  display: inline-block;
+  padding: 9px 35px 9px 17px;
+  min-height: 42px;
+  font-family: lato;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #545454;
+  text-decoration: none;
+}
+.ecp__topcenter .togift:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.ecp__topcenter .togift .ecp__hint {
+  margin-top: 3px;
+}
+.ecp__h2 {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  border-bottom: none !important;
+}
+input[name='keyword'] {
+  position: static;
+  margin-bottom: 12px;
+  padding: 0 35px 0 13px;
+  max-width: 384px;
+  width: 100%;
+  height: 33px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  border: 1px solid #ababab;
+  opacity: 1;
+  color: #787878;
+  font-family: Calibri;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  background: url("../img/icon-search.png") no-repeat right center;
+  -webkit-background-size: 19px 19px;
+          background-size: 19px;
+  background-position-x: 98%;
+}
+.ecp__search__top {
+  padding: 20px 9px 0 9px;
+  background: #f1f1f1;
+}
+.ecp__search__top input {
+  margin: 13px 0 19px 0;
+  max-width: 100%;
+  background-color: #fff;
+}
+.form2__item {
+  padding: 30px 26px 0 26px;
+}
+.ecp__search.form2__item {
+  margin: 30px 26px 0 26px;
+  padding: 0;
+  border: 1px solid #d1d1d1;
+}
+.ecp__search.form2__item .ecp__h2,
+.ecp__search.form2__item .ecp__h2 .font-red {
+  font-size: 18px;
+}
+.scroll__wrap table {
+  border: none;
+}
+.scroll__wrap table td:first-child {
+  border-left: none;
+}
+.scroll__wrap table td:last-child {
+  border-right: none;
+}
+.ecp table td img {
+  display: block;
+  margin: 0 auto;
+  max-width: 16px;
+  max-height: 16px;
+}
+@media (max-width: 700px) {
+  .form2__item {
+    padding: 30px 0 0 0;
+  }
+  .ecp__search.form2__item {
+    margin: 30px 0 0 0;
+  }
+}
+@media (max-width: 560px) {
+  .ecp__tel {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+/*common for ecp END*/
+/*ecp2 -- ЭЦП для государственных порталов BEGIN*/
+.ecp2 .ecp__form2 h3.font-red {
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin: 10px 30px 7px 30px;
+  font-family: latoblack;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 33px;
+  text-decoration: underline;
+}
+.ecp2 table.table1 td label.ecp__h2 span {
+  font-size: 16px;
+}
+.ecp2 .ecp2__scroll__top {
+  z-index: 3;
+  top: 0;
+}
+.ecp2 .ecp2__scroll__top,
+.ecp2 .ecp2__scroll__top td:not(.td--check) {
+  width: -webkit-calc(100% + 10px);
+  width: calc(100% + 10px);
+}
+.ecp2 .ecp2__scroll__top td {
+  background: #fffce6;
+}
+.ecp2 .scroll__wrap {
+  padding-right: 10px;
+  padding-bottom: 30px;
+}
+.ecp2 .scroll__wrap .forScrollOuterTrack {
+  position: relative;
+}
+.ecp2 .scroll__wrap .forScrollOuterTrack:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  right: -10px;
+  width: 30px;
+  background: #f1f1f1;
+  border-left: 1px solid #d1d1d1;
+}
+.ecp2 .scroll__wrap .scroll {
+  position: relative;
+  z-index: 2;
+  padding-right: 11px;
+}
+.ecp2 .scroll__wrap .scroll.active {
+  z-index: 0;
+}
+.ecp2 .scroll__wrap .scroll table.table1 {
+  max-width: 643px;
+}
+.ecp2 .scroll__wrap .scroll table.table1 tr:first-child td {
+  border-top: none;
+}
+.ecp2 .ecp__form2 .ecp__h2.ecp__h2--18 {
+  padding-top: 28px;
+}
+@media (max-width: 700px) {
+  .ecp2 .ecp__form2 h3.font-red {
+    margin: 10px 15px 7px 15px;
+  }
+}
+/*ecp2 -- ЭЦП для государственных порталов END*/
+/*TENDER -- Тендерное сопровождение BEGIN*/
+.tender .ecp__h2 {
+  padding-top: 65px;
+  padding-bottom: 30px !important;
+}
+.tender .ecp__background {
+  background-image: url("../img/bg-tender.jpg");
+}
+.tender__hint {
+  -webkit-transform: translateY(2px) translateX(6px);
+      -ms-transform: translateY(2px) translateX(6px);
+          transform: translateY(2px) translateX(6px);
+  background: transparent;
+}
+.tender__hint.active {
+  -webkit-transform: translateY(-5px) translateX(-1px);
+      -ms-transform: translateY(-5px) translateX(-1px);
+          transform: translateY(-5px) translateX(-1px);
+}
+.tender__form1 .ecp__h2 {
+  padding-bottom: 30px !important;
+}
+.tender__form1 table.table1,
+.tender__form1 .accordion {
+  margin: 0 auto;
+  max-width: 385px;
+}
+.tender__form1 .ecp__form2__footer .btn2 {
+  margin: 0 auto;
+}
+.tender__form1 .accordion {
+  margin-bottom: 23px;
+}
+.tender__form1 .accordion a {
+  display: block;
+  margin-top: 8px;
+  text-align: right;
+  font-family: latobold;
+  color: #417aa3;
+}
+.tender__form1 .accordion .ecp__hint {
+  display: none;
+}
+.tender__form1 .accordion.active .ecp__hint {
+  display: inline-block;
+}
+.tender__form1 .accordion .title {
+  position: relative;
+  margin: 12px 0 12px 0;
+  padding: 4px 45px 4px 17px;
+  width: 100%;
+  min-height: 32px;
+  background: #f1f1f1;
+  border: 1px solid #d1d1d1;
+}
+.tender__form1 .accordion .title:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 35px;
+  width: 1px;
+  height: 100%;
+  background: #d1d1d1;
+}
+.tender__form1 .accordion .title .arrow {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 100%;
+  background-position: center;
+}
+.tender__form2 {
+  border: none;
+  max-width: 1030px;
+}
+.tender__form2 tr td.td--price {
+  width: 25%;
+}
+.tender__form2 .ecp__form2__footer {
+  border: 1px solid #c1c1c1;
+  border-top: none;
+}
+.tender__included tr td:first-child {
+  position: relative;
+  width: 70px;
+  min-height: 60px;
+  height: 60px;
+  opacity: 0.5;
+}
+.tender__included tr td:first-child:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: url("../img/iconset-tender.png") no-repeat 10px 2px;
+}
+.tender__included tr:hover td:first-child {
+  opacity: 1;
+}
+.tender__included tr:nth-child(2) td:first-child:before {
+  background-position-y: -55px;
+}
+.tender__included tr:nth-child(3) td:first-child:before {
+  background-position-y: -115px;
+}
+.tender__included tr:nth-child(4) td:first-child:before {
+  background-position-y: -174px;
+}
+.tender__included tr:nth-child(5) td:first-child:before {
+  background-position-y: -235px;
+}
+.tender__included tr:nth-child(6) td:first-child:before {
+  background-position-y: -294px;
+}
+.tender__included tr:nth-child(7) td:first-child:before {
+  background-position-y: -353px;
+}
+.tender__included tr:nth-child(8) td:first-child:before {
+  background-position-y: -416px;
+}
+.tender__included tr:nth-child(9) td:first-child:before {
+  background-position-y: -472px;
+}
+.tender__included tr:nth-child(10) td:first-child:before {
+  background-position-y: -534px;
+}
+.tender__included tr:nth-child(11) td:first-child:before {
+  background-position-y: -593px;
+}
+.tender__included tr:nth-child(12) td:first-child:before {
+  background-position-y: -655px;
+}
+.tender__included tr:nth-child(13) td:first-child:before {
+  background-position-y: -715px;
+}
+.tender__included tr:nth-child(14) td:first-child:before {
+  background-position-y: -775px;
+}
+.tender__included tr:nth-child(15) td:first-child:before {
+  background-position-y: -839px;
+}
+.tender__getcost p {
+  margin: 0 auto;
+  max-width: 380px;
+  text-align: center;
+}
+.tender__getcost form {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 25px auto 0 auto;
+  padding-right: 27px;
+  padding-left: 27px;
+  padding-top: 18px;
+  padding-bottom: 22px;
+  max-width: 522px;
+  width: 100%;
+  border: 1px solid #c7c7c7;
+  background-color: #f9f9f9;
+}
+.tender__getcost form .title {
+  margin: 0 auto 18px auto;
+  font-family: latobold;
+  font-size: 20px;
+  line-height: 24px;
+}
+.tender__getcost form .flex_row__between {
+  width: 100%;
+}
+.tender__getcost form .btn2 {
+  margin-left: 4px;
+}
+.tender__getcost form input {
+  margin-bottom: 14px;
+}
+.tender__getcost form input.attach {
+  max-width: 100%;
+  width: 100%;
+  background-color: #fffadd;
+}
+.tender__getcost form .agreement {
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+.tender__slider .ecp__h2 {
+  padding-bottom: 90px !important;
+}
+@media (max-width: 700px) {
+  .tender__included .container {
+    padding: 0;
+  }
+  .tender__form2 {
+    padding: 0;
+  }
+}
+/*TENDER -- Тендерное сопровождение END*/
