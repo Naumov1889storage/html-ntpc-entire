@@ -8,6 +8,9 @@
 .ecp__form2 .ecp__h2 {
   padding-top: 35px !important;
 }
+.ecp__tel button {
+  text-transform: uppercase;
+}
 .ecp__items {
   margin-top: 70px;
   margin-bottom: 70px;
@@ -97,6 +100,7 @@
   font-weight: bold;
   color: #fff;
   text-shadow: 0 0 10px rgba(0,0,0,0.6);
+  text-transform: uppercase;
 }
 .ecp__topcenter form .ecp__tel {
   display: inline-block;
@@ -119,16 +123,17 @@
 .ecp__topcenter .togift {
   position: relative;
   display: inline-block;
-  padding: 9px 35px 9px 17px;
-  min-height: 42px;
+  padding: 8px 27px 6px 9px;
+  min-height: 36px;
   font-family: lato;
   font-size: 16px;
   font-weight: bold;
   line-height: 24px;
   color: #545454;
   text-decoration: none;
+  text-transform: uppercase;
 }
-.ecp__topcenter .togift:before {
+.ecp__topcenter .togift:after {
   content: '';
   position: absolute;
   z-index: -1;
@@ -140,6 +145,9 @@
 }
 .ecp__topcenter .togift .ecp__hint {
   margin-top: 3px;
+}
+.ecp__topcenter .togift .ecp__hint .hint__text {
+  text-transform: initial;
 }
 .ecp__h2 {
   margin-bottom: 0 !important;
@@ -184,6 +192,7 @@ input[name='keyword'] {
 }
 .ecp__search.form2__item .ecp__h2,
 .ecp__search.form2__item .ecp__h2 .font-red {
+  padding-top: 0 !important;
   font-size: 18px;
 }
 .scroll__wrap table {
@@ -216,7 +225,7 @@ input[name='keyword'] {
 }
 /*common for ecp END*/
 /*ecp2 -- ЭЦП для государственных порталов BEGIN*/
-.ecp2 .ecp__form2 h3.font-red {
+.ecp .ecp__form2 h3.font-red {
   position: relative;
   z-index: 2;
   display: block;
@@ -226,29 +235,33 @@ input[name='keyword'] {
   font-weight: 400;
   line-height: 33px;
   text-decoration: underline;
+  text-transform: uppercase;
 }
-.ecp2 table.table1 td label.ecp__h2 span {
+.ecp table.table1 td label.ecp__h2 {
+  text-transform: initial;
+}
+.ecp table.table1 td label.ecp__h2 span {
   font-size: 16px;
 }
-.ecp2 .ecp2__scroll__top {
+.ecp .ecp2__scroll__top {
   z-index: 3;
   top: 0;
 }
-.ecp2 .ecp2__scroll__top,
-.ecp2 .ecp2__scroll__top td:not(.td--check) {
+.ecp .ecp2__scroll__top,
+.ecp .ecp2__scroll__top td:not(.td--check) {
   width: calc(100% + 10px);
 }
-.ecp2 .ecp2__scroll__top td {
+.ecp .ecp2__scroll__top td {
   background: #fffce6;
 }
-.ecp2 .scroll__wrap {
+.ecp .scroll__wrap {
   padding-right: 10px;
   padding-bottom: 30px;
 }
-.ecp2 .scroll__wrap .forScrollOuterTrack {
+.ecp .scroll__wrap .forScrollOuterTrack {
   position: relative;
 }
-.ecp2 .scroll__wrap .forScrollOuterTrack:after {
+.ecp .scroll__wrap .forScrollOuterTrack:after {
   content: '';
   position: absolute;
   z-index: 1;
@@ -259,21 +272,24 @@ input[name='keyword'] {
   background: #f1f1f1;
   border-left: 1px solid #d1d1d1;
 }
-.ecp2 .scroll__wrap .scroll {
+.ecp .scroll__wrap .forScrollOuterTrack .scroll {
   position: relative;
   z-index: 2;
   padding-right: 11px;
 }
-.ecp2 .scroll__wrap .scroll.active {
+.ecp .scroll__wrap .forScrollOuterTrack .scroll.active {
   z-index: 0;
 }
-.ecp2 .scroll__wrap .scroll table.table1 {
+.ecp .scroll__wrap .forScrollOuterTrack .scroll table.table1 {
   max-width: 643px;
 }
-.ecp2 .scroll__wrap .scroll table.table1 tr:first-child td {
+.ecp .scroll__wrap .forScrollOuterTrack .scroll table.table1 tr:first-child td {
   border-top: none;
 }
-.ecp2 .ecp__form2 .ecp__h2.ecp__h2--18 {
+.ecp .scroll__wrap .forScrollOuterTrack .scroll table.table1 tr:last-child td {
+  border-bottom: none;
+}
+.ecp .ecp__form2 .ecp__h2.ecp__h2--18 {
   padding-top: 28px;
 }
 @media (max-width: 700px) {
@@ -450,6 +466,9 @@ input[name='keyword'] {
 .tender__getcost form .flex_row__between {
   width: 100%;
 }
+.tender__getcost form .flex_row__between input:first-child {
+  margin-right: 11px;
+}
 .tender__getcost form .btn2 {
   margin-left: 4px;
 }
@@ -475,5 +494,20 @@ input[name='keyword'] {
   .tender__form2 {
     padding: 0;
   }
+}
+@media (max-width: 500px) {
+  .tender__getcost form .flex_row__between {
+    flex-direction: column;
+  }
+  .tender__getcost form .flex_row__between input {
+    max-width: 100%;
+    width: 100%;
+  }
+  .tender__getcost form .flex_row__between input:first-child {
+    margin-right: 0;
+  }
+}
+.tender__percent {
+  text-transform: uppercase;
 }
 /*TENDER -- Тендерное сопровождение END*/

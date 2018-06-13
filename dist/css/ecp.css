@@ -819,6 +819,7 @@
       -ms-user-select: text;
           user-select: text;
   background: #fff;
+  font-size: 0 !important;
   line-height: 0;
 }
 .ecp__hint button {
@@ -838,7 +839,7 @@
   font-weight: 400;
   line-height: 16px;
   color: #545454;
-  background-color: #fff;
+  background-color: #008000;
 }
 .ecp__hint .hint__text:before {
   display: none;

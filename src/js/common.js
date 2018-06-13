@@ -10,7 +10,7 @@ $( function() {
        $(this).parents('.text.shortened').find('span').not('.moreellipses').not('.morecontent').toggleClass('active').toggle()
     });
 
-    $('.circleslider').tinycircleslider({
+/*    $('.circleslider').tinycircleslider({
         interval:true,
         intervalTime: 10000,
         radius   : 182,
@@ -23,7 +23,7 @@ $( function() {
         console.log(box.slideCurrent);
         $('.circleslider .dot').removeClass('active')
         $('.circleslider .dot').eq(box.slideCurrent).addClass('active')
-    });
+    });*/
 
 
     $('.single-item-desk--js').slick({
@@ -38,6 +38,17 @@ $( function() {
         nextArrow: '<button type="button" class="slick-next"></button>',
         prevArrow: '<button type="button" class="slick-prev"></button>',
         dots: true,
+    });
+
+    $('.circleslider').slick({
+        infinite: false,
+        prevArrow: false,
+        nextArrow: false,
+        dots: true,
+        fade: true,
+        //cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 10000,
     });
 
     $('.header__catalog .title').click(function () {
@@ -229,7 +240,14 @@ $( function() {
     });
 
     $('.scroll__showall').click(function () {
-       $(this).closest('.scroll__wrap').find('.scroll').toggleClass('active');
+        $thisScroll = $(this).closest('.scroll__wrap').find('.scroll');
+        $thisScroll.toggleClass('active');
+        console.log($thisScroll.find('tr').length);
+        if($thisScroll.hasClass('active')) {
+            $thisScroll[0].style.maxHeight = String(32*$thisScroll.find('tr').length) + 'px';
+        } else {
+            $thisScroll[0].style.maxHeight = '308px';
+        }
        $(this).toggleClass('active')
     });
 

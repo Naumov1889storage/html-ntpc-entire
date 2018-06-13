@@ -8,6 +8,12 @@
       padding-top: 35px !important
     }
   }
+  
+  &__tel {
+    button {
+      text-transform: uppercase
+    }
+  }
 }
 
 .ecp__items {
@@ -141,6 +147,7 @@
     font-weight: bold
     color: #ffffff
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.6)
+    text-transform: uppercase
   }
   form {
     .ecp__tel {
@@ -164,8 +171,8 @@
   .togift {
     position: relative
     display: inline-block
-    padding: 9px 35px 9px 17px
-    min-height: 42px
+    padding: 8px 27px 6px 9px
+    min-height: 36px
     
     font-family: lato
     font-size: 16px
@@ -173,7 +180,8 @@
     line-height: 24px
     color: #545454
     text-decoration: none
-    &:before {
+    text-transform: uppercase
+    &:after {
       content: ''
       position: absolute
       z-index: -1
@@ -186,6 +194,9 @@
 
     .ecp__hint {
       margin-top: 3px
+      .hint__text {
+        text-transform: initial
+      }
     }
   }
 }
@@ -232,6 +243,7 @@ input[name='keyword'] {
   border: 1px solid #d1d1d1
   .ecp__h2,
   .ecp__h2 .font-red {
+    padding-top: 0 !important
     font-size: 18px
   }
 }
@@ -278,7 +290,7 @@ input[name='keyword'] {
 
 /*ecp2 -- ЭЦП для государственных порталов BEGIN*/
 
-.ecp2 {
+.ecp {
   .ecp__form2 {
     h3.font-red {
       position: relative
@@ -290,12 +302,14 @@ input[name='keyword'] {
       font-weight: 400
       line-height: 33px
       text-decoration: underline
+      text-transform: uppercase
     }
   }
 
   table.table1 {
     td {
       label.ecp__h2 {
+        text-transform: initial
         span {
           font-size: 16px
         }
@@ -303,7 +317,6 @@ input[name='keyword'] {
     }
   }
   .ecp2__scroll__top {
-    //position: absolute
     z-index: 3
     top: 0
   }
@@ -331,19 +344,24 @@ input[name='keyword'] {
         background: #f1f1f1
         border-left: 1px solid #d1d1d1
       }
-    }
-    .scroll {
-      position: relative
-      z-index: 2
-      padding-right: 11px
-      &.active {
-        z-index: 0
-      }
-      table.table1 {
-        max-width: 643px
-        tr:first-child {
-          td {
-            border-top: none
+      .scroll {
+        position: relative
+        z-index: 2
+        padding-right: 11px
+        &.active {
+          z-index: 0
+        }
+        table.table1 {
+          max-width: 643px
+          tr:first-child {
+            td {
+              border-top: none
+            }
+          }
+          tr:last-child {
+            td {
+              border-bottom: none
+            }
           }
         }
       }
@@ -402,6 +420,7 @@ input[name='keyword'] {
     .ecp__form2__footer {
       .btn2 {
         margin: 0 auto
+
       }
     }
 
@@ -616,6 +635,9 @@ input[name='keyword'] {
       }
       .flex_row__between {
         width: 100%
+        input:first-child {
+          margin-right:11px
+        }
       }
       .btn2 {
         margin-left: 4px
@@ -657,4 +679,25 @@ input[name='keyword'] {
   }
 }
 
+@media (max-width: 500px) {
+    .tender {
+      &__getcost {
+        form {
+          .flex_row__between {
+            flex-direction: column
+            input {
+              max-width: 100%
+              width: 100%
+            }
+            input:first-child {
+              margin-right: 0
+            }
+          }
+        }
+      }
+    }
+}
+.tender__percent {
+  text-transform: uppercase
+}
 /*TENDER -- Тендерное сопровождение END*/
