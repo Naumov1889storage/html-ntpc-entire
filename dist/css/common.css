@@ -844,7 +844,12 @@ form.form__submit .agreement input[type='checkbox'] {
   background: #fff;
 }
 .tabs1 .tabs__content > div {
-  padding: 0 0 40px 0;
+  padding: 0 30px 40px 30px;
+  overflow: hidden;
+}
+.tabs1 .tabs__content > div > .divider {
+  width: 200%;
+  margin-left: -100px !important;
 }
 .tabs1 .tabs__content h3 {
   display: block;
@@ -936,6 +941,17 @@ form.form__submit .agreement input[type='checkbox'] {
 .tabs1 .tabs__title li.color6:after,
 .tabs1 .tabs__title li.color6 a:before {
   background: #f4a452;
+}
+@media (max-width: 970px) {
+  .tabs1 .tabs__content {
+    position: relative;
+    z-index: 100;
+    background: #fff;
+  }
+  .tabs1 .tabs__content > div {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 @media (max-width: 1040px) {
   .tabs1 .tabs__title__wrap .forshadow:before {

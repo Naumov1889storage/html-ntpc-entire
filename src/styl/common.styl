@@ -815,7 +815,12 @@ form.form__submit {
     z-index: 100
     background: #ffffff
     & > div {
-      padding: 0 0 40px 0
+      padding: 0 30px 40px 30px//0 0 40px 0
+      overflow: hidden
+      & > .divider {
+        width: 200%
+        margin-left: -100px !important
+      }
     }
     h3 {
       display: block
@@ -935,6 +940,20 @@ form.form__submit {
         }
       }
 
+    }
+  }
+}
+
+@media (max-width: 970px) {
+  .tabs1 {
+    .tabs__content {
+      position: relative
+      z-index: 100
+      background: #ffffff
+      & > div {
+        padding-left: 15px
+        padding-right: 15px
+      }
     }
   }
 }
@@ -2571,3 +2590,5 @@ input.attach {
 label {
   user-select: auto
 }
+
+
