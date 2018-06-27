@@ -184,7 +184,7 @@
 .divider::after {
   content: '';
   display: table-cell;
-  background: url("/img/bg-bordercolor.jpg") no-repeat;
+  background: url("../img/bg-bordercolor.jpg") no-repeat;
   -webkit-background-size: 100% 1px;
   background-size: 100% 1px;
 }
