@@ -324,6 +324,26 @@ form.form__submit {
       background: rgba(221, 127, 104, 0.4)
     }
   }
+  &--green {
+    width: 148px
+    height: 44px
+    z-index: 0
+    background-color: #42c0c5
+    &:before {
+      height: 100%
+      background-color: #42c0c5
+    }
+    &:after {
+      background-color: #6197a2
+    }
+  }
+  &--shadow-down {
+    &:after {
+      top: 0
+      right: 0
+      left: 0
+    }
+  }
 }
 .btn3 {
   display: flex
@@ -836,17 +856,22 @@ form.form__submit {
       margin-bottom: 30px
     }
     b {
-      font-family: Calibri
+      font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif
       font-size: 18px
       font-weight: 600
       line-height: 26px
       color: #3a3a3a
     }
     p {
-      font-family: Calibri
+      font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif
       font-size: 16px
       line-height: 20px
       color: #3a3a3a
+      a, b {
+        font-family: inherit
+        font-size: inherit
+        line-height: inherit
+      }
     }
     .divider {
       margin: 44px 0 44px 0
@@ -1055,8 +1080,290 @@ form.form__submit {
 }
   */
 
+.tabs--vertical {
+  display: flex
+}
+.tabs--vertical {
+  border-top: 1px solid #cecece
+  .title {
+    border-right: 1px solid #cecece
+    li {
+      margin-right: -1px
+      &.ui-tabs-active {
+        a {
+          background: #fefce6
+          font-family: latobold
+          border-right: 1px dashed #cecece
+          &:after {
+            display: none
+          }
+        }
+      }
+      a {
+        position: relative
+        display: block
+        padding-left: 52px
+        width: 240px
+        font-family: latoregular
+        font-size: 16px
+        line-height: 64px
+        color: #414141
+        text-decoration: none
+        border-bottom: 1px solid #cecece
+        &:before {
+          content: ''
+          position: absolute
+          left: 25px
+          top: 50%
+          transform: translateY(-50%)
+          width: 16px
+          height: 16px
+          background: center no-repeat
+        }
+        &:after {
+          content: ''
+          position: absolute
+          right: 14px
+          top: 50%
+          transform: translateY(-50%)
+          width: 8px
+          height: 27px
+          background: url(/img/icon-arrow3.png)
+        }
+      }
+
+      &:nth-child(1) {
+        a {
+          &:before {
+            background-image: url(/img/logo-nanocad-mini.png)
+          }
+        }
+      }
+      &:nth-child(2) {
+        a {
+          &:before {
+            background-image: url(/img/logo-csoft-mini.png)
+          }
+        }
+      }
+      &:nth-child(3) {
+        a {
+          &:before {
+            background-image: url(/img/logo-pilotICE-mini.png)
+          }
+        }
+      }
+      &:nth-child(4) {
+        a {
+          &:before {
+            background-image: url(/img/logo-renga-mini.png)
+          }
+        }
+      }
 
 
+    }
+  }
+
+  .content {
+    padding: 0 38px 90px 26px
+    width: 100%
+    background: #fefce6
+    .tab_content_title {
+      padding: 20px
+      font-family: latoregular
+      font-size: 22px;
+      letter-spacing: 0.26px;
+      color: #545454;
+      text-align: center
+    }
+    .table1 {
+      margin-top: 28px
+      width: auto
+      td {
+        padding-top: 8px
+        padding-bottom: 7px
+        color: #0f73b9;
+        b {
+          color: inherit !important
+        }
+      }
+      td[colspan="2"] {
+        font-family: latoregular
+        line-height: 20px
+        text-align: center
+      }
+      td:not([colspan="2"]) {
+        padding-left: 40px
+        width: 204px
+      }
+
+      &.nanocadversions {
+        tr {
+          td:nth-child(1),
+          td:nth-child(2) {
+            position: relative
+            &:before {
+              content: ''
+              position: absolute
+              top: 50%
+              left: 10px
+              transform: translateY(-50%)
+              width: 20px
+              height: 17px
+              background: url(/img/iconset-nanocad-v1.png) no-repeat center 1px
+            }
+          }
+          td:nth-child(2) {
+            &:before {
+              background-image: url(/img/iconset-nanocad-v2.png)
+            }
+          }
+        }
+        tr:nth-child(1) {
+          td {
+            &:before {
+              display: none
+            }
+          }
+        }
+        tr:nth-child(2) {
+          td:nth-child(1),
+          td:nth-child(2) {
+            &:before {
+              background-position-y: 1px
+            }
+          }
+        }
+        tr:nth-child(3) {
+          td:nth-child(1),
+          td:nth-child(2) {
+            &:before {
+              background-position-y: -32px
+            }
+          }
+        }
+        tr:nth-child(4) {
+          td:nth-child(1),
+          td:nth-child(2) {
+            &:before {
+              background-position-y: -67px
+            }
+          }
+        }
+        tr:nth-child(5) {
+          td:nth-child(1),
+          td:nth-child(2) {
+            &:before {
+              background-position-y: -101px
+            }
+          }
+        }
+        tr:nth-child(6) {
+          td:nth-child(1),
+          td:nth-child(2) {
+            &:before {
+              background-position-y: -136px
+            }
+          }
+        }
+        tr:nth-child(7) {
+          td:nth-child(1),
+          td:nth-child(2) {
+            &:before {
+              background-position-y: -170px
+            }
+          }
+        }
+        tr:nth-child(8) {
+          td:nth-child(1),
+          td:nth-child(2) {
+            &:before {
+              background-position-y: -203px
+            }
+          }
+        }
+        tr:nth-child(9) {
+          td:nth-child(1),
+          td:nth-child(2) {
+            &:before {
+              background-position-y: -237px
+            }
+          }
+        }
+
+      }
+
+    }
+  }
+}
+
+@media (max-width: 780px) {
+    .tabs--vertical {
+      flex-direction: column
+      .title {
+        display: flex
+        flex-wrap: wrap
+        border-right: 0
+        li {
+          //margin-right: 0
+          margin-left: 1px
+          width: 25%
+          min-width: 175px
+          a {
+            padding-left: 38px
+            padding-right: 10px
+            width: 100%
+            border-right: 1px solid #cecece
+            &:before {
+              left: 12px
+            }
+            &:after {
+              display: none
+            }
+          }
+
+          &.ui-tabs-active {
+            a {
+              border-right: 1px solid #cecece
+              //border-bottom: 1px dashed #cecece
+            }
+          }
+        }
+      }
+      .content {
+        margin-top: -1px
+        padding: 0 15px 90px 15px;
+        border-top: 1px solid #cecece
+      }
+    }
+}
+
+@media (max-width: 550px) {
+  .tabs--vertical {
+    .title {
+      li {
+        width: 100%
+      }
+    }
+  }
+}
+
+
+/*.title {
+  border-right: 1px solid #cecece
+  li {
+    margin-right: -1px
+    &.ui-tabs-active {
+      a {
+        background: #fefce6
+        font-family: latobold
+        border-right: 1px dashed #cecece
+        &:after {
+          display: none
+        }
+      }
+    }*/
 
 /*HEADER BEGIN*/
 .header {
@@ -2072,6 +2379,10 @@ table.table1 {
     border-collapse: collapse;
     border: 1px solid #d2d2d2
     box-sizing: border-box
+    span {
+      font-family: inherit
+      font-size: inherit
+    }
     &.withHint {
       padding-right: 33px
     }
@@ -2469,21 +2780,26 @@ p.ecp__h2 {
   line-height: 29px
   color: #545454
   text-transform: uppercase
-  & .font-red {
+  & .font-red,
+  & .font-blue,
+  & .font-darkblue {
     font-family: latoblack
     font-size: 24px
   }
   &--18 {
     font-size: 18px
     line-height: 23px
-    & .font-red {
+    & .font-red,
+    & .font-darkblue {
       font-size: 18px
     }
   }
   &--20 {
     font-size: 20px
     line-height: 25px
-    & .font-red {
+    & .font-red,
+    & .font-blue,
+    & .font-darkblue {
       font-size: 20px
     }
   }
@@ -2516,7 +2832,9 @@ p.ecp__h3 {
   font-size: 18px
   color: #545454
   text-transform: uppercase
-  & .font-red {
+  & .font-red,
+  & .font-blue,
+  & .font-darkblue {
     font-family: latoblack
     font-size: 18px
   }
@@ -2532,6 +2850,9 @@ p.ecp__h3 {
 
 .font-blue {
   color: #4984ad;
+}
+.font-darkblue {
+  color: #0055a3
 }
 
 
@@ -2592,3 +2913,48 @@ label {
 }
 
 
+.divider2.right.left {
+  padding: 0 10px 0 10px
+  text-align: center
+  overflow: hidden
+  div {
+    position: relative
+    display: inline-block
+    &:before,
+    &:after {
+      content: ''
+      position: absolute
+      top: 50%
+      left: -812px
+      width: 800px
+      height: 1px
+      background: #cecece
+    }
+    &:after {
+      left: auto
+      right: -812px
+    }
+  }
+}
+
+
+.list {
+  &--checked {
+    li {
+      position: relative
+      margin: 7px 0 7px 0
+      padding-left: 24px
+      font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif
+      &:before {
+        content: ''
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+        width: 14px
+        height: 14px
+        background: url(/img/icon-checked.png) center no-repeat
+      }
+    }
+  }
+}

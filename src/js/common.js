@@ -163,7 +163,15 @@ $( function() {
     });
 
 
-    var ecpCostCheckbox = $('.ecp__form2 input[type="checkbox"]'),
+    $('<input>').attr({
+        type: 'hidden',
+        id: 'hidden_sum',
+        name: 'ecp__form2__sum',
+        value: 0
+    }).appendTo('.ecp__form2 form');
+
+
+    var ecpCostCheckbox = $('.ecp__form2 li input[type="checkbox"]'),
         ecpCostPrint = $('.ecp__form2 .ecp__form2__footer .result .number'),
         ecpCostCount = 0;
     ecpCostCheckbox.change(function () {
@@ -173,8 +181,33 @@ $( function() {
        } else {
            ecpCostCount -= parseInt(ecpCostThis)
        }
-        $('.ecp__form2 .ecp__form2__footer .result .number').html(String(ecpCostCount))
+        $('.ecp__form2 .ecp__form2__footer .result .number').html(String(ecpCostCount));
+        $('#hidden_sum').val(ecpCostCount)
     });
+
+    var ecpCostCheckbox2 = $('.ecp__form2 .td--check input[type="checkbox"]');
+    ecpCostCheckbox2.change(function () {
+        try {
+            ecpCostThis = $(this).parents('tr').find('.td--price label').html().match(/\d/g).join("");
+        }
+        catch (error) {
+            try {
+                ecpCostThis = $(this).parents('tr').find('td .font-red').html().match(/\d/g).join("");
+            }
+            catch (error) {
+                ecpCostThis = $(this).parents('.form2__item').find('.ecp__search__top .font-red').html().match(/\d/g).join("");
+            }
+        }
+
+        if($(this).prop('checked')) {
+            ecpCostCount += parseInt(ecpCostThis)
+        } else {
+            ecpCostCount -= parseInt(ecpCostThis)
+        }
+        $('.ecp__form2 .ecp__form2__footer .result .number').html(String(ecpCostCount));
+        $('#hidden_sum').val(ecpCostCount)
+    });
+
 
     $('.ecp__hint button').click(function () {
         $(this).parent('.ecp__hint').toggleClass('active')
@@ -195,6 +228,8 @@ $( function() {
         $('.tabs1 .tabs__title__wrap li:eq(' + (li-1) + ')').addClass('prev');
         $('.tabs1 .tabs__title__wrap li:eq(-1)').removeClass('prev');
     });
+
+    $('.tabs--vertical').tabs();
 
     /*tabs1 begin*/
     window.onresize = function() {
