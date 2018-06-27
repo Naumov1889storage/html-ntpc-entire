@@ -60,13 +60,17 @@ $( function() {
         $('.topmenu ul').toggleClass('active')
     });
 
+    toTabs = $('#tabs .tabs__title__wrap a').offset().top - 115;
     $('#tabs .tabs__title__wrap a').click(function () {
+        $('body, html').animate({
+            scrollTop: toTabs
+        }, 0);
+
         li = $(this).parent().index();
         $('#tabs .tabs__title__wrap li').removeClass('prev');
         $('#tabs .tabs__title__wrap li:eq(' + (li-1) + ')').addClass('prev');
         $('#tabs .tabs__title__wrap li:eq(-1)').removeClass('prev');
     });
-
 
     function closeIfOutside(block) {
         $(document).click(function(e) {

@@ -2513,3 +2513,7 @@ label {
   height: 14px;
   background: url("/img/icon-checked.png") center no-repeat;
 }
+.preventJumping {
+  position: absolute;
+  height: 1500px;
+}
