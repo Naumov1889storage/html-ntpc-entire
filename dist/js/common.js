@@ -361,24 +361,24 @@ function modal(modal, btnOpen) {
     });
 
     $(modal).find('.modal__close').click(function () {
-        $('html').height(initBodyHeight);
-        $('html, body').animate ({
-            scrollTop: initScrollPosition
-        }, 0);
-
         $(modal).fadeOut();
         $(modal).removeClass('active');
         $('.overlay').fadeOut()
+
+        $('body').height(initBodyHeight);
+        $('html, body').animate ({
+            scrollTop: initScrollPosition
+        }, 0);
     });
     $('.overlay').click(function () {
-        $('html').height(initBodyHeight);
-        $('html, body').animate ({
-            scrollTop: initScrollPosition
-        }, 0);
-
         $(modal).fadeOut();
         $(modal).removeClass('active');
         $('.overlay').fadeOut()
+
+        $('body').height(initBodyHeight);
+        $('html, body').animate ({
+            scrollTop: initScrollPosition
+        }, 0);
     });
 }
 
