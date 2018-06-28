@@ -350,40 +350,40 @@ function modal(modal, btnOpen) {
         setTimeout(function () {
             initBodyHeight = $(document).outerHeight();
             console.log(initBodyHeight);
-        }, 2000);
-    });
+        }, 1000);
 
-    $(btnOpen).click(function () {
-        initScrollPosition = $(window).scrollTop();
-        $('html, body').height('100%');
-        $('html, body').animate ({
-            scrollTop: initScrollPosition
-        }, 0);
+        $(btnOpen).click(function () {
+            initScrollPosition = $(window).scrollTop();
+            $('html, body').height('100%');
+            $('html, body').animate ({
+                scrollTop: initScrollPosition
+            }, 0);
 
-        $(modal).fadeIn();
-        $(modal).addClass('active');
-        $('.overlay').fadeIn()
-    });
+            $(modal).fadeIn();
+            $(modal).addClass('active');
+            $('.overlay').fadeIn()
+        });
 
-    $(modal).find('.modal__close').click(function () {
-        $(modal).fadeOut();
-        $(modal).removeClass('active');
-        $('.overlay').fadeOut();
+        $(modal).find('.modal__close').click(function () {
+            $(modal).fadeOut();
+            $(modal).removeClass('active');
+            $('.overlay').fadeOut();
 
-        $('body').height(initBodyHeight);
-        $('html, body').animate ({
-            scrollTop: initScrollPosition
-        }, 0);
-    });
-    $('.overlay').click(function () {
-        $(modal).fadeOut();
-        $(modal).removeClass('active');
-        $('.overlay').fadeOut();
+            $('body').height(initBodyHeight);
+            $('html, body').animate ({
+                scrollTop: initScrollPosition
+            }, 0);
+        });
+        $('.overlay').click(function () {
+            $(modal).fadeOut();
+            $(modal).removeClass('active');
+            $('.overlay').fadeOut();
 
-        $('body').height(initBodyHeight);
-        $('html, body').animate ({
-            scrollTop: initScrollPosition
-        }, 0);
+            $('body').height(initBodyHeight);
+            $('html, body').animate ({
+                scrollTop: initScrollPosition
+            }, 0);
+        });
     });
 }
 
