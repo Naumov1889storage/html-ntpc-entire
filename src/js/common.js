@@ -350,7 +350,7 @@ function modal(modal, btnOpen) {
         setTimeout(function () {
             initBodyHeight = $(document).outerHeight();
             console.log(initBodyHeight);
-        }, 1000);
+        }, 2000);
 
         $(btnOpen).click(function () {
             initScrollPosition = $(window).scrollTop();
