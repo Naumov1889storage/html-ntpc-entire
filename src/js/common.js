@@ -350,7 +350,7 @@ function modal(modal, btnOpen) {
         setTimeout(function () {
             initBodyHeight = $(document).outerHeight();
             console.log(initBodyHeight);
-        }, 500);
+        }, 2000);
     });
 
     $(btnOpen).click(function () {
