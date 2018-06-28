@@ -346,7 +346,7 @@ function modalImg() {
 }
 
 function modal(modal, btnOpen) {
-    initBodyHeight = $('body').height();
+    initBodyHeight = $('body').outerHeight();
 
     $(btnOpen).click(function () {
         initScrollPosition = $(window).scrollTop();
@@ -363,9 +363,9 @@ function modal(modal, btnOpen) {
     $(modal).find('.modal__close').click(function () {
         $(modal).fadeOut();
         $(modal).removeClass('active');
-        $('.overlay').fadeOut()
+        $('.overlay').fadeOut();
 
-        $('body').height(initBodyHeight);
+        $('body').outerHeight(initBodyHeight);
         $('html, body').animate ({
             scrollTop: initScrollPosition
         }, 0);
@@ -375,7 +375,7 @@ function modal(modal, btnOpen) {
         $(modal).removeClass('active');
         $('.overlay').fadeOut()
 
-        $('body').height(initBodyHeight);
+        $('body').outerHeight(initBodyHeight);
         $('html, body').animate ({
             scrollTop: initScrollPosition
         }, 0);
