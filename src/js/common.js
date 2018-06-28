@@ -346,7 +346,10 @@ function modalImg() {
 }
 
 function modal(modal, btnOpen) {
-    initBodyHeight = $('html').outerHeight();
+    $(function () {
+        initBodyHeight = $('html').outerHeight();
+        console.log(initBodyHeight);
+    });
 
     $(btnOpen).click(function () {
         initScrollPosition = $(window).scrollTop();
