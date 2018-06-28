@@ -1781,7 +1781,7 @@ form.form__submit .agreement input[type='checkbox'] {
 /*MODAL BEGIN*/
 .overlay {
   display: none;
-  position: absolute;
+  position: fixed;
   z-index: 200;
   top: 0;
   left: 0;

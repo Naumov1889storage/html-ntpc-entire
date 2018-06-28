@@ -346,18 +346,36 @@ function modalImg() {
 }
 
 function modal(modal, btnOpen) {
+    initBodyHeight = $('body').height();
+
     $(btnOpen).click(function () {
+        initScrollPosition = $(window).scrollTop();
+        $('html, body').height('100%');
+        $('html, body').animate ({
+            scrollTop: initScrollPosition
+        }, 0);
+
         $(modal).fadeIn();
         $(modal).addClass('active');
         $('.overlay').fadeIn()
     });
 
     $(modal).find('.modal__close').click(function () {
+        $('html, body').height(initBodyHeight);
+        $('html, body').animate ({
+            scrollTop: initScrollPosition
+        }, 0);
+
         $(modal).fadeOut();
         $(modal).removeClass('active');
         $('.overlay').fadeOut()
     });
     $('.overlay').click(function () {
+        $('html, body').height(initBodyHeight);
+        $('html, body').animate ({
+            scrollTop: initScrollPosition
+        }, 0);
+
         $(modal).fadeOut();
         $(modal).removeClass('active');
         $('.overlay').fadeOut()
