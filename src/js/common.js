@@ -361,7 +361,7 @@ function modal(modal, btnOpen) {
     });
 
     $(modal).find('.modal__close').click(function () {
-        $('html, body').height(initBodyHeight);
+        $('html').height(initBodyHeight);
         $('html, body').animate ({
             scrollTop: initScrollPosition
         }, 0);
@@ -371,7 +371,7 @@ function modal(modal, btnOpen) {
         $('.overlay').fadeOut()
     });
     $('.overlay').click(function () {
-        $('html, body').height(initBodyHeight);
+        $('html').height(initBodyHeight);
         $('html, body').animate ({
             scrollTop: initScrollPosition
         }, 0);
