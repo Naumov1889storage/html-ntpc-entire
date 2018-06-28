@@ -369,7 +369,7 @@ function modal(modal, btnOpen) {
             $(modal).removeClass('active');
             $('.overlay').fadeOut();
 
-            $('body').height(initBodyHeight);
+            $('html, body').height(initBodyHeight);
             $('html, body').animate ({
                 scrollTop: initScrollPosition
             }, 0);
@@ -379,7 +379,7 @@ function modal(modal, btnOpen) {
             $(modal).removeClass('active');
             $('.overlay').fadeOut();
 
-            $('body').height(initBodyHeight);
+            $('html, body').height(initBodyHeight);
             $('html, body').animate ({
                 scrollTop: initScrollPosition
             }, 0);
