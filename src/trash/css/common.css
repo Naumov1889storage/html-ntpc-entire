@@ -29,14 +29,9 @@
 * {
   font-family: latoregular;
 }
-html,
-body {
-  height: 100%;
-}
 body {
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 .toPushFooter {
   flex: 1 0 auto;

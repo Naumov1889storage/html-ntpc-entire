@@ -29,10 +29,6 @@
 * {
   font-family: latoregular;
 }
-html,
-body {
-  height: 100%;
-}
 body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -43,7 +39,6 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
 }
 .toPushFooter {
   -webkit-box-flex: 1;

@@ -1,5 +1,42 @@
 $( function() {
-    $( "#tabs" ).tabs();
+
+    if ($('body').height() < $(document).height()) {
+        $('html,body').height('100%')
+    }
+
+    $('#tabs').tabs({
+        beforeActivate: function(event, ui) {
+            $(this).data('scrollTop', $(window).scrollTop()); // save scrolltop
+        },
+        activate: function(event, ui) {
+            if (!$(this).data('scrollTop')) { // there was no scrolltop before
+                jQuery('html').css('height', 'auto'); // reset back to auto...
+                // this may not work on page where originally
+                // the html tag was of a fixed height...
+                return;
+            }
+            //console.log('activate: scrolltop pred = ' + $(this).data('scrollTop') + ', nyni = ' + $(window).scrollTop());
+            if ($(window).scrollTop() == $(this).data('scrollTop')) // the scrolltop was not moved
+                return;                // nothing to be done
+            // scrolltop moved - we need to fix it
+            var min_height = $(this).data('scrollTop') + $(window).height();
+            // minimum height the document must have to have that scrollTop
+            if ($('html').outerHeight() < min_height) { // just a test to be sure
+                // but this test should be always true
+                /* be sure to use $('html').height() instead of $(document).height()
+                   because the document height is always >= window height!
+                   Not what you want. And to handle potential html padding, be sure
+                   to use outerHeight instead!
+                       Now enlarge the html tag (unfortunatelly cannot set
+                   $(document).height()) - we want to set min_height
+                   as html's outerHeight:
+                 */
+                $('html').height(min_height -
+                    ($('html').outerHeight() - $('html').height()));
+            }
+            $(window).scrollTop($(this).data('scrollTop')); // finally, set it back
+        }
+    });
 
     $(".text.short").shorten({
         "showChars" : 350,
@@ -9,21 +46,6 @@ $( function() {
     $('.morelink').click(function () {
        $(this).parents('.text.shortened').find('span').not('.moreellipses').not('.morecontent').toggleClass('active').toggle()
     });
-
-/*    $('.circleslider').tinycircleslider({
-        interval:true,
-        intervalTime: 10000,
-        radius   : 182,
-        dotsSnap: true,
-        dotsHide: false,
-        slideCurrent: 2});
-    var box = $('.circleslider').data("plugin_tinycircleslider");
-    $('.circleslider').bind("move", function()
-    {
-        console.log(box.slideCurrent);
-        $('.circleslider .dot').removeClass('active')
-        $('.circleslider .dot').eq(box.slideCurrent).addClass('active')
-    });*/
 
 
     $('.single-item-desk--js').slick({
@@ -60,12 +82,7 @@ $( function() {
         $('.topmenu ul').toggleClass('active')
     });
 
-    toTabs = $('#tabs .tabs__title__wrap a').offset().top - 115;
     $('#tabs .tabs__title__wrap a').click(function () {
-        $('body, html').animate({
-            scrollTop: toTabs
-        }, 0);
-
         li = $(this).parent().index();
         $('#tabs .tabs__title__wrap li').removeClass('prev');
         $('#tabs .tabs__title__wrap li:eq(' + (li-1) + ')').addClass('prev');
