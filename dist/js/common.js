@@ -347,7 +347,7 @@ function modalImg() {
 
 function modal(modal, btnOpen) {
     $(function () {
-        initBodyHeight = $('html').outerHeight();
+        initBodyHeight = $(document).outerHeight();
         console.log(initBodyHeight);
     });
 
