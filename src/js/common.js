@@ -347,8 +347,10 @@ function modalImg() {
 
 function modal(modal, btnOpen) {
     $(function () {
-        initBodyHeight = $(document).outerHeight();
-        console.log(initBodyHeight);
+        setTimeout(function () {
+            initBodyHeight = $(document).outerHeight();
+            console.log(initBodyHeight);
+        }, 500);
     });
 
     $(btnOpen).click(function () {
