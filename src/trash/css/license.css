@@ -14,7 +14,7 @@
   bottom: 3px;
   width: 32px;
   height: 32px;
-  background: url("/img/icon-loup.png") center;
+  background: url("../img/icon-loup.png") center;
   background-size: cover;
   border-radius: 100%;
 }

@@ -44,16 +44,16 @@
   transform: translateX(-50%);
   width: 50px;
   height: 50px;
-  background: url("/img/icon-ecpitems1.png") no-repeat bottom center;
+  background: url("../img/icon-ecpitems1.png") no-repeat bottom center;
 }
 .ecp.ecp2 .ecp__items ul li:nth-child(2) a:before {
-  background-image: url("/img/icon-ecpitems2.png");
+  background-image: url("../img/icon-ecpitems2.png");
 }
 .ecp.ecp2 .ecp__items ul li:nth-child(3) a:before {
-  background-image: url("/img/icon-ecpitems3.png");
+  background-image: url("../img/icon-ecpitems3.png");
 }
 .ecp.ecp2 .ecp__items ul li:nth-child(4) a:before {
-  background-image: url("/img/icon-ecpitems4.png");
+  background-image: url("../img/icon-ecpitems4.png");
 }
 .ecp.tender .ecp__items {
   margin-top: 0;
@@ -63,13 +63,13 @@
   padding-bottom: 0 !important;
 }
 .ecp.tender .ecp__items ul li:nth-child(1) a:before {
-  background-image: url("/img/icon-ecpitems5.png");
+  background-image: url("../img/icon-ecpitems5.png");
 }
 .ecp.tender .ecp__items ul li:nth-child(2) a:before {
-  background-image: url("/img/icon-ecpitems6.png");
+  background-image: url("../img/icon-ecpitems6.png");
 }
 .ecp.tender .ecp__items ul li:nth-child(3) a:before {
-  background-image: url("/img/icon-ecpitems7.png");
+  background-image: url("../img/icon-ecpitems7.png");
 }
 @media (max-width: 550px) {
   .ecp__items ul li {
@@ -85,7 +85,7 @@
   z-index: -1;
   width: 100%;
   height: 760px;
-  background: url("/img/bg-ecp2.jpg") bottom;
+  background: url("../img/bg-ecp2.jpg") bottom;
   background-size: cover;
 }
 .ecp__topcenter {
@@ -169,7 +169,7 @@ input[name='keyword'] {
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
-  background: url("/img/icon-search.png") no-repeat right center;
+  background: url("../img/icon-search.png") no-repeat right center;
   background-size: 19px;
   background-position-x: 98%;
 }
@@ -304,7 +304,7 @@ input[name='keyword'] {
   padding-bottom: 30px !important;
 }
 .tender .ecp__background {
-  background-image: url("/img/bg-tender.jpg");
+  background-image: url("../img/bg-tender.jpg");
 }
 .tender__hint {
   transform: translateY(2px) translateX(6px);
@@ -393,7 +393,7 @@ input[name='keyword'] {
   left: 0;
   width: 100%;
   height: 50px;
-  background: url("/img/iconset-tender.png") no-repeat 10px 2px;
+  background: url("../img/iconset-tender.png") no-repeat 10px 2px;
 }
 .tender__included tr:hover td:first-child {
   opacity: 1;

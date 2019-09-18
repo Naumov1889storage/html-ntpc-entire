@@ -23,11 +23,6 @@
   color: #4984ad;
   opacity: 1; /* Firefox */
 }
-.nanocad .ecp__tel input:-ms-input-placeholder {
-/* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #4984ad;
-  opacity: 1; /* Firefox */
-}
 .nanocad .ecp__tel input::-ms-input-placeholder {
 /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #4984ad;

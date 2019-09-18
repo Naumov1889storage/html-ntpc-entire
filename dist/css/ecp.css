@@ -89,11 +89,6 @@
   color: #f56542;
   opacity: 1; /* Firefox */
 }
-.ecp__tel input:-ms-input-placeholder {
-/* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #f56542;
-  opacity: 1; /* Firefox */
-}
 .ecp__tel input::-ms-input-placeholder {
 /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #f56542;

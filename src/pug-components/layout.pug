@@ -21,7 +21,7 @@ html(lang="ru-Ru")
         link(rel='stylesheet', href='css/ecp.css')
         link(rel='stylesheet', href='css/ecp2.css')
         link(rel='stylesheet', href='css/nanocad.css')
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
     body
         .toPushFooter
             block header
@@ -50,51 +50,51 @@ html(lang="ru-Ru")
                                             .square.top.flex_column.align_center
                                                 ul.foricons#foricons__1
                                                     li.content__title
-                                                        a(href='') Инженерное ПО
+                                                        a(href='tender.html' class='inactiveLink') Инженерное ПО
                                                     li
-                                                        a(href='') NanoCAD
+                                                        a(href='tender.html') NanoCAD
                                                     li
-                                                        a(href='') Model Studio CS
+                                                        a(href='tender.html' class='inactiveLink') Model Studio CS
                                                     li
-                                                        a(href='') Pilot-ICE
+                                                        a(href='tender.html' class='inactiveLink') Pilot-ICE
                                                     li
-                                                        a(href='') Renga
+                                                        a(href='engsoft.html') Renga
 
                                             .square.bottom.flex_column.justify_center.align_center
                                                 ul
                                                     li.content__title.lonely
-                                                        a(href='') NormaCS
+                                                        a(href='license.html') NormaCS
                                                     li.content__title.lonely
-                                                        a(href='') Гарант
+                                                        a(href='license-inner.html') Гарант
                                                     li.content__title.lonely
-                                                        a(href='') Обучение
+                                                        a(href='nanocad1.html') Обучение
                                         .right
                                             ul.foricons#foricons__2
                                                 li.content__title
-                                                    a(href='') Электронная подпись
+                                                    a(href='' class='inactiveLink') Электронная подпись
                                                 li
-                                                    a(href='') Для гос. порталов
+                                                    a(href='' class='inactiveLink') Для гос. порталов
                                                 li
-                                                    a(href='') Для электронных торгов
+                                                    a(href='' class='inactiveLink') Для электронных торгов
                                                 li
-                                                    a(href='') Электронная отчетность
+                                                    a(href='' class='inactiveLink') Электронная отчетность
                                                 li
-                                                    a(href='') Электронный документооборот
+                                                    a(href='' class='inactiveLink') Электронный документооборот
                                                 li
-                                                    a(href='') Электронные кассы
+                                                    a(href='' class='inactiveLink') Электронные кассы
 
 
                                             ul.foricons#foricons__3
                                                 li.content__title
-                                                    a(href='') Тендерное сопровождение
+                                                    a(href='pricedown.html') Тендерное сопровождение
                                                 li
-                                                    a(href='') Аккредитация / Установка
+                                                    a(href='nanocad2.html') Аккредитация / Установка
                                                 li
-                                                    a(href='') Обучение Торгам
+                                                    a(href='' class='inactiveLink') Обучение Торгам
                                                 li
-                                                    a(href='') Подготовка для участия в тендере
+                                                    a(href='' class='inactiveLink') Подготовка для участия в тендере
                                                 li
-                                                    a(href='') Полное сопровождение
+                                                    a(href='' class='inactiveLink') Полное сопровождение
 
                 if page == 'Главная'
                     .header
@@ -115,8 +115,8 @@ html(lang="ru-Ru")
                                 i
                         ul.container
                             +navLink('pricedown.html', 'Акции')
-                            +navLink('news.html', 'Новости')
-                            +navLink('article.html', 'Статьи')
+                            +navLink('ecp.html', 'Новости')
+                            +navLink('ecp2.html', 'Статьи')
                             +navLink('feedback.html', 'Отзывы')
                             +navLink('about.html', 'О компании')
                             +navLink('contact.html', 'Контакты')
@@ -127,8 +127,8 @@ html(lang="ru-Ru")
                                 i
                         ul.container
                             +navLink('pricedown.html', 'Акции')
-                            +navLink('news.html', 'Новости')
-                            +navLink('article.html', 'Статьи')
+                            +navLink('ecp.html', 'Новости')
+                            +navLink('ecp2.html', 'Статьи')
                             +navLink('feedback.html', 'Отзывы')
                             +navLink('about.html', 'О компании')
                             +navLink('contact.html', 'Контакты')
@@ -153,19 +153,19 @@ html(lang="ru-Ru")
                         ul.footer__company
                             li.footer__title КОМПАНИЯ
                             li
-                                a(href='') О компании
+                                a(href='about.html') О компании
                             li
-                                a(href='') Контакты
+                                a(href='contact.html') Контакты
                             li
-                                a(href='') Новости
+                                a(href='ecp.html') Новости
                             li
-                                a(href='') Акции
+                                a(href='pricedown.html') Акции
                             li
-                                a(href='') Лицензии
+                                a(href='license.html') Лицензии
                             li
-                                a(href='') Работа в компании
+                                a(href='license-inner.html') Работа в компании
                             li
-                                a(href='') Корпоративная жизни
+                                a(href='tender.html') Корпоративная жизни
 
 
 
@@ -173,16 +173,16 @@ html(lang="ru-Ru")
                             li.footer__title НАПРАВЛЕНИЯ
                             li
                                 a(href='') Инженерное ПО
-                            li <span>- </span> <a href=''>NanoCAD</a>
-                            li <span>- </span> <a href=''>Renga</a>
+                            li <span>- </span> <a href='nanocad1.html'>NanoCAD</a>
+                            li <span>- </span> <a href='nanocad2.html'>Renga</a>
                             li
                                 a(href='') Электронные услуги
-                            li <span>- </span> <a href=''>Электронная подпись</a>
-                            li <span>- </span> <a href=''>Кассы под ключ</a>
+                            li <span>- </span> <a href='engsoft.html'>Электронная подпись</a>
+                            li <span>- </span> <a href='ecp.html'>Кассы под ключ</a>
                             li
-                                a(href='') NormaCS
+                                a(href='ecp2.html') NormaCS
                             li
-                                a(href='') Гарант
+                                a(href='pricedown.html') Гарант
 
                         ul.footer__contact
                             li.footer__title КОНТАКТЫ
@@ -207,8 +207,8 @@ html(lang="ru-Ru")
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
         script(src='https://code.jquery.com/ui/1.12.1/jquery-ui.js')
         script(src='https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.es6.min.js')
-        <script type="text/javascript" src="https://viralpatel.net/blogs/demo/jquery/jquery.shorten.1.0.js" ></script>
-        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        script(src="https://viralpatel.net/blogs/demo/jquery/jquery.shorten.1.0.js")
+        script(src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
         script(src='js/concat-js-libs.js')
         script(src='js/common.js')
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGbclFi3wr16ier0KgiNuocl713ihJmO0&callback=initMap" type="text/javascript"></script>

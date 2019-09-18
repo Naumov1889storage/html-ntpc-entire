@@ -1,30 +1,30 @@
 @font-face {
   font-family: 'TimesNewRomanPSMT'
-  src: url('/fonts/TimesNewRomanPSMT.ttf')
+  src: url('../fonts/TimesNewRomanPSMT.ttf')
 }
 @font-face {
   font-family: 'Calibri'
-  src: url('/fonts/Calibri.ttf')
+  src: url('../fonts/Calibri.ttf')
 }
 @font-face {
   font-family: 'calibri'
-  src: url('/fonts/Calibri.ttf')
+  src: url('../fonts/Calibri.ttf')
 }
 @font-face {
   font-family: 'latoblack'
-  src: url('/fonts/latoblack.ttf')
+  src: url('../fonts/latoblack.ttf')
 }
 @font-face {
   font-family: 'latobold'
-  src: url('/fonts/latobold.ttf')
+  src: url('../fonts/latobold.ttf')
 }
 @font-face {
   font-family: 'latoregular'
-  src: url('/fonts/latoregular.ttf')
+  src: url('../fonts/latoregular.ttf')
 }
 @font-face {
   font-family: 'latolight'
-  src: url('/fonts/latolight.ttf')
+  src: url('../fonts/latolight.ttf')
 }
 
 * {
@@ -60,6 +60,11 @@ a {
   text-decoration: underline
   &:hover {
     text-decoration: none
+  }
+  &.inactiveLink {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.6;
   }
 }
 
@@ -159,7 +164,7 @@ form.form__submit {
   input {
     &.name,
     &.tel {
-      background: #ffffff url(/img/iconset-feedback1.jpg) no-repeat 12px 10px
+      background: #ffffff url("../img/iconset-feedback1.jpg") no-repeat 12px 10px
     }
     &.tel {
       background-position: 12px -46px
@@ -189,7 +194,7 @@ form.form__submit {
       top: 4px
       width: 15px
       height: 15px
-      background: url(/img/icon-checkbox.png) no-repeat
+      background: url("../img/icon-checkbox.png") no-repeat
       background-size: cover
       border-radius: 0
     }
@@ -386,7 +391,7 @@ form.form__submit {
       left: 6px
       width: 15px
       height: 9px
-      background: url(/img/icon-arrow2.png) no-repeat
+      background: url("../img/icon-arrow2.png") no-repeat
       transition: .3s
     }
     &.active {
@@ -482,7 +487,7 @@ form.form__submit {
       top: 3px
       width: 15px
       height: 15px
-      background: url(/img/iconset-checkbox.png) no-repeat center -20px
+      background: url("../img/iconset-checkbox.png") no-repeat center -20px
       transition: none !important
     }
     input:not(checked) + label:after,
@@ -492,7 +497,7 @@ form.form__submit {
       margin: 0
       width: 15px
       height: 15px
-      background: url(/img/iconset-checkbox.png) no-repeat center 0
+      background: url("../img/iconset-checkbox.png") no-repeat center 0
       transition: none !important
     }
     input:not(checked) + label:after {
@@ -906,7 +911,7 @@ form.form__submit {
           line-height: 20px
           text-align: center
           color: #4373aa
-          background: url(/img/iconset-features.jpg) no-repeat
+          background: url("../img/iconset-features.jpg") no-repeat
           background-position: 12px 0
           &:nth-child(2) {
             background-position: -122px 0
@@ -927,7 +932,7 @@ form.form__submit {
         &:after,
         a:before {
           background: darkmagenta
-        } 
+        }
       }
       &.color2 {
         &:before,
@@ -1128,35 +1133,35 @@ form.form__submit {
           transform: translateY(-50%)
           width: 8px
           height: 27px
-          background: url(/img/icon-arrow3.png)
+          background: url("../img/icon-arrow3.png")
         }
       }
 
       &:nth-child(1) {
         a {
           &:before {
-            background-image: url(/img/logo-nanocad-mini.png)
+            background-image: url("../img/logo-nanocad-mini.png")
           }
         }
       }
       &:nth-child(2) {
         a {
           &:before {
-            background-image: url(/img/logo-csoft-mini.png)
+            background-image: url("../img/logo-csoft-mini.png")
           }
         }
       }
       &:nth-child(3) {
         a {
           &:before {
-            background-image: url(/img/logo-pilotICE-mini.png)
+            background-image: url("../img/logo-pilotICE-mini.png")
           }
         }
       }
       &:nth-child(4) {
         a {
           &:before {
-            background-image: url(/img/logo-renga-mini.png)
+            background-image: url("../img/logo-renga-mini.png")
           }
         }
       }
@@ -1211,12 +1216,12 @@ form.form__submit {
               transform: translateY(-50%)
               width: 20px
               height: 17px
-              background: url(/img/iconset-nanocad-v1.png) no-repeat center 1px
+              background: url("../img/iconset-nanocad-v1.png") no-repeat center 1px
             }
           }
           td:nth-child(2) {
             &:before {
-              background-image: url(/img/iconset-nanocad-v2.png)
+              background-image: url("../img/iconset-nanocad-v2.png")
             }
           }
         }
@@ -1442,7 +1447,7 @@ form.form__submit {
       transform: translateY(-50%)
       width: 24px
       height: 24px
-      background: url("/img/icon-search.png")
+      background: url("../img/icon-search.png")
     }
   }
 
@@ -1467,7 +1472,7 @@ form.form__submit {
           height: 15px
           border: none
           transform: rotate(0)
-          background: url("/img/icon-cross.jpg")
+          background: url("../img/icon-cross.jpg")
         }
       }
       .content {
@@ -1580,7 +1585,7 @@ form.form__submit {
               transform: translateY(-50%)
               width: 20px
               height: 20px
-              background: url(/img/iconset-catalog.jpg)
+              background: url("../img/iconset-catalog.jpg")
             }
           }
           &#foricons {
@@ -1967,7 +1972,7 @@ form.form__submit {
         left: 0
         width: 19px
         height: 19px
-        background: url(/img/iconset-topmenu.png) no-repeat
+        background: url("../img/iconset-topmenu.png") no-repeat
       }
       &:nth-child(2) {
         &:before {
@@ -2282,7 +2287,7 @@ form.form__submit {
   input {
     &.name,
     &.tel {
-      background: url(/img/iconset-feedback1.jpg) no-repeat 12px 10px
+      background: url("../img/iconset-feedback1.jpg") no-repeat 12px 10px
     }
     &.tel {
       background-position: 12px -46px
@@ -2308,7 +2313,7 @@ form.form__submit {
       top: 4px
       width: 15px
       height: 15px
-      background: url(/img/icon-checkbox.png) no-repeat
+      background: url("../img/icon-checkbox.png") no-repeat
       background-size: cover
       border-radius: 0
     }
@@ -2457,7 +2462,7 @@ table.table1 {
     height: 16px
     transform: none
     opacity: 1
-    background: url(/img/icon-checkbox2.jpg) no-repeat center
+    background: url("../img/icon-checkbox2.jpg") no-repeat center
   }
   input:not(checked) + label:after,
   input:checked + label:after {
@@ -2467,7 +2472,7 @@ table.table1 {
     width: 16px
     height: 16px
     opacity: 1
-    background: url(/img/icon-checkbox2-checked.jpg) no-repeat center
+    background: url("../img/icon-checkbox2-checked.jpg") no-repeat center
   }
   input:not(checked) + label:after {
     opacity: 0
@@ -2502,7 +2507,7 @@ table.table1 {
   margin: 0 auto
   width: 350px
   height: 350px
-  background: url(/img/bg-circleslider.png) no-repeat center
+  background: url("../img/bg-circleslider.png") no-repeat center
   .slick-list,
   .slick-track,
   .slick-track .item {
@@ -2535,27 +2540,27 @@ table.table1 {
       &:nth-child(1) {
         top: -65px
         left: 115px
-        background-image: url(/img/icon-circleslider1.png)
+        background-image: url("../img/icon-circleslider1.png")
       }
       &:nth-child(2) {
         top: 55px
         right: -50px
-        background-image: url(/img/icon-circleslider2.png)
+        background-image: url("../img/icon-circleslider2.png")
       }
       &:nth-child(3) {
         bottom: 10px
         right: -15px
-        background-image: url(/img/icon-circleslider3.png)
+        background-image: url("../img/icon-circleslider3.png")
       }
       &:nth-child(4) {
         bottom: -8px
         left: 7px
-        background-image: url(/img/icon-circleslider4.png)
+        background-image: url("../img/icon-circleslider4.png")
       }
       &:nth-child(5) {
         top: 40px
         left: -48px
-        background-image: url(/img/icon-circleslider5.png)
+        background-image: url("../img/icon-circleslider5.png")
       }
     }
   }
@@ -2713,7 +2718,7 @@ table.table1 {
       top: 8px
       width: 19px
       height: 11px
-      background: url(/img/icon-arrow2.png) no-repeat center
+      background: url("../img/icon-arrow2.png") no-repeat center
       background-size: 19px 11px
     }
     &.active {
@@ -2878,7 +2883,7 @@ p.ecp__h3 {
       margin: 0 3px 0 3px;
       width: 16px;
       height: 9px;
-      background: url(/img/icon-arrow2.png) no-repeat
+      background: url("../img/icon-arrow2.png") no-repeat
       transition: .3s
     }
   }
@@ -2905,7 +2910,7 @@ p.ecp__h3 {
 }
 
 input.attach {
-  background: #ffffff url(/img/icon-attach2.png) no-repeat 12px 10px
+  background: #ffffff url("../img/icon-attach2.png") no-repeat 12px 10px
 }
 
 label {
@@ -2953,7 +2958,7 @@ label {
         transform: translateY(-50%)
         width: 14px
         height: 14px
-        background: url(/img/icon-checked.png) center no-repeat
+        background: url("../img/icon-checked.png") center no-repeat
       }
     }
   }

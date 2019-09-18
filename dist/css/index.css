@@ -2,7 +2,7 @@
 .indexpagefirstscreen {
   margin-top: -135px;
   padding-top: 225px;
-  min-height: 845px;
+  padding-bottom: 50px;
   background: url("../img/bg-indexpagefirstscreen.jpg") center no-repeat;
 }
 .indexpagefirstscreen .single-item {
@@ -24,7 +24,6 @@
 }
 .indexpagefirstscreen .single-item .item {
   width: 100%;
-  height: 510px;
 }
 .indexpagefirstscreen .single-item .item:nth-child(1) {
   background-color: #c4d2e1;
@@ -118,9 +117,6 @@
     margin-top: -185px;
     padding-top: 275px;
   }
-  .indexpagefirstscreen .single-item .item {
-    height: 420px;
-  }
 }
 @media (max-width: 730px) {
   .indexpagefirstscreen {
@@ -138,6 +134,9 @@
   }
   .indexpagefirstscreen .single-item-mob--js {
     display: block;
+    width: 328px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (max-width: 430px) {

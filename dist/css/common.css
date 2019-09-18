@@ -65,6 +65,11 @@ a {
 a:hover {
   text-decoration: none;
 }
+a.inactiveLink {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.6;
+}
 .innerPage__title {
   margin-top: 40px;
   font-family: latoblack;
@@ -147,11 +152,6 @@ form.form__submit textarea::-webkit-input-placeholder {
 }
 form.form__submit input::-moz-placeholder,
 form.form__submit textarea::-moz-placeholder {
-  color: #666;
-  opacity: 1;
-}
-form.form__submit input:-ms-input-placeholder,
-form.form__submit textarea:-ms-input-placeholder {
   color: #666;
   opacity: 1;
 }
@@ -1361,10 +1361,6 @@ form.form__submit .agreement input[type='checkbox'] {
   color: #b4b4b4;
   opacity: 1;
 }
-.header__search input:-ms-input-placeholder {
-  color: #b4b4b4;
-  opacity: 1;
-}
 .header__search input::-ms-input-placeholder {
   color: #b4b4b4;
   opacity: 1;
@@ -2173,11 +2169,6 @@ form.form__submit .agreement input[type='checkbox'] {
 }
 .modal input::-moz-placeholder,
 .modal textarea::-moz-placeholder {
-  color: #666;
-  opacity: 1;
-}
-.modal input:-ms-input-placeholder,
-.modal textarea:-ms-input-placeholder {
   color: #666;
   opacity: 1;
 }

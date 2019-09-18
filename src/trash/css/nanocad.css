@@ -113,7 +113,7 @@
   left: 0;
   width: 36px;
   height: 48px;
-  background: url("/img/icon-document.png") no-repeat center;
+  background: url("../img/icon-document.png") no-repeat center;
 }
 .nanocad .form__number {
   font-family: latoblack;
@@ -151,7 +151,7 @@
 }
 .nanocad__form.form__submit input.email,
 .nanocad__form.form__submit input.organization {
-  background: #fff url("/img/iconset-nanocad2.png") no-repeat 12px 10px;
+  background: #fff url("../img/iconset-nanocad2.png") no-repeat 12px 10px;
 }
 .nanocad__form.form__submit input.organization {
   background-position-y: -41px;
@@ -340,7 +340,7 @@
   left: 0;
   width: 30px;
   height: 30px;
-  background: url("/img/iconset-nanocad.png") no-repeat center 3px;
+  background: url("../img/iconset-nanocad.png") no-repeat center 3px;
 }
 .nanocad1.nanocad #tabs-3 ul li:nth-child(2):before {
   background-position-y: -36px;
@@ -585,20 +585,20 @@
   transform: translateX(-50%);
   width: 50px;
   height: 50px;
-  background: url("/img/icon-nanocad1.png") no-repeat center;
+  background: url("../img/icon-nanocad1.png") no-repeat center;
   background-size: contain;
 }
 .nanocad2__other ul li:nth-child(2) a:before {
-  background-image: url("/img/icon-nanocad2.png");
+  background-image: url("../img/icon-nanocad2.png");
 }
 .nanocad2__other ul li:nth-child(3) a:before {
-  background-image: url("/img/icon-nanocad3.png");
+  background-image: url("../img/icon-nanocad3.png");
 }
 .nanocad2__other ul li:nth-child(4) a:before {
-  background-image: url("/img/icon-nanocad2.png");
+  background-image: url("../img/icon-nanocad2.png");
 }
 .nanocad2__other ul li:nth-child(5) a:before {
-  background-image: url("/img/icon-nanocad1.png");
+  background-image: url("../img/icon-nanocad1.png");
 }
 .nanocad2__call {
   margin-top: 38px;

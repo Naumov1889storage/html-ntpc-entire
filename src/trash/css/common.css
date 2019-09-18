@@ -1,30 +1,30 @@
 @font-face {
   font-family: 'TimesNewRomanPSMT';
-  src: url("/fonts/TimesNewRomanPSMT.ttf");
+  src: url("../fonts/TimesNewRomanPSMT.ttf");
 }
 @font-face {
   font-family: 'Calibri';
-  src: url("/fonts/Calibri.ttf");
+  src: url("../fonts/Calibri.ttf");
 }
 @font-face {
   font-family: 'calibri';
-  src: url("/fonts/Calibri.ttf");
+  src: url("../fonts/Calibri.ttf");
 }
 @font-face {
   font-family: 'latoblack';
-  src: url("/fonts/latoblack.ttf");
+  src: url("../fonts/latoblack.ttf");
 }
 @font-face {
   font-family: 'latobold';
-  src: url("/fonts/latobold.ttf");
+  src: url("../fonts/latobold.ttf");
 }
 @font-face {
   font-family: 'latoregular';
-  src: url("/fonts/latoregular.ttf");
+  src: url("../fonts/latoregular.ttf");
 }
 @font-face {
   font-family: 'latolight';
-  src: url("/fonts/latolight.ttf");
+  src: url("../fonts/latolight.ttf");
 }
 * {
   font-family: latoregular;
@@ -51,6 +51,11 @@ a {
 }
 a:hover {
   text-decoration: none;
+}
+a.inactiveLink {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.6;
 }
 .innerPage__title {
   margin-top: 40px;
@@ -142,7 +147,7 @@ form.form__submit .input:before {
 }
 form.form__submit input.name,
 form.form__submit input.tel {
-  background: #fff url("/img/iconset-feedback1.jpg") no-repeat 12px 10px;
+  background: #fff url("../img/iconset-feedback1.jpg") no-repeat 12px 10px;
 }
 form.form__submit input.tel {
   background-position: 12px -46px;
@@ -171,7 +176,7 @@ form.form__submit .agreement input:not(checked) + label:before {
   top: 4px;
   width: 15px;
   height: 15px;
-  background: url("/img/icon-checkbox.png") no-repeat;
+  background: url("../img/icon-checkbox.png") no-repeat;
   background-size: cover;
   border-radius: 0;
 }
@@ -355,7 +360,7 @@ form.form__submit .agreement input[type='checkbox'] {
   left: 6px;
   width: 15px;
   height: 9px;
-  background: url("/img/icon-arrow2.png") no-repeat;
+  background: url("../img/icon-arrow2.png") no-repeat;
   transition: 0.3s;
 }
 .btn3--arrow.active:after {
@@ -431,7 +436,7 @@ form.form__submit .agreement input[type='checkbox'] {
   top: 3px;
   width: 15px;
   height: 15px;
-  background: url("/img/iconset-checkbox.png") no-repeat center -20px;
+  background: url("../img/iconset-checkbox.png") no-repeat center -20px;
   transition: none !important;
 }
 .checkbox--circle input:not(checked) + label:after,
@@ -441,7 +446,7 @@ form.form__submit .agreement input[type='checkbox'] {
   margin: 0;
   width: 15px;
   height: 15px;
-  background: url("/img/iconset-checkbox.png") no-repeat center 0;
+  background: url("../img/iconset-checkbox.png") no-repeat center 0;
   transition: none !important;
 }
 .checkbox--circle input:not(checked) + label:after {
@@ -784,7 +789,7 @@ form.form__submit .agreement input[type='checkbox'] {
   line-height: 20px;
   text-align: center;
   color: #4373aa;
-  background: url("/img/iconset-features.jpg") no-repeat;
+  background: url("../img/iconset-features.jpg") no-repeat;
   background-position: 12px 0;
 }
 .tabs1 .tabs__content #tabs-1 ul.features li:nth-child(2) {
@@ -959,19 +964,19 @@ form.form__submit .agreement input[type='checkbox'] {
   transform: translateY(-50%);
   width: 8px;
   height: 27px;
-  background: url("/img/icon-arrow3.png");
+  background: url("../img/icon-arrow3.png");
 }
 .tabs--vertical .title li:nth-child(1) a:before {
-  background-image: url("/img/logo-nanocad-mini.png");
+  background-image: url("../img/logo-nanocad-mini.png");
 }
 .tabs--vertical .title li:nth-child(2) a:before {
-  background-image: url("/img/logo-csoft-mini.png");
+  background-image: url("../img/logo-csoft-mini.png");
 }
 .tabs--vertical .title li:nth-child(3) a:before {
-  background-image: url("/img/logo-pilotICE-mini.png");
+  background-image: url("../img/logo-pilotICE-mini.png");
 }
 .tabs--vertical .title li:nth-child(4) a:before {
-  background-image: url("/img/logo-renga-mini.png");
+  background-image: url("../img/logo-renga-mini.png");
 }
 .tabs--vertical .content {
   padding: 0 38px 90px 26px;
@@ -1020,10 +1025,10 @@ form.form__submit .agreement input[type='checkbox'] {
   transform: translateY(-50%);
   width: 20px;
   height: 17px;
-  background: url("/img/iconset-nanocad-v1.png") no-repeat center 1px;
+  background: url("../img/iconset-nanocad-v1.png") no-repeat center 1px;
 }
 .tabs--vertical .content .table1.nanocadversions tr td:nth-child(2):before {
-  background-image: url("/img/iconset-nanocad-v2.png");
+  background-image: url("../img/iconset-nanocad-v2.png");
 }
 .tabs--vertical .content .table1.nanocadversions tr:nth-child(1) td:before {
   display: none;
@@ -1186,7 +1191,7 @@ form.form__submit .agreement input[type='checkbox'] {
   transform: translateY(-50%);
   width: 24px;
   height: 24px;
-  background: url("/img/icon-search.png");
+  background: url("../img/icon-search.png");
 }
 .header__catalog {
   position: relative;
@@ -1211,7 +1216,7 @@ form.form__submit .agreement input[type='checkbox'] {
   height: 15px;
   border: none;
   transform: rotate(0);
-  background: url("/img/icon-cross.jpg");
+  background: url("../img/icon-cross.jpg");
 }
 .header__catalog.active .content {
   display: block;
@@ -1322,7 +1327,7 @@ form.form__submit .agreement input[type='checkbox'] {
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  background: url("/img/iconset-catalog.jpg");
+  background: url("../img/iconset-catalog.jpg");
 }
 .header__catalog .content ul.foricons#foricons__1 li:nth-child(2):before {
   background-position: 2px 0;
@@ -1617,7 +1622,7 @@ form.form__submit .agreement input[type='checkbox'] {
   left: 0;
   width: 19px;
   height: 19px;
-  background: url("/img/iconset-topmenu.png") no-repeat;
+  background: url("../img/iconset-topmenu.png") no-repeat;
 }
 .topmenu ul li:nth-child(2):before {
   background-position: -114px 0;
@@ -1891,7 +1896,7 @@ form.form__submit .agreement input[type='checkbox'] {
 }
 .modal input.name,
 .modal input.tel {
-  background: url("/img/iconset-feedback1.jpg") no-repeat 12px 10px;
+  background: url("../img/iconset-feedback1.jpg") no-repeat 12px 10px;
 }
 .modal input.tel {
   background-position: 12px -46px;
@@ -1917,7 +1922,7 @@ form.form__submit .agreement input[type='checkbox'] {
   top: 4px;
   width: 15px;
   height: 15px;
-  background: url("/img/icon-checkbox.png") no-repeat;
+  background: url("../img/icon-checkbox.png") no-repeat;
   background-size: cover;
   border-radius: 0;
 }
@@ -2049,7 +2054,7 @@ table.table1 .checkbox label:after {
   height: 16px;
   transform: none;
   opacity: 1;
-  background: url("/img/icon-checkbox2.jpg") no-repeat center;
+  background: url("../img/icon-checkbox2.jpg") no-repeat center;
 }
 .checkbox.checkbox--square input:not(checked) + label:after,
 .checkbox.checkbox--square input:checked + label:after {
@@ -2059,7 +2064,7 @@ table.table1 .checkbox label:after {
   width: 16px;
   height: 16px;
   opacity: 1;
-  background: url("/img/icon-checkbox2-checked.jpg") no-repeat center;
+  background: url("../img/icon-checkbox2-checked.jpg") no-repeat center;
 }
 .checkbox.checkbox--square input:not(checked) + label:after {
   opacity: 0;
@@ -2091,7 +2096,7 @@ table.table1 .checkbox label:after {
   margin: 0 auto;
   width: 350px;
   height: 350px;
-  background: url("/img/bg-circleslider.png") no-repeat center;
+  background: url("../img/bg-circleslider.png") no-repeat center;
 }
 .circleslider .slick-list,
 .circleslider .slick-track,
@@ -2123,27 +2128,27 @@ table.table1 .checkbox label:after {
 .circleslider .slick-dots li:nth-child(1) {
   top: -65px;
   left: 115px;
-  background-image: url("/img/icon-circleslider1.png");
+  background-image: url("../img/icon-circleslider1.png");
 }
 .circleslider .slick-dots li:nth-child(2) {
   top: 55px;
   right: -50px;
-  background-image: url("/img/icon-circleslider2.png");
+  background-image: url("../img/icon-circleslider2.png");
 }
 .circleslider .slick-dots li:nth-child(3) {
   bottom: 10px;
   right: -15px;
-  background-image: url("/img/icon-circleslider3.png");
+  background-image: url("../img/icon-circleslider3.png");
 }
 .circleslider .slick-dots li:nth-child(4) {
   bottom: -8px;
   left: 7px;
-  background-image: url("/img/icon-circleslider4.png");
+  background-image: url("../img/icon-circleslider4.png");
 }
 .circleslider .slick-dots li:nth-child(5) {
   top: 40px;
   left: -48px;
-  background-image: url("/img/icon-circleslider5.png");
+  background-image: url("../img/icon-circleslider5.png");
 }
 @media (max-width: 500px) {
   .circleslider {
@@ -2278,7 +2283,7 @@ table.table1 .checkbox label:after {
   top: 8px;
   width: 19px;
   height: 11px;
-  background: url("/img/icon-arrow2.png") no-repeat center;
+  background: url("../img/icon-arrow2.png") no-repeat center;
   background-size: 19px 11px;
 }
 .scroll__showall.active:after {
@@ -2448,7 +2453,7 @@ p.ecp__h3 .font-darkblue {
   margin: 0 3px 0 3px;
   width: 16px;
   height: 9px;
-  background: url("/img/icon-arrow2.png") no-repeat;
+  background: url("../img/icon-arrow2.png") no-repeat;
   transition: 0.3s;
 }
 .accordion.active .content {
@@ -2464,7 +2469,7 @@ p.ecp__h3 .font-darkblue {
   transition: none;
 }
 input.attach {
-  background: #fff url("/img/icon-attach2.png") no-repeat 12px 10px;
+  background: #fff url("../img/icon-attach2.png") no-repeat 12px 10px;
 }
 label {
   user-select: auto;
@@ -2506,7 +2511,7 @@ label {
   transform: translateY(-50%);
   width: 14px;
   height: 14px;
-  background: url("/img/icon-checked.png") center no-repeat;
+  background: url("../img/icon-checked.png") center no-repeat;
 }
 .preventJumping {
   position: absolute;

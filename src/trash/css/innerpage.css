@@ -7,7 +7,7 @@
   margin-bottom: 24px;
   min-width: 212px;
   height: 143px;
-  background: url("/img/bg-innermenu1.jpg");
+  background: url("../img/bg-innermenu1.jpg");
   background-size: cover !important;
 }
 .innerPage__menu li a {
@@ -42,13 +42,13 @@
   opacity: 0.4;
 }
 .innerPage__menu li:nth-child(2) {
-  background: url("/img/bg-innermenu2.jpg");
+  background: url("../img/bg-innermenu2.jpg");
 }
 .innerPage__menu li:nth-child(3) {
-  background: url("/img/bg-innermenu3.jpg");
+  background: url("../img/bg-innermenu3.jpg");
 }
 .innerPage__menu li:nth-child(4) {
-  background: url("/img/bg-innermenu4.jpg");
+  background: url("../img/bg-innermenu4.jpg");
 }
 @media (max-width: 1050px) {
   .innerPage__wrap > .container.flex_row__start {

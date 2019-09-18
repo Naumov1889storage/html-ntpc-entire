@@ -112,7 +112,7 @@
   width: 58px;
   height: 58px;
   border-radius: 100%;
-  background: #fff url("/img/icon-ecp-sample1.png") center no-repeat;
+  background: #fff url("../img/icon-ecp-sample1.png") center no-repeat;
 }
 .ecp__features li:after {
   z-index: -1;
@@ -122,16 +122,16 @@
   background: rgba(255,255,255,0.5);
 }
 .ecp__features li:nth-child(2):before {
-  background-image: url("/img/icon-ecp-sample2.png");
+  background-image: url("../img/icon-ecp-sample2.png");
 }
 .ecp__features li:nth-child(3):before {
-  background-image: url("/img/icon-ecp-sample3.png");
+  background-image: url("../img/icon-ecp-sample3.png");
 }
 .ecp__features li:nth-child(4):before {
-  background-image: url("/img/icon-ecp-sample1.png");
+  background-image: url("../img/icon-ecp-sample1.png");
 }
 .ecp__features li:nth-child(5):before {
-  background-image: url("/img/icon-ecp-sample3.png");
+  background-image: url("../img/icon-ecp-sample3.png");
 }
 .ecp .fox__wrap {
   position: absolute;
@@ -144,7 +144,7 @@
   z-index: -1;
   top: 0;
   height: 1339px;
-  background: url("/img/bg-landscape.jpg") right no-repeat;
+  background: url("../img/bg-landscape.jpg") right no-repeat;
   background-size: cover;
   overflow: visible;
 }
@@ -152,7 +152,7 @@
   top: auto;
   bottom: -110px;
   height: 342px;
-  background: url("/img/bg-landscape2.png") no-repeat;
+  background: url("../img/bg-landscape2.png") no-repeat;
   background-size: cover;
 }
 .ecp .fox__wrap .content--fox .fox {
@@ -199,20 +199,20 @@
   transform: translateY(-50%);
   width: 40px;
   height: 40px;
-  background: url("/img/icon-ecp-sample4.jpg") right center no-repeat;
+  background: url("../img/icon-ecp-sample4.jpg") right center no-repeat;
 }
 .ecp__links li a {
   display: block;
 }
 .ecp__links li:nth-child(2):before {
-  background-image: url("/img/icon-ecp-sample5.png");
+  background-image: url("../img/icon-ecp-sample5.png");
 }
 .ecp__links li:nth-child(3) {
   padding-left: 82px;
 }
 .ecp__links li:nth-child(3):before {
   width: 67px;
-  background-image: url("/img/icon-ecp-sample6.png");
+  background-image: url("../img/icon-ecp-sample6.png");
 }
 .ecp .checkbox__wrap ul {
   display: flex;
@@ -352,7 +352,7 @@
   justify-content: center;
   flex-wrap: wrap;
   padding-top: 27px;
-  background: url("/img/bg-ecp-steps.png") no-repeat center 0;
+  background: url("../img/bg-ecp-steps.png") no-repeat center 0;
 }
 .ecp__steps ul li {
   margin-right: 5px;
@@ -506,7 +506,7 @@
   height: 16px;
   transform: none;
   opacity: 1;
-  background: url("/img/icon-checkbox2.jpg") no-repeat center;
+  background: url("../img/icon-checkbox2.jpg") no-repeat center;
 }
 .ecp__stair .checkbox input:not(checked) + label:after,
 .ecp__stair .checkbox input:checked + label:after {
@@ -517,7 +517,7 @@
   height: 16px;
   transform: none;
   opacity: 1;
-  background: url("/img/icon-checkbox2-checked.jpg") no-repeat center;
+  background: url("../img/icon-checkbox2-checked.jpg") no-repeat center;
 }
 .ecp__stair .checkbox input:not(checked) + label:after {
   opacity: 0;
@@ -684,7 +684,7 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
-  background: url("/img/icon-search.png") no-repeat right center;
+  background: url("../img/icon-search.png") no-repeat right center;
   background-size: 19px;
   background-position-x: 98%;
 }
@@ -707,7 +707,7 @@
 .ecp__hint button {
   width: 14px;
   height: 14px;
-  background: url("/img/icon-help.png") center no-repeat;
+  background: url("../img/icon-help.png") center no-repeat;
   border-radius: 100%;
   cursor: pointer;
 }
@@ -737,7 +737,7 @@
 }
 .ecp__hint.active button {
   transform: translateX(-5px);
-  background-image: url("/img/icon-help-close.png");
+  background-image: url("../img/icon-help-close.png");
 }
 .ecp__hint.active .hint__text {
   background-color: #fcf4c0;
